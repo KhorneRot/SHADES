@@ -4,3 +4,4 @@
 - Luis Alejandro Ramírez Manilla
 - Arturo Hernandez Silva
 - Josselyn Ileana Mosco García
+- Aarón Caleb Ulloa Gómez
