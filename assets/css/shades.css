@@ -1,0 +1,22 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  height: 320px;
+  width: 100%;
+  background-color: #414141;
+}
+
+.footer h3 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bolder;
+}
+
+.footer p {
+  font-size: 1rem;
+  color: white;
+}
+
+.derechos p {
+  font-size: 0.75rem;
+}
