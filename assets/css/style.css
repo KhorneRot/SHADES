@@ -1,0 +1,30 @@
+/* nav */
+.fondo {
+  background-color: #fdefe1;
+  position: absolute;
+  width: 1440px;
+  height: 70px;
+  left: 0px;
+  top: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+body {
+  /* Rectangle 8 */
+  width: 1446px;
+  height: 661px;
+  left: -6px;
+  top: 105px;
+  background: #d59090;
+}
+
+/* modelo */
+.modelo {
+    position: absolute;
+width: auto px;
+height: 662px;
+left: -310px;
+top: 68px;
+
+background: url(https://i.imgur.com/1ubCgat.jpg);
+}
