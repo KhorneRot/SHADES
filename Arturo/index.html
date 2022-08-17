@@ -8,6 +8,7 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/styles.css">
 
 
 
@@ -16,6 +17,123 @@
 </head>
 <body>
     
+
+
+<!--panel-->
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-body">A Basic Panel</div>
+      </div>
+</div>
+
+
+<!--boton-->
+<div class="container">
+    <a href="#seccion" class="btn btn-primary" data-toggle="collapse">
+        Mostrar/ocultar
+    </a>
+    <div class="collapse" id="seccion">
+        <div class="well">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente incidunt ullam excepturi. Ab pariatur aspernatur quae officia esse, quisquam maiores aut praesentium, eum dolores consequuntur numquam nulla laudantium sit ut!</p>
+        </div>
+    </div>
+</div>
+
+
+
+<!---->
+
+
+
+<!--intento fallido de acordeon-->
+<!--
+<div class="container">
+<div class="panel-group" id="accordion" role="tablist">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading1">
+            <h4 class="panel-title">
+                <a href="#" data-toggle="collapse" data-parent="#accordion">
+                    Encabezado1
+                </a>
+            </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ipsa vel incidunt aut illum, doloremque, quibusdam similique ullam dolore enim ab exercitationem animi nulla ex eum debitis voluptate assumenda officiis.
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+-->
+
+
+
+
+<!--intento de cordeon-->
+<div class="panel-group" id="accordion" role="tablist">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading1">
+            <h4 class="panel-title">
+                <a href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+                    Encabezado1
+                </a>
+            </h4>
+        </div>
+        <div class="collapse1" class="panel-collapse collapse">
+            <div class="panel-body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero inventore necessitatibus tenetur quisquam minus, illo iure neque, doloremque doloribus porro itaque? Atque aliquid aperiam expedita fugit rerum cum officia porro!
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading2">
+            <h4 class="panel-title">
+                <a href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+                    Encabezado2
+                </a>
+            </h4>
+        </div>
+        <div class="collapse2" class="panel-collapse collapse in">
+            <div class="panel-body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero inventore necessitatibus tenetur quisquam minus, illo iure neque, doloremque doloribus porro itaque? Atque aliquid aperiam expedita fugit rerum cum officia porro!
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading3">
+            <h4 class="panel-title">
+                <a href="#collapse3" data-toggle="collapse" data-parent="#accordion">
+                    Encabezado3
+                </a>
+            </h4>
+        </div>
+        <div class="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero inventore necessitatibus tenetur quisquam minus, illo iure neque, doloremque doloribus porro itaque? Atque aliquid aperiam expedita fugit rerum cum officia porro!
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+
 
 
 
@@ -47,6 +165,72 @@
 
 
 
+    <!--Nuestro equipo-->
+    <div class="container d-flex justify-content-evenly">
+        <div class="row">
+
+
+
+            <div class="col">
+                <img src="assets/imagenes/josselyn.jpg" alt="" class="nuestrasfotos">
+                <p>Josselyn</p>
+            </div>
+
+            <div class="col">
+                <img src="assets/imagenes/Arturo.jpg" alt="fotoarturo" class="nuestrasfotos">
+                <p>Arturo</p>
+            </div>
+            
+            <div class="col">
+                <img src="assets/imagenes/alejandro.jpg" alt="" class="nuestrasfotos">
+                <p>Alejandro</p>
+            </div>
+                   
+            <div class="col">
+                <img src="assets/imagenes/hector.jpg" alt="" class="nuestrasfotos">
+                <p>Héctor</p>
+            </div>
+                    
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img src="assets/imagenes/kaleb.jpg" alt="" class="nuestrasfotos">
+                <p>Kaleb</p>
+            </div>
+            
+            <div class="col">
+                <img src="assets/imagenes/maciel.jpg" alt="" class="nuestrasfotos">
+                <p>Maciel</p> 
+            </div>
+                     
+            <div class="col">
+                <img src="assets/imagenes/Arturo.jpg" alt="fotoarturo" class="nuestrasfotos">
+                <p>Iker</p>
+            </div>
+
+            <div class="col">
+                <img src="assets/imagenes/cyntya.jpg" alt="" class="nuestrasfotos">
+                <p>Cyntya</p>
+            </div>
+                    
+                    
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -62,3 +246,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 </html>
+
