@@ -1,0 +1,18 @@
+/* Carrito */
+.table{
+    width: 60%;
+}
+
+.resumen{
+    float: right;
+    background-color: #FCEEE1;
+    margin-left: 60px;
+    padding-left: 20px;
+
+}
+
+
+.btn{
+    background-color: #D49090;
+}
+
