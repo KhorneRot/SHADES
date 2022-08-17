@@ -1,8 +1,8 @@
-/* nav */
-.fondo {
+/* BARRA NAVEGACION */
+.barraNav {
   background-color: #fdefe1;
   position: absolute;
-  width: 1440px;
+  width: 1423px;
   height: 70px;
   left: 0px;
   top: 0px;
@@ -11,7 +11,7 @@
 
 body {
   /* Rectangle 8 */
-  width: 1446px;
+  width: 1423px;
   height: 661px;
   left: -6px;
   top: 105px;
@@ -20,11 +20,137 @@ body {
 
 /* modelo */
 .modelo {
-    position: absolute;
-width: auto px;
-height: 662px;
-left: -310px;
-top: 68px;
+  position: absolute;
+  width: 961px;
+  height: 717px;
+  left: -345px;
+  top: -104px;
+}
+/* Lema SHADES */
+.portada {
+  /* Tu estilo es tu confianza Pasa una vida llena de belleza */
+  text-align: center;
+  width: 902px;
+  margin: -80px;
+  margin-left: 381px;
+  height: 564px;
+  left: 464px auto;
+  top: 900px;
+  bottom: 2476px;
 
-background: url(https://i.imgur.com/1ubCgat.jpg);
+  font-family: "Felix Titling";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58.9px;
+  line-height: 70px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  text-shadow: 0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25),
+    0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25),
+    0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25),
+    0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25);
+}
+
+/* carrusel */
+/* imagenes */
+.carrusel {
+  height: 241px;
+  max-width: 107%;
+  max-height: 54%;
+}
+/* fondo de carrusel */
+.carrusel2 {
+  width: 675px;
+  height: 259px;
+  margin-top: -153.1px;
+  margin-right: -3px;
+  margin-left: 333px;
+
+  background: #fdefe1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* ajustes de ancho y largo */
+.carrusel3 {
+  width: 212%;
+  margin-top: 9px;
+  margin-left: -3px;
+}
+
+.cambioControl {
+  right: -339px;
+}
+
+/* Nuestros socios */
+.rectangulo {
+  position: absolute;
+  width: 1423px;
+  height: 950px;
+  left: 0px;
+  top: 613px;
+
+  background-color: #ffffff;
+}
+
+/* Categorias */
+
+.catalogo {
+  position: absolute;
+  width: 360.51px;
+  height: 239.68px;
+  left: 14px;
+  top: 242.1px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.catalogo2 {
+  position: absolute;
+  width: 695.3px;
+  height: 239.68px;
+  left: 401.7px;
+  top: 241.1px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.catalogo3 {
+  position: absolute;
+  width: 360.51px;
+  height: 239.68px;
+  left: 737px;
+  top: 498.1px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.catalogo4 {
+  position: absolute;
+  width: 695.3px;
+  height: 239.68px;
+  left: 7.7px;
+  top: 499.1px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.categorias {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 327px;
+  height: 46px;
+  left: 133px;
+  top: 803px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+
+  color: #000000;
 }
