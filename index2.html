@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+      <!-- CSS-->
+      <link rel="stylesheet" href="/stylesTienda.css">
+
+    <title>Tienda - SHADES</title>
+</head>
+<body>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!--Contenedor para el título-->
+    <div class="container">
+        <h1>Tienda 2</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-3">
+                <!-- Columna 1 -->
+                <ul class="list-group list-group-flush mr-xl-5">
+                
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="buscar" placeholder="Busca aquí" aria-describedby="buscar" >
+                    </div>
+                    
+                    <ul class="list-group"> Categorías </ul>
+                        <li class="list-group list-group-flush">
+                            <li class="list-group-item ml-1">A second item <span class="badge badge-pill">13</span></li>
+                            <li class="list-group-item ml-1">A third item <span class="badge badge-pill">13</span> </li>
+                            <li class="list-group-item ml-1">A fourth item <span class="badge badge-pill">13</span> </li>
+                            <li class="list-group-item ml-1">And a fifth one <span class="badge badge-pill">13</span></li>
+                        </li>
+
+                        <ul class="list-group"> <br> Marcas </ul>
+                        <li class="list-group list-group-flush">
+                            <li class="list-group-item ml-1">A second item <span class="badge badge-pill">13</span></li>
+                            <li class="list-group-item ml-1">A third item <span class="badge badge-pill">13</span> </li>
+                            <li class="list-group-item ml-1">A fourth item <span class="badge badge-pill">13</span> </li>
+                            <li class="list-group-item ml-1">And a fifth one <span class="badge badge-pill">13</span></li>
+                        </li>
+
+                        <ul class="list-group"> <br></ul>
+                            <label for="customRange1" class="form-label">Precio</label>
+                            <input type="range" min="29" max="$1999" step="100" class="form-range" id="rangoPrecio">
+                            <label for="customRange1" class="form-label">Precio   $29.00 - $1,999.00</label>
+
+                        
+                        <ul class="list-group"> <br>Filtro --> Reiniciar el filtro C</ul>
+                        <br>
+
+                        
+                        <img id="imgDescuento" src="/image/50deDescuento.png" alt="Cosmeticos en descuento" srcset="">                        
+
+                        <br>
+                        <br>
+                </ul>
+            </div>
+
+            <div class="col-9">
+                <!-- <h2 id="subtitulo">Columna 2 Grande</h2> -->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                    <!--CARDS-->
+
+                    <div class="col" id="cards">
+                      <div class="card h-60">
+                        <img src="/image/labial.jpg" class="card-img-top" alt="...">
+                        <div id="cardBody" class="card-body">
+                          <h5 class="card-title">Serum Anti-acné</h5>
+                          <p class="card-text">$4.99</p>
+                          <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--CARD 2-->
+                    <div class="col" id="cards">
+                      <div class="card h-60">
+                        <img src="/image/labial.jpg" class="card-img-top" alt="...">
+                        <div id="cardBody" class="card-body">
+                          <h5 class="card-title">Neccesaire</h5>
+                          <p class="card-text">$5.49</p>
+                          <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--CARD 3-->
+                    <div class="col" id="cards">
+                      <div class="card h-60">
+                        <img src="/image/labial.jpg" class="card-img-top" alt="...">
+                        <div id="cardBody" class="card-body">
+                          <h5 class="card-title">Skin Care</h5>
+                          <p class="card-text">$5.99</p>
+                          <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!--CARD 4-->
+                    <div class="col" id="cards">
+                        <div class="card h-60">
+                          <img src="..." class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title 3</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--CARD 5-->
+                    <div class="col" id="cards">
+                        <div class="card h-60">
+                          <img src="..." class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title 3</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--CARD 6-->
+                    <div class="col" id="cards">
+                        <div class="card h-60">
+                          <img src="..." class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title 3</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                          </div>
+                        </div>
+                      </div>
+
+                    <!--FIN DE CARDS-->
+
+                    <!--PAGINACIÓN-->
+
+                    <nav id="navegacion" aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+
+                          <li class="page-item disabled">
+                            <a class="page-link-flush p-3">
+                              <img src="/image/flechaizq.png" alt="Regresar" srcset="">
+                            </a>
+                          </li>
+
+                          <li class="page-item"><a class="page-link-flush p-3" href="#">
+                            <img src="/image/uno32px.png" alt="" srcset="">
+                          </a></li>
+
+                          <li class="page-item"><a class="page-link-flush p-3" href="#">
+                            <img src="/image/dos.png" alt="" srcset="">
+                          </a></li>
+                          <li class="page-item"><a class="page-link-flush p-3" href="#">
+                            <img src="/image/tres.png" alt="" srcset="">
+                          </a></li>
+                          <li class="page-item"><a class="page-link-flush p-3" href="#">
+                            <img src="/image/cuatro.png" alt="" srcset="">
+                          </a></li>
+                          <li class="page-item">
+                            <a class="page-link-flush p-3" href="#">
+                              <img src="/image/flechader.png" alt="" srcset="">  
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+
+                    <!-- FIN DEPAGINACIÓN-->
+                  </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
