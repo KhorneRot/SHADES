@@ -1,0 +1,148 @@
+/*CSS de about shades*/
+.nuestrasfotos{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+
+.iconosarturo{
+    width:45px;
+    margin: 5px;
+}
+
+
+.titulosaboutshades{
+    font-size: 40px;
+}
+
+
+.accordion-button{
+    background-color: #fceee1;
+    font-size: 20px;
+    
+}
+
+
+.accordion-body{
+    font-size: 20px;
+}
+
+
+
+
+
+
+/* BARRA NAVEGACION */
+
+.header{
+  background-color: #FDEFE1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 5px 10%;
+}
+
+.header .logo{
+  cursor: pointer;
+
+}
+
+.header .logo img{
+  height: 58px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.header .logo img:hover{
+  transform: scale(1.2);
+}
+
+.header .nav-links{
+  list-style: none;
+  margin-bottom: 0rem;
+  margin-left: 155px;
+}
+
+.header .nav-links li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+  transform: scale(1.1);
+}
+
+
+.header .nav-links a{
+  font-size: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.header .btn{
+  font-weight: 700;
+  color: #000000;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+
+
+
+
+
+
+
+
+/* REGLAS DE ESTILO PARA EL PIE DE PAGINA */
+
+/*Eliminen esta regla si no se comporta como debe*/
+body {
+    min-height: 100vh;
+  }
+  /****************************************/
+  
+  .footer {
+    position: sticky; /* Y esta tambien*/
+    top: 100%;        /*Y esta*/
+    width: 100%;
+    background-color: #414141;
+  }
+  
+  .footer h3 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bolder;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .derechos p {
+    font-size: 0.75rem;
+  }
+  
+  .iconos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+  }
+  
+  svg:hover path{
+    fill: #D49090;
+    transition: 200ms;
+  }
+  
+   footer span {
+    width: 25px;
+    margin-right: 10px;
+  } 

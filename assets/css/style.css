@@ -1,0 +1,243 @@
+/* BARRA NAVEGACION */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+.header{
+  background-color: #FDEFE1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 5px 10%;
+}
+
+.header .logo{
+  cursor: pointer;
+
+}
+
+.header .logo img{
+  height: 58px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.header .logo img:hover{
+  transform: scale(1.2);
+}
+
+.header .nav-links{
+  list-style: none;
+  margin-bottom: 0rem;
+  margin-left: 155px;
+}
+
+.header .nav-links li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+  transform: scale(1.1);
+}
+
+
+.header .nav-links a{
+  font-size: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.header .btn{
+  font-weight: 700;
+  color: #000000;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+
+
+body {
+  display: flex;
+  background: #d59090;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main{
+  flex-grow:1;
+}
+
+
+
+
+
+/* iconos */
+.iconos {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+
+/* modelo */
+.modelo {
+  position: absolute;
+  width: 961px;
+  height: 717px;
+  left: -345px;
+  top: -104px;
+}
+/* Lema SHADES */
+.portada {
+
+  /* Tu estilo es tu confianza Pasa una vida llena de belleza */
+  text-align: center;
+  width: 902px;
+  margin: -158px;
+  margin-left: 381px;
+  height: 564px;
+  left: 464px auto;
+  top: 900px;
+  bottom: 2476px;
+
+  font-family: "Felix Titling";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58.9px;
+  line-height: 70px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  text-shadow: 0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25),
+    0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25),
+    0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25),
+    0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25);
+}
+
+/* carrusel */
+/* imagenes */
+.carrusel {
+  height: 241px;
+  max-width: 107%;
+  max-height: 54%;
+}
+/* fondo de carrusel */
+.carrusel2 {
+  width: 675px;
+  height: 259px;
+  margin-top: -153.1px;
+  margin-right: -3px;
+  margin-left: 460px;
+
+  background: #fdefe1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* ajustes de ancho y largo */
+.carrusel3 {
+  width: 212%;
+  margin-top: 9px;
+  margin-left: -3px;
+}
+
+.cambioControl {
+  right: -339px;
+}
+
+/* Nuestros socios */
+.socio1{
+  margin-left: 38px;
+}
+.socio2{
+  margin-left: 71px;
+}
+.socio3{
+  margin-left: 68px;
+}
+
+/* Categorias */
+
+.catalogo {
+  position: absolute;
+  width: 360.51px;
+  height: 239.68px;
+  left: 151px;
+  top: -770.9px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.catalogo2 {
+  position: absolute;
+  width: 695.3px;
+  height: 239.68px;
+  left: 519.7px;
+  top: -770.9px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.catalogo3 {
+  position: absolute;
+  width: 360.51px;
+  height: 239.68px;
+  left: 854px;
+  top: -516px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.catalogo4 {
+  position: absolute;
+  width: 695.3px;
+  height: 239.68px;
+  left: 145.7px;
+  top: -516px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.categorias {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 327px;
+  height: 46px;
+  left: 133px;
+  top: 803px;
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+
+  color: #000000;
+}
+
+
+.rectangulo {
+  position: relative;
+  width: 1423px;
+  height: 950px;
+  left: 0px;
+  top: -25px;
+  
+
+  background-color: #ffffff;
+}
