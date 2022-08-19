@@ -1,5 +1,5 @@
 h1 {
-
+    font-family: 'Domine', serif;
     font-family: 'Edu VIC WA NT Beginner', cursive;
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -39,10 +39,50 @@ h4 {
 #navegacion{
     margin:auto;
     align-items: center;
+    padding: 30px;
 }
 
 #icon{
     border-radius: 15px;
     width: 16px;
     height: 16px;
+}
+
+
+#list-group{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Poppins', sans-serif;
+    text-align:left;
+    font-size:large;
+
+}
+
+
+#list-group-mostrar{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Poppins', sans-serif;
+    text-align:left;
+    font-size:medium;
+
+}
+
+#filtro{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Poppins', sans-serif;
+    text-align:left;
+    font-size:small;
+}
+
+.card-img-top{
+    display:block;
+    width: 253px;
+    height: 253px;
+    object-fit: cover;
+}
+
+#badge-pill{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size:medium;
 }

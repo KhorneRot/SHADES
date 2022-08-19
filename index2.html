@@ -15,8 +15,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!--H1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500&family=Edu+VIC+WA+NT+Beginner:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
 
-      <!-- CSS-->
+    <!-- CSS-->
       <link rel="stylesheet" href="/stylesTienda.css">
 
     <title>Tienda - SHADES</title>
@@ -30,7 +35,7 @@
 
     <!--Contenedor para el título-->
     <div class="container">
-        <h1>Tienda 2</h1>
+        <h1>Tienda</h1>
     </div>
 
     <div class="container">
@@ -40,33 +45,51 @@
                 <!-- Columna 1 -->
                 <ul class="list-group list-group-flush mr-xl-5">
                 
+
+                  <!-- Buscador -->
                     <div class="form-group">
                       <input type="text" class="form-control" id="buscar" placeholder="Busca aquí" aria-describedby="buscar" >
                     </div>
                     
-                    <ul class="list-group"> Categorías </ul>
+                   <!-- Categorías y subcategorías --> 
+                    <ul id="list-group" class="list-group"> <b> Categorías </b></ul>
                         <li class="list-group list-group-flush">
-                            <li class="list-group-item ml-1">A second item <span class="badge badge-pill">13</span></li>
-                            <li class="list-group-item ml-1">A third item <span class="badge badge-pill">13</span> </li>
-                            <li class="list-group-item ml-1">A fourth item <span class="badge badge-pill">13</span> </li>
-                            <li class="list-group-item ml-1">And a fifth one <span class="badge badge-pill">13</span></li>
+                            <li class="list-group-item ml-1">Skin Care <span id="badge-pill" class="badge-pill">(9)</span></li>
+                            <li class="list-group-item ml-1">Ojos <span id="badge-pill" class="badge-pill">(22)</span> </li>
+                            <li class="list-group-item ml-1">Cejas <span id="badge-pill" class="badge-pill">(14)</span> </li>
+                            <li class="list-group-item ml-1">Labios <span id="badge-pill" class="badge-pill">(31)</span></li>
+                            <li class="list-group-item ml-1">Cabello <span id="badge-pill" class="badge-pill">(29)</span></li>
                         </li>
 
-                        <ul class="list-group"> <br> Marcas </ul>
+                        <ul id="list-group" class="list-group"> <br> <b> Marcas </b> </ul>
                         <li class="list-group list-group-flush">
-                            <li class="list-group-item ml-1">A second item <span class="badge badge-pill">13</span></li>
-                            <li class="list-group-item ml-1">A third item <span class="badge badge-pill">13</span> </li>
-                            <li class="list-group-item ml-1">A fourth item <span class="badge badge-pill">13</span> </li>
-                            <li class="list-group-item ml-1">And a fifth one <span class="badge badge-pill">13</span></li>
+                            <li class="list-group-item ml-1">Vichy <span id="badge-pill" class="badge-pill">(17)</span></li>
+                            <li class="list-group-item ml-1">Clarins<span id="badge-pill" class="badge-pill">(11)</span> </li>
+                            <li class="list-group-item ml-1">L'Oreal <span id="badge-pill" class="badge-pill">(23)</span></li>
+                            <li class="list-group-item ml-1">Avene <span id="badge-pill" class="badge-pill">(13)</span></li>
                         </li>
 
-                        <ul class="list-group"> <br></ul>
-                            <label for="customRange1" class="form-label">Precio</label>
+                        <!-- Mostrar más, lo pusimos aparte para cambiar el CSS -->
+
+                        <ul id="list-group-mostrar" class="list-group"> <br> <FONT COLOR=#D49090> <b> Mostrar más + </b> </FONT></ul>
+
+                        <!-- Precio -->
+                        <ul id="list-group" class="list-group"> <br> <b> Precio</b> </ul>
+                            <label for="customRange1" class="form-label"></label>
                             <input type="range" min="29" max="$1999" step="100" class="form-range" id="rangoPrecio">
                             <label for="customRange1" class="form-label">Precio   $29.00 - $1,999.00</label>
 
+
+                         <!-- Filtro -->
+                         <br>
+                         <br>
+
+                        <ul class="list-group" id="filtro"> 
+
+                          <p><b>Filtro</b>&nbsp; &#129042; <FONT COLOR=#D49090><b>Reiniciar el filtro &nbsp;
+                            &#8634; </FONT></b></p>
                         
-                        <ul class="list-group"> <br>Filtro --> Reiniciar el filtro C</ul>
+                        </ul>
                         <br>
 
                         
@@ -77,18 +100,18 @@
                 </ul>
             </div>
 
-            <div class="col-9">
+            <div class="col-9 ">
                 <!-- <h2 id="subtitulo">Columna 2 Grande</h2> -->
                 <div class="row row-cols-1 row-cols-md-3 g-4">
 
                     <!--CARDS-->
 
                     <div class="col" id="cards">
-                      <div class="card h-60">
-                        <img src="/image/labial.jpg" class="card-img-top" alt="...">
+                      <div class="card h-60" >
+                        <img id= "imgTienda" src="/image/productos/serumantiance1.jpg" class="card-img-top" alt="...">
                         <div id="cardBody" class="card-body">
                           <h5 class="card-title">Serum Anti-acné</h5>
-                          <p class="card-text">$4.99</p>
+                          <p class="card-text">$499.00</p>
                           <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
                         </div>
                       </div>
@@ -97,10 +120,10 @@
                     <!--CARD 2-->
                     <div class="col" id="cards">
                       <div class="card h-60">
-                        <img src="/image/labial.jpg" class="card-img-top" alt="...">
+                        <img src="/image/productos/hidratante.jpg" class="card-img-top" alt="...">
                         <div id="cardBody" class="card-body">
-                          <h5 class="card-title">Neccesaire</h5>
-                          <p class="card-text">$5.49</p>
+                          <h5 class="card-title">Hidratante</h5>
+                          <p class="card-text">$549.00</p>
                           <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
                         </div>
                       </div>
@@ -109,10 +132,10 @@
                     <!--CARD 3-->
                     <div class="col" id="cards">
                       <div class="card h-60">
-                        <img src="/image/labial.jpg" class="card-img-top" alt="...">
+                        <img src="/image/productos/skincare.jpg" class="card-img-top" alt="...">
                         <div id="cardBody" class="card-body">
                           <h5 class="card-title">Skin Care</h5>
-                          <p class="card-text">$5.99</p>
+                          <p class="card-text">$599.00</p>
                           <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
                         </div>
                       </div>
@@ -121,45 +144,186 @@
 
                     <!--CARD 4-->
                     <div class="col" id="cards">
-                        <div class="card h-60">
-                          <img src="..." class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title 3</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                          </div>
-                          <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                          </div>
+                      <div class="card h-60">
+                        <img src="/image/productos/serumhidratante.jpg" class="card-img-top" alt="...">
+                        <div id="cardBody" class="card-body">
+                          <h5 class="card-title">Serum Hidratante</h5>
+                          <p class="card-text">$429.00</p>
+                          <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
                         </div>
                       </div>
+                    </div>
 
                       <!--CARD 5-->
-                    <div class="col" id="cards">
+                      <div class="col" id="cards">
                         <div class="card h-60">
-                          <img src="..." class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title 3</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                          </div>
-                          <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                          <img src="/image/productos/peelinggel.jpg" class="card-img-top" alt="...">
+                          <div id="cardBody" class="card-body">
+                            <h5 class="card-title">Peeling Gel</h5>
+                            <p class="card-text">$629.00</p>
+                            <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
                           </div>
                         </div>
                       </div>
 
                       <!--CARD 6-->
-                    <div class="col" id="cards">
+                      <div class="col" id="cards">
                         <div class="card h-60">
-                          <img src="..." class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title 3</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                          </div>
-                          <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                          <img src="/image/productos/serumsellaporos.jpg" class="card-img-top" alt="...">
+                          <div id="cardBody" class="card-body">
+                            <h5 class="card-title">Serum Sella-poros</h5>
+                            <p class="card-text">$599.00</p>
+                            <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
                           </div>
                         </div>
                       </div>
+
+                       <!--CARD 7-->
+                       <div class="col" id="cards">
+                        <div class="card h-60">
+                          <img src="/image/productos/lociontonificante.jpg" class="card-img-top" alt="...">
+                          <div id="cardBody" class="card-body">
+                            <h5 class="card-title">Loción Tonificante</h5>
+                            <p class="card-text"><del> <FONT COLOR="gray"> $599.00</FONT></del>   $499.00</p>
+                            <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--CARD 8-->
+                      <div class="col" id="cards">
+                        <div class="card h-60">
+                          <img src="/image/productos/serumantiporos.jpg" class="card-img-top" alt="...">
+                          <div id="cardBody" class="card-body">
+                            <h5 class="card-title">Serum Anti-poros</h5>
+                            <p class="card-text">$549.00</p>
+                            <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--CARD 9-->
+                      <div class="col" id="cards">
+                        <div class="card h-60">
+                          <img src="/image/productos/kitcompletoskincare.jpg" class="card-img-top" alt="...">
+                          <div id="cardBody" class="card-body">
+                            <h5 class="card-title">Kit Skincare</h5>
+                            <p class="card-text">$1,599.00</p>
+                            <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--CARD 10-->
+                      <div class="col" id="cards">
+                        <div class="card h-60">
+                          <img src="/image/productos/tratamientoparacabello.jpg" class="card-img-top" alt="...">
+                          <div id="cardBody" class="card-body">
+                            <h5 class="card-title">Tratamiento Capilar</h5>
+                            <p class="card-text">$429.00</p>
+                            <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--CARD 11-->
+                      <div class="col" id="cards">
+                        <div class="card h-60">
+                          <img src="/image/productos/peelinggelligero.jpg" class="card-img-top" alt="...">
+                          <div id="cardBody" class="card-body">
+                            <h5 class="card-title">Peeling Gel Ligero</h5>
+                            <p class="card-text">$629.00</p>
+                            <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--CARD 12-->
+                      <div class="col" id="cards">
+                        <div class="card h-60">
+                          <img src="/image/productos/cafeinafacial.jpg" class="card-img-top" alt="...">
+                          <div id="cardBody" class="card-body">
+                            <h5 class="card-title">Cafeína Facial</h5>
+                            <p class="card-text">$329.00</p>
+                            <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--CARD 13-->
+                      <div class="col" id="cards">
+                        <div class="card h-60">
+                          <img src="/image/productos/serumantiacne2.jpg" class="card-img-top" alt="...">
+                          <div id="cardBody" class="card-body">
+                            <h5 class="card-title">Serum Anti-acné</h5>
+                            <p class="card-text"><del> <FONT COLOR="gray"> $799.00</FONT></del>   $499.00</p>
+                            <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--CARD 14-->
+                      <div class="col" id="cards">
+                        <div class="card h-60">
+                          <img src="/image/productos/cremafacialligera.jpg" class="card-img-top" alt="...">
+                          <div id="cardBody" class="card-body">
+                            <h5 class="card-title">Crema Facial Ligera</h5>
+                            <p class="card-text">$549.00</p>
+                            <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--CARD 15-->
+                      <div class="col" id="cards">
+                        <div class="card h-60">
+                          <img src="/image/productos/skincarepielessensibles.jpg" class="card-img-top" alt="...">
+                          <div id="cardBody" class="card-body">
+                            <h6 class="card-title">Skin-care Pieles sensibles</h6>
+                            <p class="card-text">$599.00</p>
+                            <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--CARD 16-->
+                      <div class="col" id="cards">
+                        <div class="card h-60">
+                          <img src="/image/productos/sombrasparaojos.jpg" class="card-img-top" alt="...">
+                          <div id="cardBody" class="card-body">
+                            <h5 class="card-title">Paleta de Sombras</h5>
+                            <p class="card-text">$429.00</p>
+                            <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--CARD 17-->
+                      <div class="col" id="cards">
+                        <div class="card h-60">
+                          <img src="/image/productos/peelinggeltonico.jpg" class="card-img-top" alt="...">
+                          <div id="cardBody" class="card-body">
+                            <h5 class="card-title">Peeling Gel Tónico</h5>
+                            <p class="card-text">$629.00</p>
+                            <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--CARD 18-->
+                      <div class="col" id="cards">
+                        <div class="card h-60">
+                          <img src="/image/productos/tonicofacial.jpg" class="card-img-top" alt="...">
+                          <div id="cardBody" class="card-body">
+                            <h5 class="card-title">Tónico Facial</h5>
+                            <p class="card-text">$599.00</p>
+                            <img id="icon" src="/image/icon.png" alt="Icono Me gusta" srcset="">
+                          </div>
+                        </div>
+                      </div>
+
+                      <br>
+                      <br>
 
                     <!--FIN DE CARDS-->
 
