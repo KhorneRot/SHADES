@@ -9,6 +9,9 @@
   font-size: 20px;
 }
 
+.fondo{
+  background-color: #D49090;
+}
 .header{
   background-color: #FDEFE1;
   display: flex;
@@ -69,7 +72,7 @@
 
 body {
   display: flex;
-  background: #d59090;
+  /*background: #d59090;*/
   flex-direction: column;
   min-height: 100vh;
 }
