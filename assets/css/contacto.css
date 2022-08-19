@@ -1,0 +1,20 @@
+
+
+
+.colorRosa{
+    background-color: #D49090 ;
+}
+
+.mInfo{
+
+    -ms-flex-align: center;
+    max-width: fit-content;
+    
+}
+
+
+
+#imgMapa{
+    height: 620px;
+    width: 300px;
+}
