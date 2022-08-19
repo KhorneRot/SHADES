@@ -2,7 +2,9 @@
 
 /*Eliminen esta regla si no se comporta como debe*/
 
+
 body {
+
   min-height: 100vh;
 }
 /****************************************/
@@ -10,7 +12,6 @@ body {
 .footer {
   position: sticky; /* Y esta tambien*/
   top: 100%;        /*Y esta*/
->>>>>>> d0f41d407a63c0536fbde5cc80a35729df3c69d7
   width: 100%;
   background-color: #414141;
 }
