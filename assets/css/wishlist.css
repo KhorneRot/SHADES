@@ -1,0 +1,22 @@
+/* html,
+body,
+#centro {
+    background-color: rgb(230, 196, 196);
+    
+    height: 55%;
+}
+ */
+
+#centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+
+
+.sombra{
+    box-shadow: 1rem 1rem 0.2rem rgb(201, 182, 182);;
+}
