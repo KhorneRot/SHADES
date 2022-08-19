@@ -1,0 +1,84 @@
+h2 {
+  font-size: 2.8rem;
+}
+
+.suscripcion {
+  position: relative;
+  background-color: #D49090;
+  color: white;
+  z-index:0;
+}
+
+::placeholder {
+  color: white !important;
+  opacity: 1;
+}
+
+input[type="email"],button[type="submit"]
+{
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 0;
+}
+
+.modelo {
+  position: absolute;
+  bottom: 0px;
+  right: 0%;
+  z-index: 1;
+  width: auto;
+}
+
+.modelo img{
+  
+}
+
+/* REGLAS DE ESTILO PARA EL PIE DE PAGINA */
+
+/*Eliminen esta regla si no se comporta como debe*/
+body {
+  min-height: 100vh;
+}
+/****************************************/
+
+.footer {
+  position: sticky; /* Y esta tambien*/
+  top: 100%;        /*Y esta*/
+  width: 100%;
+  background-color: #414141;
+  color: white;
+}
+
+.footer h3 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bolder;
+}
+
+.footer p {
+  font-size: 1rem;
+  
+}
+
+.derechos p {
+  font-size: 0.75rem;
+}
+
+.iconos {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+a:hover, svg:hover path{
+  color: #D49090 !important; 
+  fill: #D49090;
+  transition: 200ms;
+}
+
+ footer span {
+  width: 25px;
+  margin-right: 10px;
+} 
