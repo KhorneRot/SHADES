@@ -1,37 +1,122 @@
-h2 {
-  font-size: 2.8rem;
+.productos-destacados h2 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
 }
+
+.ver-todo {
+  aspect-ratio: 2 / 3;
+}
+
+.destacados {
+  aspect-ratio: 4 / 3;
+}
+
+.ver-todo img{
+  /* aspect-ratio: 2 / 3; */
+  height: calc(100% + 20px);
+  object-fit: cover;
+ 
+}
+
+.destacados img {
+  /* aspect-ratio: 4 / 3; */
+  object-fit: fill;
+}
+
+/* REGLAS PARA LA SECCIÓN DE SUSCRIPCION*/
 
 .suscripcion {
   position: relative;
   background-color: #D49090;
-  color: white;
+  color: black;
   z-index:0;
 }
 
 ::placeholder {
-  color: white !important;
+  color: #414141 !important;
   opacity: 1;
 }
+
+.suscripcion .btn-primary {
+  color: black !important;
+}
+
+.suscripcion .form-control{
+  color: black;
+}
+
+.suscripcion .form-control:focus {
+  color: black !important;
+  border-color: black !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5) !important;
+  transition: 100ms;
+}
+
+.suscripcion .btn-primary:hover, .btn-primary:active {
+  background-color: #FCEEE1 !important;
+  border-color: #FCEEE1 !important;
+}
+
 
 input[type="email"],button[type="submit"]
 {
     background: transparent;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 0;
 }
 
-.modelo {
-  position: absolute;
-  bottom: 0px;
-  right: 0%;
-  z-index: 1;
-  width: auto;
+.modelo2 {
+  display: none;
 }
+ /*----------------------------------------------*/
 
-.modelo img{
+/* INCLUIR MEDIA QUERIES */
+
+@media (min-width: 576px) {
   
 }
+
+@media (min-width: 768px) {
+  .productos-destacados h2 {
+    text-align: right;
+  }
+
+  .modelo2 {
+    display: none;
+  } 
+  
+}
+
+@media (min-width: 992px) {
+  .productos-destacados .row {
+    width: 75%;
+  }
+
+
+  
+  .suscripcion .row{
+    width: 75%;
+  }
+  
+  .modelo2 {
+    display: inline;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    z-index: 1;
+    width: auto
+  }
+}
+
+@media (min-width: 1200px) {
+  
+}
+
+/*------------------------------------------*/
+
 
 /* REGLAS DE ESTILO PARA EL PIE DE PAGINA */
 
