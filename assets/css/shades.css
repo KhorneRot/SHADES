@@ -12,18 +12,78 @@
 
 .destacados {
   aspect-ratio: 4 / 3;
+  border: none !important;
 }
 
 .ver-todo img{
   /* aspect-ratio: 2 / 3; */
   height: calc(100% + 20px);
   object-fit: cover;
- 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+}
+
+.overlay-ver-todo {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 1rem;
+}
+
+.overlay-ver-todo p{
+  font-size: 1.5rem;
+}
+
+.overlay-ver-todo p, .boton{
+  position: relative;
+  top:30%;
+}
+
+ .boton{
+  display: inline-block;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.overlay-destacados{
+  position: absolute;
+  bottom: calc(0% + 20px);
+  width: 100%;
+  height: 25%;
+  background-color: rgba(65, 65, 65, 0.75);
+  color:white;
+}
+
+.destacados span {
+  font-size: 0.8rem;
+}
+
+.destacados svg{
+  width: 30px;
+  height: 30px;
+}
+
+.destacados svg:hover path{
+  fill: #D49090;
+  transition: 200ms;
 }
 
 .destacados img {
-  /* aspect-ratio: 4 / 3; */
-  object-fit: fill;
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 60%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* REGLAS PARA LA SECCIÓN DE SUSCRIPCION*/
@@ -76,12 +136,49 @@ input[type="email"],button[type="submit"]
 /* INCLUIR MEDIA QUERIES */
 
 @media (min-width: 576px) {
+  .overlay-ver-todo p{
+    font-size: 2rem;
+  }
   
+  .boton{
+    font-size: 1.5rem;
+  }
+
+  .destacados span {
+    font-size: 1.25rem;
+  }
+
+  .destacados svg{
+    width: 45px;
+    height: 45px;
+  }
 }
 
 @media (min-width: 768px) {
   .productos-destacados h2 {
     text-align: right;
+  }
+
+  .overlay-ver-todo p{
+    font-size: 1.3rem;
+  }
+  
+  .boton{
+    font-size: 1rem;
+  }
+
+  .producto1 .overlay-destacados , .producto3 .overlay-destacados {
+    position: absolute;
+    bottom: 10px;  
+  }
+
+  .destacados span {
+    font-size: 0.70rem;
+  }
+
+  .destacados svg{
+    width: 25px;
+    height: 25px;
   }
 
   .modelo2 {
@@ -91,7 +188,7 @@ input[type="email"],button[type="submit"]
 }
 
 @media (min-width: 992px) {
-  .productos-destacados .row {
+  .productos-destacados .contenedor {
     width: 75%;
   }
 
@@ -101,6 +198,13 @@ input[type="email"],button[type="submit"]
     width: 75%;
   }
   
+  .overlay-destacados{
+    width: 100%;
+    height: 25%;
+    background-color: rgba(65, 65, 65, 0.75);
+    color:white;
+  }
+
   .modelo2 {
     display: inline;
     position: absolute;
@@ -116,54 +220,3 @@ input[type="email"],button[type="submit"]
 }
 
 /*------------------------------------------*/
-
-
-/* REGLAS DE ESTILO PARA EL PIE DE PAGINA */
-
-/*Eliminen esta regla si no se comporta como debe*/
-body {
-  min-height: 100vh;
-}
-/****************************************/
-
-.footer {
-  position: sticky; /* Y esta tambien*/
-  top: 100%;        /*Y esta*/
-  width: 100%;
-  background-color: #414141;
-  color: white;
-}
-
-.footer h3 {
-  font-size: 1.5rem;
-  color: white;
-  font-weight: bolder;
-}
-
-.footer p {
-  font-size: 1rem;
-  
-}
-
-.derechos p {
-  font-size: 0.75rem;
-}
-
-.iconos {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-}
-
-a:hover, svg:hover path{
-  color: #D49090 !important; 
-  fill: #D49090;
-  transition: 200ms;
-}
-
- footer span {
-  width: 25px;
-  margin-right: 10px;
-} 
