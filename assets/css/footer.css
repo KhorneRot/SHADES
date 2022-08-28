@@ -40,7 +40,7 @@ body {
 }
 
 .footer a:hover, .footer svg:hover path{
-  color: #D49090 !important; 
+  color: hsl(0, 44%, 70%) !important; 
   fill: #D49090;
   transition: 200ms;
 }

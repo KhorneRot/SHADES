@@ -16,7 +16,7 @@
 }
 
 .ver-todo img{
-  /* aspect-ratio: 2 / 3; */
+  aspect-ratio: 2 / 3;
   height: calc(100% + 20px);
   object-fit: cover;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -62,6 +62,7 @@
   height: 25%;
   background-color: rgba(65, 65, 65, 0.75);
   color:white;
+  z-index: 3;
 }
 
 .destacados span {
@@ -74,7 +75,7 @@
 }
 
 .destacados svg:hover path{
-  fill: #D49090;
+  fill: #d49191;
   transition: 200ms;
 }
 
@@ -84,6 +85,11 @@
   object-fit: cover;
   object-position: 50% 60%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
+.destacados > a{
+  z-index:1;
 }
 
 /* REGLAS PARA LA SECCIÓN DE SUSCRIPCION*/
@@ -92,7 +98,6 @@
   position: relative;
   background-color: #D49090;
   color: black;
-  z-index:0;
 }
 
 ::placeholder {
@@ -169,7 +174,12 @@ input[type="email"],button[type="submit"]
 
   .producto1 .overlay-destacados , .producto3 .overlay-destacados {
     position: absolute;
-    bottom: 10px;  
+    bottom: 10px;
+  }
+
+  .producto2 .overlay-destacados , .producto4 .overlay-destacados{
+    position: absolute;
+    bottom: 0;
   }
 
   .destacados span {
@@ -188,14 +198,12 @@ input[type="email"],button[type="submit"]
 }
 
 @media (min-width: 992px) {
-  .productos-destacados .contenedor {
+  .productos-destacados .contenedor, .suscripcion .row, .h2{
     width: 75%;
   }
 
-
-  
-  .suscripcion .row{
-    width: 75%;
+  .h2{
+    padding-right: 1rem;
   }
   
   .overlay-destacados{
@@ -206,12 +214,15 @@ input[type="email"],button[type="submit"]
   }
 
   .modelo2 {
-    display: inline;
+    display: inline-block;
     position: absolute;
     bottom: 0%;
     right: 0%;
-    z-index: 1;
-    width: auto
+    max-width: 30%;
+  }
+
+  .modelo2 .img-fluid{
+    float: right;    
   }
 }
 
