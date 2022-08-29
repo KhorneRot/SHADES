@@ -23,59 +23,84 @@
 </head>
 
 <body>
-<!-- !Navbar -->
+<!--! Navbar -->
     <header class="header sticky-top">
         <div class="logo">
-            <img src="img/logo-iconos/SHADES-LOGO.svg"
+            <img src="assets/logo-iconos/SHADES-LOGO.svg"
                 alt="logo de la marca" />
         </div>
-        <div class="container d-flex justify-content-center ">
+        <div class="container d-flex justify-content-center">
             <div class="row align-content-center">
-                <div class="col-12"></div>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href=""></a>Inicio</li>
-                        <li><a href=""></a>Tienda</li>
-                        <li><a href=""></a>Acerca de</li>
-                        <li><a href=""></a>Contacto</li>
-                    </ul>
-                </nav>
+                <div class="col-12">
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="">Inicio</a></li>
+                            <li><a href="">Tienda</a></li>
+                            <li><a href="">Acerca de</a></li>
+                            <li><a href="">Contacto</a></li>
+                        </ul>
+                </div>
+            </div>
+            <a href=""
+                class="btn"><img src="assets/logo-iconos/Lupa.svg"
+                    alt="" /></a>
+            <a href=""
+                class="btn"><img src="assets/logo-iconos/Corazon.svg"
+                    alt="" /></a>
+            <a href=""
+                class="btn"><img src="assets/logo-iconos/Carrito.svg"
+                    alt="" /></a>
+            </nav>
+        </div>
+        <a onclick="openNav()"
+            class="menu"
+            href="#"><button>Menu</button></a>
+        <div class="overlay"
+            id="mobile-menu">
+            <a onclick="closeNav()"
+                href=""
+                class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="">Inicio</a>
+                <a href="">Tienda</a>
+                <a href="">Acerca de</a>
+                <a href="">Contacto</a>
+                <a href=""> <img src="assets/logo-iconos/Lupa.svg"
+                        alt=""> Buscar</a>
+                <a href=""> <img src="assets/logo-iconos/Corazon.svg"
+                        alt=""> Favoritos</a>
+                <a href=""> <img src="assets/logo-iconos/Carrito.svg"
+                        alt=""> Carrito</a>
             </div>
         </div>
-        <a href=""
-            class="btn"><img src="img/logo-iconos/Lupa.svg"
-                alt=""></a>
-        <a href=""
-            class="btn"><img src="img/logo-iconos/Corazon.svg"
-                alt=""></a>
-        <a href=""
-            class="btn"><img src="img/logo-iconos/Carrito.svg"
-                alt=""></a>
     </header>
+<!--! Navbar -->
 
     <div class="titulo text-center mt-3 mb-2">
-        <h1>Wishlist</h1>
+        <h1 class="mb-5 mb-sm-1 mb-md-1 mb-lg-1">Wishlist</h1>
     </div>
     <div id="centro"
         class="container">
-        <div class="row">
-            <div class="col-lg-7 col-sm-12 ">
-                <h3>Aun no has agregado nada a tu wishlist</h3>
-                <p class=" text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga
+        <div class="row ml-1">
+            <div class="col-lg-7  col-sm-12 ">
+                <h3 id="subTitulo" class="col-">Aun no has agregado nada a tu wishlist</h3>
+                <p id="textoNada"
+                    class=" text-justify ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga
                     voluptatum non illum
                     molestiae, asperiores possimus aliquid aut iusto temporibus laboriosam? Quis, neque iste incidunt
                     laboriosam tenetur dolorum aut excepturi?</p>
             </div>
 
-            <div class="col-lg-5 col-sm-12">
-                <img class="sombra"
-                    src="assets/personaMaquillando.png"
+            <div id="imgDiv"
+                class="col-lg-5 col-sm-12">
+                <img class="sombra mb-5"
+                    src="assets\img\personaMaquillando.png"
                     alt="...">
 
             </div>
         </div>
     </div>
-    
+
     <!--! Footer -->
     <footer class="container-fluid footer">
         <div class="container pb-1">
@@ -240,6 +265,9 @@
 
         </div>
     </footer>
+    <!--! Footer -->
+
+    <script src="assets/js/nav.js"></script>
 
 </body>
 
