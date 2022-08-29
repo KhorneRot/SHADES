@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="./assets/css/footer.css">
   
 <body>  
-
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -29,33 +28,63 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/css/navbar.css" />
-    <link rel="stylesheet" href="./assets/css/producto.css" />
-    <title>SHADES</title>
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/shades.css" />
+    <title>SHADES BORRADOR</title>
   </head>
+
   <body>
     <!-- BARRA NAVEGACION -->
     <header class="header sticky-top">
       <div class="logo">
-        <img src="./assets/img/SHADES-LOGO.svg" alt="logo de la marca"/>
+        <img src="assets/logo-iconos/SHADES-LOGO.svg" alt="logo de la marca" />
       </div>
-      <div class="container d-flex justify-content-center ">
+      <div class="container d-flex justify-content-center">
         <div class="row align-content-center">
-          <div class="col-12"></div>
-            <nav>
-              <ul class="nav-links">
-                <li><a href=""></a>Inicio</li>
-                <li><a href=""></a>Tienda</li>
-                <li><a href=""></a>Acerca de</li>
-                <li><a href=""></a>Contacto</li>
-              </ul>
-            </nav>
-          </div>
+          <div class="col-12">
+          <nav>
+            <ul class="nav-links">
+              <li><a href="">Inicio</a></li>
+              <li><a href="">Tienda</a></li>
+              <li><a href="">Acerca de</a></li>
+              <li><a href="">Contacto</a></li>
+            </ul>
         </div>
-            <a href="" class="btn"><img src="./assets/img/Lupa.svg" alt=""></a>
-            <a href="" class="btn"><img src="./assets/img/Corazon.svg" alt=""></a>
-            <a href="" class="btn"><img src="./assets/img/Carrito.svg" alt=""></a>
-            </header>
+      </div>
+      <a href="" class="btn"
+        ><img src="assets/logo-iconos/Lupa.svg" alt=""
+      /></a>
+      <a href="" class="btn"
+        ><img src="assets/logo-iconos/Corazon.svg" alt=""
+      /></a>
+      <a href="" class="btn"
+        ><img src="assets/logo-iconos/Carrito.svg" alt=""
+      /></a>
+    </nav>
+</div>
+      <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+      <div class="overlay" id="mobile-menu">
+        <a onclick="closeNav()" href="" class="close">&times;</a>
+        <div class="overlay-content">
+          <a href="">Inicio</a>
+          <a href="">Tienda</a>
+          <a href="">Acerca de</a>
+          <a href="">Contacto</a>
+          <a href=""> <img src="assets/logo-iconos/Lupa.svg" alt=""> Buscar</a>
+          <a href=""> <img src="assets/logo-iconos/Corazon.svg" alt=""> Favoritos</a>
+          <a href=""> <img src="assets/logo-iconos/Carrito.svg" alt=""> Carrito</a>
+        </div>
+      </div>
+    </header>
+    <!-- FIN BARRA NAVEGACION -->
+   
+
+
+<!-- ENLAZAR EL JS DE LA NAVBAR -->
+    <script src="./assets/js/nav.js"></script>
+  
+  
 
 
   
@@ -67,9 +96,9 @@
             Tomar en cuenta que la lista de ingredientes puede cambiar y variar con el tiempo. Para una lista más actualizada de los ingredientes, favor de revisar el empaque del producto
           </ul>
         </div>
-         <h3 id="nombre">
+         <h4 id="nombre">
           Clinique Pop™ <br> Matte Lip Colour + Primer
-         </h3>
+         </h4>
             <p id="precio">$ 230 </p>
     
         <div id="primera" class="card" style= "width: 25rem";>

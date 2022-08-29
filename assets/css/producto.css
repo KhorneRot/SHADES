@@ -1,3 +1,4 @@
+/* BARRA NAVEGACION */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 *{
@@ -7,6 +8,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
 }
+
 
 .header{
   background-color: #FDEFE1;
@@ -43,7 +45,8 @@
   padding: 0 20px;
 }
 
-.header .nav-links li:hover{
+.header .nav-links li:hover,
+.overlay a:hover{
   transform: scale(1.1);
 }
 
@@ -64,15 +67,102 @@
   transition: all 0.3s ease 0s;
 }
 
-
-
-body {
-  background: FFFFF;
-  /* display: flex; */
-  flex-direction: column;
-  min-height: 100vh;
+.menu{
+  display: none;
 }
 
+.header .menu button{
+  margin-left: 20px;
+  font-weight: 700;
+  color: #FDEFE1;
+  padding: 9px 25px;
+  background-color: #D49090;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all  0.3s ease 0s;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+
+  .nav-links, .btn{
+    display: none;
+  }
+  .menu{
+    display: inherit;
+  }
+}
+
+
+/* Nav */
+
+
+
+.header a{
+  text-decoration: none;
+}
+
+.header .overlay{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0%;
+  top: 0%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #FDEFE1;
+  overflow: hidden;
+  transition: all  0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
+  display: flex;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.header .overlay a{
+  padding:  15px;
+  font-size: 36px;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  transition: all  0.3s ease 0s;
+  font-weight: 700;
+  color: #000000;
+}
+
+
+.header .overlay a:hover,
+.header .overlay a:focus{
+  color: #D49090;
+}
+
+
+.header .overlay .close{
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 65px;
+}
+
+@media screen and (max-height:450px){
+  .header .overlay a{
+    font-size: 20px;
+  }
+
+
+  .header .overlay .close{
+    font-size: 40px;
+    top: 15px;
+    right: 3px;
+  }
+}
 
 /**/
 
@@ -85,13 +175,13 @@ h1{
 
 }
 
-h3{
+h4{
   font-weight: bold;
   font-family: 'pompin''sans-serif';
   text-align: left;
-  font-size:larger;
+  font-size:medium;
   position:relative;
-  left:  100px;
+  left:  40px;
   top: 150px
 
 }
@@ -113,9 +203,9 @@ h3{
 }
 
 
-.card{
+#primera{
     border-style: solid;
-    border-radius: 50px;
+    border-radius:4px;
     border-color: #fceee1;
     margin: auto;
     margin-bottom: 600px;
@@ -176,7 +266,7 @@ font-size:larger;
 font-weight: bold;
 position: relative;
 top:150px;
-left:320px;
+left:340px;
 
 }
 
@@ -189,7 +279,7 @@ left:320px;
     fill: currentColor;
     position: relative;
     right: 180px;
-    bottom:2350px;
+    bottom:1750px;
   }
 
 #nombreProducto{
@@ -209,6 +299,7 @@ left:320px;
     width: 200px;
     position: relative;
     bottom:450px;
+    left: 497px;
     
     
     
@@ -224,7 +315,7 @@ left:320px;
 }
 #carrusel2{
   border-radius: 30px;
-  max-width: 00px;
+  max-width: 300px;
   max-height: 400px;
 
   
@@ -249,7 +340,7 @@ left:320px;
 }
 #carrusel5{
   border-radius: 30px;
-  max-width: 00px;
+  max-width: 300px;
   max-height: 400px;
   
   
@@ -338,15 +429,13 @@ left:320px;
 }
 
 #añadir{
-  /*   border-color: #D49090;
-    border-radius: 20px; */
     background-color: #fceee1;
     margin-left: auto;
     font-family: 'pompin' 'sans-serif';
     font-size: 20px;
     padding-block: 4px;
     position: relative;
-    bottom: 1600px;
+    bottom: 900px;
     left:1000px;
     color: #000000;
     
@@ -355,14 +444,14 @@ left:320px;
 
 
 #comprarAhora{
-    border-radius: 50px;
+    border-radius: 4px;
     background-color: #fceee1;
     font-family: 'pompin' 'sans-serif';
     font-size: 20px;
     padding-block: 4px;
     margin-left: 20px;
     position: relative;
-    bottom: 1500PX;
+    bottom: 1000PX;
     left:760px;
     color: #000000;
     
