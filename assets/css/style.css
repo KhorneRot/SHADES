@@ -9,9 +9,7 @@
   font-size: 20px;
 }
 
-.fondo{
-  background-color: #D49090;
-}
+
 .header{
   background-color: #FDEFE1;
   display: flex;
@@ -47,7 +45,8 @@
   padding: 0 20px;
 }
 
-.header .nav-links li:hover{
+.header .nav-links li:hover,
+.overlay a:hover{
   transform: scale(1.1);
 }
 
@@ -68,179 +67,192 @@
   transition: all 0.3s ease 0s;
 }
 
+.menu{
+  display: none;
+}
+
+.header .menu button{
+  margin-left: 20px;
+  font-weight: 700;
+  color: #FDEFE1;
+  padding: 9px 25px;
+  background-color: #D49090;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all  0.3s ease 0s;
+}
 
 
-body {
+@media screen and (max-width: 1200px) {
+
+
+  .nav-links, .btn{
+    display: none;
+  }
+  .menu{
+    display: inherit;
+  }
+}
+
+
+/* Nav */
+
+
+
+.header a{
+  text-decoration: none;
+}
+
+.header .overlay{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0%;
+  top: 0%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #FDEFE1;
+  overflow: hidden;
+  transition: all  0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
   display: flex;
-  /*background: #d59090;*/
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
   flex-direction: column;
-  min-height: 100vh;
-}
-
-main{
-  flex-grow:1;
-}
-
-
-
-
-
-/* iconos */
-.iconos {
-  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
 }
 
 
-/* modelo */
-.modelo {
-  position: absolute;
-  width: 961px;
-  height: 717px;
-  left: -345px;
-  top: -104px;
-}
-/* Lema SHADES */
-.portada {
-
-  /* Tu estilo es tu confianza Pasa una vida llena de belleza */
-  text-align: center;
-  width: 902px;
-  margin: -158px;
-  margin-left: 381px;
-  height: 564px;
-  left: 464px auto;
-  top: 900px;
-  bottom: 2476px;
-
-  font-family: "Felix Titling";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 58.9px;
-  line-height: 70px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #ffffff;
-
-  text-shadow: 0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25),
-    0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25),
-    0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25),
-    0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25);
-}
-
-/* carrusel */
-/* imagenes */
-.carrusel {
-  height: 241px;
-  max-width: 107%;
-  max-height: 54%;
-}
-/* fondo de carrusel */
-.carrusel2 {
-  width: 675px;
-  height: 259px;
-  margin-top: -153.1px;
-  margin-right: -3px;
-  margin-left: 460px;
-
-  background: #fdefe1;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
-    0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-/* ajustes de ancho y largo */
-.carrusel3 {
-  width: 212%;
-  margin-top: 9px;
-  margin-left: -3px;
-}
-
-.cambioControl {
-  right: -339px;
-}
-
-/* Nuestros socios */
-.socio1{
-  margin-left: 38px;
-}
-.socio2{
-  margin-left: 71px;
-}
-.socio3{
-  margin-left: 68px;
-}
-
-/* Categorias */
-
-.catalogo {
-  position: absolute;
-  width: 360.51px;
-  height: 239.68px;
-  left: 151px;
-  top: -770.9px;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.catalogo2 {
-  position: absolute;
-  width: 695.3px;
-  height: 239.68px;
-  left: 519.7px;
-  top: -770.9px;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.catalogo3 {
-  position: absolute;
-  width: 360.51px;
-  height: 239.68px;
-  left: 854px;
-  top: -516px;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.catalogo4 {
-  position: absolute;
-  width: 695.3px;
-  height: 239.68px;
-  left: 145.7px;
-  top: -516px;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.categorias {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 327px;
-  height: 46px;
-  left: 133px;
-  top: 803px;
-
+.header .overlay a{
+  padding:  15px;
+  font-size: 36px;
+  display: block;
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 72px;
-  text-align: center;
-
+  transition: all  0.3s ease 0s;
+  font-weight: 700;
   color: #000000;
 }
 
 
-.rectangulo {
+.header .overlay a:hover,
+.header .overlay a:focus{
+  color: #D49090;
+}
+
+
+.header .overlay .close{
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 65px;
+}
+
+@media screen and (max-height:450px){
+  .header .overlay a{
+    font-size: 20px;
+  }
+
+
+  .header .overlay .close{
+    font-size: 40px;
+    top: 15px;
+    right: 3px;
+  }
+}
+
+
+/* FIN BARRA NAVEGADOR */
+
+
+.fondoInicio{
+background-color: #D59090;
+
+}
+/* Modelo */
+
+
+
+.modeloShades{
+  display: flex;
   position: relative;
-  width: 1423px;
-  height: 950px;
-  left: 0px;
-  top: -25px;
+  margin-top: -27vh;
+  width: 151vh;
+  height: 99vh;
+  top: 0px;
+  left: -455px;
+  object-fit: scale-down;
   
 
-  background-color: #ffffff;
+}
+
+/*fin Modelo */
+
+
+/* LEMA SHADES */
+.lemaShades{
+
+font-family: 'Felix Titling';
+font-style: normal;
+font-weight: 400;
+font-size: 60.1px;
+line-height: 78px;
+
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25), 0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25), 0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25), 0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25);
+}
+
+/* FIN LEMA SHADES */
+
+
+/* CARRUSEL */
+.carrusel{
+  position: relative;
+max-width: 300px;
+max-height: 150px;
+right: 10px;
+left: 10px;
+
+}
+
+.carrusel2{
+  position: relative;
+  left: 10px;
+  bottom: 10px;
+
+}
+
+/* FIN CARRUSEL */
+
+/* Socios */
+.sociosShades{
+  display: flex;
+  justify-content: center;
+  
+}
+.sociosShades2{
+  display: flex;
+  padding-left: 153px;
+  padding-right: 294px;
+  
+}
+
+
+/* CATEGORIAS */
+
+.categoriasShades{
+  margin: 10px;
+
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
 }
