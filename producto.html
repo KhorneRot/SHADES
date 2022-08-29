@@ -1,23 +1,42 @@
-<!doctype html>
-<html lang="eS">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINA DE PRODUCTO </title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/producto.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+  
+<body>  
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/carrito.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-
-
-    <title>Carrito</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/shades.css" />
+    <title>SHADES BORRADOR</title>
   </head>
-  <body>
 
-     <!-- BARRA NAVEGACION -->
-     <header class="header sticky-top">
+  <body>
+    <!-- BARRA NAVEGACION -->
+    <header class="header sticky-top">
       <div class="logo">
         <img src="assets/logo-iconos/SHADES-LOGO.svg" alt="logo de la marca" />
       </div>
@@ -62,138 +81,273 @@
    
 
 
-
-
-<!-- Carrito de compras -->
+<!-- ENLAZAR EL JS DE LA NAVBAR -->
+    <script src="./assets/js/nav.js"></script>
   
-     
-        <br>
-        <br> 
-		<h1 style="text-align: center; font-family: 'Poppins', sans-serif; font-weight: bold;">Carrito</h1>
-		      
-     
-    <div class="contenedor">
-      <div class="row">
-		<table class="table">
-			<thead>
-			  <tr>
-				<th scope="col">#</th>
-				<th scope="col">Item</th>
-				<th scope="col">Cantidad</th>
-				<th scope="col">Acción</th>
-				<th scope="col">Total</th>
-			  </tr>
-			</thead>
-			<tbody id="items"></tbody>
-			<tfoot>
-                
-			  <tr id="footer">
-				<th scope="row" colspan="5">Artículo 1</th>
-				
-			  </tr>
-              <tr id="footer">
-				<th scope="row" colspan="5">Artículo 2</th>
-				
-			  </tr>
-              <tr id="footer">
-				<th scope="row" colspan="5">Artículo 3</th>
-				
-			  </tr>
-              <tr id="footer">
-				<th scope="row" colspan="5">Artículo 4</th>
-				
-			  </tr>
-			</tfoot>
-		  </table>
-		
+  
 
-        <div class="col-md-4 resumen" style="margin-top: 0;">
-            <div><h5><b>Resumen de compra</b></h5></div>
-            <hr>
-            <div class="row">
-                <div class="col" style="padding-left:2px;">#Artículos 4</div>
-                <div class="col text-right">&dollar; 132.00</div>
-            </div>
-            <form>
-                <p>Envío</p>
-                <select><option class="text-muted">Envío estandar- &dollar;100.00</option></select>
-                <p>Cupón</p>
-                <input id="code" placeholder="Ingresa tu código">
-            </form>
-            <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
-                <div class="col">Precio Total</div>
-                <div class="col text-right">&dollar; 232.00</div>
-            </div>
-            <button class="btnn text-right">CHECKOUT</button>
+
+  
+        <h1 id="producto"> PRODUCTOS</h1>
+
+        <div id="ingre" class="container">
+          <div class="col-sm-12"></div>
+          <ul>
+            Tomar en cuenta que la lista de ingredientes puede cambiar y variar con el tiempo. Para una lista más actualizada de los ingredientes, favor de revisar el empaque del producto
+          </ul>
         </div>
-    </div>
-  
-	</div>
-
-   <br>
-   <br>
-   <br>
-   
-
-    <h3 style="text-align: center; font-family: 'Poppins', sans-serif; font-weight: bold;">Sugerencias de compra</h3>
-    <br>
-    <br>
-    <div class="row">
+         <h4 id="nombre">
+          Clinique Pop™ <br> Matte Lip Colour + Primer
+         </h4>
+            <p id="precio">$ 230 </p>
     
-    <div class="col" id="cards">
-      <div class="card h-60" >
-        <img id= "imgTienda" src="/assets/img/productos/serumantiance1.jpg" class="card-img-top" alt="...">
-        <div id="cardBody" class="card-body">
-          <h5 class="card-title">Serum Anti-acné</h5>
-          <p class="card-text">$499.00</p>
-          <img id="icon" src="/assets/logo-iconos/me-gusta.png" alt="Icono Me gusta" srcset="">
-          <img id="icon" src="/assets/logo-iconos/carritoC.png" alt="Icono Carrito" srcset="">
+        <div id="primera" class="card" style= "width: 25rem";>
+            <img src="./assets/img/rojo carmesi.jpg" class="card-img-top, shadow-lg p-3 mb-5 bg-white rounded" alt="...">
+            <div class="card-body">
+
+             
+              <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img id="segunda" src="./assets/img/labial amdera.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>madera otoñal</h5>
+                     
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img id="tercera" src="./assets/img/labial cafe.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>cafe seco</h5>
+                     
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img id="cuarta" src="./assets/img/labial morado.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>morado amor</h5>
+                      
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img id="quinta" src="./assets/img/rosa.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>rosa festival</h5>
+                      
+                    </div>
+                  </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </button>
+              </div>
+            
+            </div>
+          </div>
+     
+        
           
-        </div>
-      </div>
-    </div>
+          <div id="queEs" class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li  class="list-group-item">¿Qué es?
+                Fórmula ligera que deja los labios con acabados mate llenos de color que se sienten cómodos. Se desliza sin esfuerzo y uniformemente. Descubre los diferentes tonos. Tus labios harán Pop.</li>
+            
+            </ul>
+            </div>
 
-    <!--CARD 2-->
-    <div class="col" id="cards">
-      <div class="card h-60">
-        <img src="/assets/img/productos/hidratante.jpg" class="card-img-top" alt="...">
-        <div id="cardBody" class="card-body">
-          <h5 class="card-title">Hidratante</h5>
-          <p class="card-text">$549.00</p>
-          <img id="icon" src="/assets/logo-iconos/me-gusta.png" alt="Icono Me gusta" srcset="">
-          <img id="icon" src="/assets/logo-iconos/carritoC.png" alt="Icono Carrito" srcset="">
-        </div>
-      </div>
-    </div>
+           
+         
+            <a id="añadir" href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">AÑADIR AL CARRITO</a>
+            <a id="comprarAhora" href="#" class="btn btn-secondary btn-lg active " role="button" aria-pressed="true">COMPRAR AHORA</a>
 
-    <!--CARD 3-->
-    <div class="col" id="cards">
-      <div class="card h-60">
-        <img src="/assets/img/productos/skincare.jpg" class="card-img-top" alt="...">
-        <div id="cardBody" class="card-body">
-          <h5 class="card-title">Skin Care</h5>
-          <p class="card-text">$599.00</p>
-          <img id="icon" src="/assets/logo-iconos/me-gusta.png" alt="Icono Me gusta" srcset="">
-          <img id="icon" src="/assets/logo-iconos/carritoC.png" alt="Icono Carrito" srcset="">
-        </div>
-      </div>
-    </div>
+            <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty">
 
+              <symbol id="icon-star-empty" viewBox="0 0 32 32">
+                <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798zM16 23.547l-6.983 3.671 1.334-7.776-5.65-5.507 7.808-1.134 3.492-7.075 3.492 7.075 7.807 1.134-5.65 5.507 1.334 7.776-6.983-3.671z">
+                </path>
+                <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798zM16 23.547l-6.983 3.671 1.334-7.776-5.65-5.507 7.808-1.134 3.492-7.075 3.492 7.075 7.807 1.134-5.65 5.507 1.334 7.776-6.983-3.671z">
+                </path>
+              
+                </symbol>
+            </use>
+          </svg>
+            
+          <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty">
 
-    <!--CARD 4-->
-    <div class="col" id="cards">
-      <div class="card h-60">
-        <img src="/assets/img/productos/serumhidratante.jpg" class="card-img-top" alt="...">
-        <div id="cardBody" class="card-body">
-          <h5 class="card-title">Serum Hidratante</h5>
-          <p class="card-text">$429.00</p>
-          <img id="icon" src="/assets/logo-iconos/me-gusta.png" alt="Icono Me gusta" srcset="">
-          <img id="icon" src="/assets/logo-iconos/carritoC.png" alt="Icono Carrito" srcset="">
+            <symbol id="icon-star-empty" viewBox="0 0 32 32">
+              <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798zM16 23.547l-6.983 3.671 1.334-7.776-5.65-5.507 7.808-1.134 3.492-7.075 3.492 7.075 7.807 1.134-5.65 5.507 1.334 7.776-6.983-3.671z">
+              </path>
+              <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798zM16 23.547l-6.983 3.671 1.334-7.776-5.65-5.507 7.808-1.134 3.492-7.075 3.492 7.075 7.807 1.134-5.65 5.507 1.334 7.776-6.983-3.671z">
+              </path>
+            
+              </symbol>
+          </use>
+        </svg>
+        <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty">
+
+          <symbol id="icon-star-empty" viewBox="0 0 32 32">
+            <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798zM16 23.547l-6.983 3.671 1.334-7.776-5.65-5.507 7.808-1.134 3.492-7.075 3.492 7.075 7.807 1.134-5.65 5.507 1.334 7.776-6.983-3.671z">
+            </path>
+            <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798zM16 23.547l-6.983 3.671 1.334-7.776-5.65-5.507 7.808-1.134 3.492-7.075 3.492 7.075 7.807 1.134-5.65 5.507 1.334 7.776-6.983-3.671z">
+            </path>
+          
+            </symbol>
+        </use>
+      </svg>
+      <svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty">
+
+        <symbol id="icon-star-empty" viewBox="0 0 32 32">
+          <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798zM16 23.547l-6.983 3.671 1.334-7.776-5.65-5.507 7.808-1.134 3.492-7.075 3.492 7.075 7.807 1.134-5.65 5.507 1.334 7.776-6.983-3.671z">
+          </path>
+          <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798zM16 23.547l-6.983 3.671 1.334-7.776-5.65-5.507 7.808-1.134 3.492-7.075 3.492 7.075 7.807 1.134-5.65 5.507 1.334 7.776-6.983-3.671z">
+          </path>
+        
+          </symbol>
+      </use>
+    </svg>
+    <svg class="icon icon-star-half"><use xlink:href="#icon-star-half"></use>
+      <symbol id="icon-star-half" viewBox="0 0 32 32">
+        <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798zM16 23.547l-0.029 0.015 0.029-17.837 3.492 7.075 7.807 1.134-5.65 5.507 1.334 7.776-6.983-3.671z"></path>
+        </symbol>
+
+    </svg>
+
+ <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col">
+                <div class="bg-white py-4 text-white text-center">
+                  <img id="carrusel1" src="./assets/img/kit.jpg" alt="">
+                </div>    
+              </div>
+              <div class="col">
+                <div class="bg-white py-4 text-white text-center">
+                  <img id="carrusel2" src="./assets/img/carrusel2.jpg" alt="">
+                </div>
+                
+              </div>
+              <div class="col">
+                <div class="bg-white py-4 text-white text-center">
+                  <img id="carrusel3" src="./assets/img/carrusel3.jpg" alt="">
+                </div>
+                
+              </div>
+              <div class="col">
+                <div class="bg-white py-4 text-white text-center">
+                  <img id="carrusel4" src="./assets/img/carrusel4.jpg" alt="">
+                </div>
+                
+              </div>
+              <div class="col">
+                <div class="bg-white py-4 text-white text-center">
+                  <img id="carrusel5" src="./assets/img/carrusel5.jpg" alt="">
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              
+              <div class="col">
+                <div class="bg-white py-4 text-white text-center">
+                  <img id="carrusel6" src="./assets/img/carrusel6.jpg" alt="">
+                </div>
+                
+              </div>
+              <div class="col">
+                <div class="bg-white py-4 text-white text-center">
+                  <img id="carrusel7" src="./assets/img/carrusel7.jpg" alt="">
+                </div>
+                
+              </div>
+              
+              <div class="col">
+                <div class="bg-white py-4 text-white text-center">
+                  <img id="carrusel8" src="./assets/img/carrusel8.jpg" alt="">
+                </div>
+               
+              </div>
+              <div class="col">
+                <div class="bg-white py-4 text-white text-center">
+                  <img id="carrusel9" src="./assets/img/carrusel9.jpg" alt="">
+                </div>
+                
+              </div>
+              <div class="col">
+                <div class="bg-white py-4 text-white text-center">
+                  <img id="carrusel10" src="./assets/img/carrusel10.jpg" alt="">
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <div class="bg-white py-4 text-white text-center">
+                <img id="carrusel11" src="./assets/img/carrusel11.jpg" alt="">
+              </div>
+              
+            </div>
+            <div class="col">
+              <div class="bg-white py-4 text-white text-center">
+                <img id="carrusel12" src="./assets/img/carrusel12.jpg" alt="">
+              </div>
+              
+            </div>
+            <div class="col">
+              <div class="bg-white py-4 text-white text-center">
+                <img id="carrusel13" src="./assets/img/carrusel13.jpg" alt="">
+              </div>
+              
+            </div>
+            <div class="col">
+              <div class="bg-white py-4 text-white text-center">
+                <img id="carrusel14" src="./assets/img/carrusel14.jpg" alt="">
+              </div>
+             
+            </div>
+            <div class="col">
+              <div class="bg-white py-4 text-white text-center">
+                <img id="carrusel15" src="./assets/img/carrusel15.jpg" alt="">
+              </div>
+              
+            </div>
+          </div>
         </div>
-      </div>
+
+        </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </button>
   </div>
-  
+
+
+
+            </div>
+        </div>
+
         <footer class="container-fluid footer">
           <div class="container pb-1">
             <div class="row justify-content-end">
@@ -337,18 +491,19 @@
         
           </div>
         </footer>
-    
 
 
 
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    <script src="assets/js/carrito.js"></script>
-    <script src="assets/js/nav.js"></script>
-    
-  </body>
+
+
+        
+
+
+
+<script type="text/javascript" src="jQuery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
-
-
