@@ -39,7 +39,8 @@ body {
   height: 32px;
 }
 
-svg:hover path{
+.footer a:hover, .footer svg:hover path{
+  color: hsl(0, 44%, 70%) !important; 
   fill: #D49090;
   transition: 200ms;
 }
