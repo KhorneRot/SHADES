@@ -1,60 +1,171 @@
-/* Barra de Navegación */
+//* BARRA NAVEGACION */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+
 .header{
-    background-color: #FDEFE1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    padding: 5px 10%;
+  background-color: #FDEFE1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 5px 10%;
+}
+
+.header .logo{
+  cursor: pointer;
+
+}
+
+.header .logo img{
+  height: 58px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.header .logo img:hover{
+  transform: scale(1.2);
+}
+
+.header .nav-links{
+  list-style: none;
+  margin-bottom: 0rem;
+  margin-left: 155px;
+}
+
+.header .nav-links li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.header .nav-links li:hover,
+.overlay a:hover{
+  transform: scale(1.1);
+}
+
+
+.header .nav-links a{
+  font-size: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.header .btn{
+  font-weight: 700;
+  color: #000000;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.menu{
+  display: none;
+}
+
+.header .menu button{
+  margin-left: 20px;
+  font-weight: 700;
+  color: #FDEFE1;
+  padding: 9px 25px;
+  background-color: #D49090;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all  0.3s ease 0s;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+
+  .nav-links, .btn{
+    display: none;
   }
-  
-  .header .logo{
-    cursor: pointer;
-  
+  .menu{
+    display: inherit;
   }
-  
-  .header .logo img{
-    height: 58px;
-    width: auto;
-    transition: all 0.3s;
+}
+
+
+/* Nav */
+
+
+
+.header a{
+  text-decoration: none;
+}
+
+.header .overlay{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0%;
+  top: 0%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #FDEFE1;
+  overflow: hidden;
+  transition: all  0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
+  display: flex;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.header .overlay a{
+  padding:  15px;
+  font-size: 36px;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  transition: all  0.3s ease 0s;
+  font-weight: 700;
+  color: #000000;
+}
+
+
+.header .overlay a:hover,
+.header .overlay a:focus{
+  color: #D49090;
+}
+
+
+.header .overlay .close{
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 65px;
+}
+
+@media screen and (max-height:450px){
+  .header .overlay a{
+    font-size: 20px;
   }
-  
-  .header .logo img:hover{
-    transform: scale(1.2);
+
+
+  .header .overlay .close{
+    font-size: 40px;
+    top: 15px;
+    right: 3px;
   }
-  
-  .header .nav-links{
-    list-style: none;
-    margin-bottom: 0rem;
-    margin-left: 155px;
-  }
-  
-  .header .nav-links li{
-    display: inline-block;
-    padding: 0 20px;
-  }
-  
-  .header .nav-links li:hover{
-    transform: scale(1.1);
-  }
-  
-  
-  .header .nav-links a{
-    font-size: 700;
-    color: #000000;
-    text-decoration: none;
-  }
-  
-  .header .btn{
-    font-weight: 700;
-    color: #000000;
-    padding: 9px 25px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-  }
-  
+}
+
+
+/* FIN BARRA NAVEGADOR */
   
 /* PÁGINA TIENDA */
 
@@ -75,6 +186,10 @@ h4 {
     text-align: end;
 }
 
+h6{
+  font-size: 1.3rem;
+}
+
 #subtitulo{
     font-family: 'Edu VIC WA NT Beginner', cursive;
     font-family: 'Poppins', sans-serif;
@@ -84,9 +199,10 @@ h4 {
 
 #cards{
     margin-bottom: 21px;
-    border-radius: 0%;
     text-align: left;
     align-items: baseline;
+    min-width: 14rem;
+    max-width: 20rem;
 
 }
 
@@ -95,6 +211,10 @@ h4 {
     font-family: 'Poppins', sans-serif;
     text-align: left;
     font-size: small;
+}
+
+#cardBody.card-body{
+  max-height: 141px;
 }
 
 #navegacion{
@@ -130,9 +250,12 @@ h4 {
 
 .card-img-top{
     display:block;
-    width: 253px;
-    height: 253px;
+    width: 100%;
+    height: 17rem;
     object-fit: cover;
+    box-sizing: border-box;
+    image-rendering: auto;
+    max-height: 160px;
 }
 
 #badge-pill{
@@ -141,6 +264,7 @@ h4 {
     text-align: center;
     font-size:medium;
 }
+
 
 /* FOOTER */
 body {
@@ -187,3 +311,143 @@ body {
     width: 25px;
     margin-right: 10px;
   } 
+
+  /*Media Queries*/
+
+
+  @media (max-width:670px){
+    #list-group{
+      font-size: medium;
+    }
+
+    h1 {
+      font-family: 'Domine', serif;
+      font-family: 'Edu VIC WA NT Beginner', cursive;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 10px;
+      margin: 10px;
+      font-size: x-large;
+    }
+
+    h5 {
+      font-size: 1.1rem;
+
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+    }
+    #buscar{
+      width: 8rem;
+    }
+
+    #badge-pill{
+      text-align: center;
+      font-size:.8rem;
+  }
+
+    .list-group-item{
+      margin-left: -0.75rem!important;
+      font-size: .8rem;
+
+    }
+
+    #columna2{
+      padding-left: 1rem!important;
+      max-width: 59%;
+    }
+
+    #columna1{
+      padding-left: 1rem!important;
+      max-width: 41%;
+    }
+
+    #card-body{
+      line-heigh: 1.0;
+      padding: .25rem;
+    }
+
+    #card-title{
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-img-top{
+      height: 10rem;
+
+    }
+
+    .card{
+      line-height:1.0rem;
+    }
+
+    .card-body{
+      line-height:1.0rem;
+      padding: 0.25rem;
+    }
+
+
+    .p-3 {
+      padding: 0rem!important;
+    }
+
+    .page-item{
+      align-content: center;
+      max-width: 32px;
+      max-height: 32px;
+    }
+
+    #navegacion{
+      margin:1px;
+      padding:15px;
+      align-content: left;
+    }
+
+    
+    /*550px - pantalla celular*/
+  }
+
+  @media (max-width:896px){
+    .card-img-top{
+      height: 10rem;
+
+    }
+
+    #navegacion{
+      margin:1px;
+      padding:26px;
+      align-content: left;
+    }
+
+  }
+
+  @media (max-width:740px){
+    #navegacion{
+      margin:1px;
+      padding:12px;
+      align-content: left;
+    }
+  }
+
+  @media (max-width:915px){
+    #cards{
+      max-width: 10rem;
+
+    }
+
+    #navegacion{
+      margin:1px;
+      padding:1px;
+      align-content: left;
+    }
+
+  }
+
+  @media (max-width:375px){
+    #cards{
+      max-width: 10rem;
+
+    }
+
+  }
