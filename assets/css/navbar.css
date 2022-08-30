@@ -1,4 +1,6 @@
+
 /* BARRA NAVEGACION */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 *{
@@ -8,6 +10,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
 }
+
 
 .header{
   background-color: #FDEFE1;
@@ -44,10 +47,8 @@
   padding: 0 20px;
 }
 
-
 .header .nav-links li:hover,
 .overlay a:hover{
-
   transform: scale(1.1);
 }
 
@@ -67,7 +68,6 @@
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-
 
 .menu{
   display: none;
@@ -95,7 +95,9 @@
   .menu{
     display: inherit;
   }
+
 }
+
 
 
 /* Nav */
@@ -168,92 +170,4 @@
 
 
 /* FIN BARRA NAVEGADOR */
-
-
-.fondoInicio{
-background-color: #D59090;
-
-}
-/* Modelo */
-
-
-
-.modeloShades{
-  display: flex;
-  position: relative;
-  margin-top: -27vh;
-  width: 151vh;
-  height: 99vh;
-  top: 0px;
-  left: -455px;
-  object-fit: scale-down;
-  
-
-}
-
-/*fin Modelo */
-
-
-/* LEMA SHADES */
-.lemaShades{
-
-font-family: 'Felix Titling';
-font-style: normal;
-font-weight: 400;
-font-size: 60.1px;
-line-height: 78px;
-
-
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #FFFFFF;
-
-text-shadow: 0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25), 0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25), 0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25), 0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25);
-}
-
-/* FIN LEMA SHADES */
-
-
-/* CARRUSEL */
-.carrusel{
-  position: relative;
-max-width: 300px;
-max-height: 150px;
-right: 10px;
-left: 10px;
-
-}
-
-.carrusel2{
-  position: relative;
-  left: 10px;
-  bottom: 10px;
-
-}
-
-/* FIN CARRUSEL */
-
-/* Socios */
-.sociosShades{
-  display: flex;
-  justify-content: center;
-  
-}
-.sociosShades2{
-  display: flex;
-  padding-left: 153px;
-  padding-right: 294px;
-  
-}
-
-/* CATEGORIAS */
-
-.categoriasShades{
-  margin: 10px;
-
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
 

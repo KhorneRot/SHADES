@@ -33,6 +33,7 @@ body {
 }
 
 .footer .iconos {
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -47,6 +48,7 @@ body {
 }
 
  .footer span {
+
   width: 25px;
   margin-right: 10px;
 } 
