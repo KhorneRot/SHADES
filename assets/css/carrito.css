@@ -1,0 +1,65 @@
+/* Carrito */
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    /* min-height: 100vh; */
+}
+.compras{
+    flex-wrap: wrap;
+   
+}
+
+.table{
+    
+    width: 60%;
+}
+
+.resumen{
+    float: right;
+    background-color: #FCEEE1;
+    margin-left: 60px;
+    padding-left: 20px;
+
+}
+
+
+.btnn{
+    background-color: #D49090;
+}
+
+
+/* cartas */
+#cards{
+    margin-bottom: 21px;
+    border-radius: 0%;
+    text-align: left;
+    align-items: baseline;
+
+}
+
+#cardBody{
+    
+       
+    background-color: #d5cfcf;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size: small;
+    
+}
+#icon{
+    border-radius: 15px;
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin-right: 20px;
+}
+.card-img-top{
+    display:block;
+    object-position: center;
+    object-fit: cover;
+    width: 253px;
+    height: 253px;
+    
+}
