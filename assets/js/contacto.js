@@ -16,8 +16,10 @@ formularioInput.addEventListener("submit", (e) =>{
         mensajeValor : mensaje.value,
     };  
     
+
     console.log(contactoObj);
     return contactoObj
 });
+
 
 
