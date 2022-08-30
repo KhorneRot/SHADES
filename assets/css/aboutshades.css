@@ -1,4 +1,12 @@
 /*CSS de about shades*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+}
+
+
 .nuestrasfotos{
     margin: 10px;
     width: 200px;
@@ -19,15 +27,52 @@
 }
 
 
-.accordion-button{
-    background-color: #fceee1;
-    font-size: 20px;
-    
+
+
+.accordion-button:hover {
+  background-color: #ffffff !important;
+  font: 20px; color: #000000; 
 }
 
 
+
+
+.accordion-button:visited {
+  background-color: #FCEEE1 !important;
+  font: 20px; color: #000000; 
+  
+}
+
+
+
+
+.accordion-button:active  {
+  background-color: #FCEEE1 !important;
+  font: 20px; color: #000000; 
+}
+
+
+
+
+
+.accordion-button {
+  background-color: #FCEEE1 !important;
+  border: none;
+  color: #000000;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+
+
 .accordion-body{
-    font-size: 20px;
+  font: 20px; color: #000000; 
 }
 
 
