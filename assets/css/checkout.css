@@ -1,0 +1,113 @@
+.logo{
+    width: 50px;
+    height: 50px;
+    align-self: center
+}
+
+.card-text{
+    text-align: center;
+}
+
+.card-body1{
+    
+  background-color:pink;
+  margin: 0 auto;
+  
+  
+}
+
+.card-body2{
+    
+  background-color: pink;
+  margin: 0 auto;
+  
+
+
+}
+
+#correo{
+  width: 70%;
+  
+}
+
+#pass{
+  width: 70%;
+}
+
+#imagproducto{
+  width: 70%;
+
+}
+
+#descuento{
+  width: 70%;
+}
+
+.contenedor{
+  
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px
+}
+
+
+
+
+
+
+
+
+body {
+  min-height: 100vh;
+}
+/****************************************/
+
+.footer {
+  width: auto;
+  position: sticky; /* Y esta tambien*/
+  top: 100%;        /*Y esta*/
+>>>>>>> d0f41d407a63c0536fbde5cc80a35729df3c69d7
+  width: 100%;
+  background-color: #414141;
+}
+
+.footer h3 {
+  width: auto;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bolder;
+}
+
+.footer p {
+ width: auto;
+  font-size: 1rem;
+  color: white;
+}
+
+.derechos p {
+  width: auto;
+  font-size: 0.75rem;
+}
+
+.iconos {
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+svg:hover path{
+  fill: #D49090;
+  transition: 200ms;
+}
+
+ footer span {
+  width: 25px;
+  margin-right: 10px;
+} 

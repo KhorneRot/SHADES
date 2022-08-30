@@ -1,8 +1,43 @@
+/*CSS de about shades*/
+.nuestrasfotos{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+}
+
+
+.iconosarturo{
+    width:45px;
+    margin: 5px;
+    margin-top: 40px;
+}
+
+
+.titulosaboutshades{
+    font-size: 40px;
+}
+
+
+.accordion-button{
+    background-color: #fceee1;
+    font-size: 20px;
+    
+}
+
+
+.accordion-body{
+    font-size: 20px;
+}
+
+
+
+
 
 
 /* BARRA NAVEGACION */
 
-
+/* BARRA NAVEGACION */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 *{
@@ -97,11 +132,7 @@
   .menu{
     display: inherit;
   }
-
-
 }
-
-
 
 
 /* Nav */
@@ -175,3 +206,60 @@
 
 /* FIN BARRA NAVEGADOR */
 
+
+
+
+
+
+
+
+
+
+
+/* REGLAS DE ESTILO PARA EL PIE DE PAGINA */
+
+/*Eliminen esta regla si no se comporta como debe*/
+body {
+    min-height: 100vh;
+  }
+  /****************************************/
+  
+  .footer {
+    position: sticky; /* Y esta tambien*/
+    top: 100%;        /*Y esta*/
+    width: 100%;
+    background-color: #414141;
+  }
+  
+  .footer h3 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bolder;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .derechos p {
+    font-size: 0.75rem;
+  }
+  
+  .iconos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+  }
+  
+  svg:hover path{
+    fill: #D49090;
+    transition: 200ms;
+  }
+  
+   footer span {
+    width: 25px;
+    margin-right: 10px;
+  } 

@@ -2,6 +2,7 @@ const formularioInput = document.getElementById("formularioInput")
 
 const correo = document.getElementById("correo")
 
+
 const nombre = document.getElementById("nombre")
 const mensaje = document.getElementById("mensaje")
 
@@ -15,7 +16,10 @@ formularioInput.addEventListener("submit", (e) =>{
         mensajeValor : mensaje.value,
     };  
     
-    
+
+    console.log(contactoObj);
     return contactoObj
 });
+
+
 
