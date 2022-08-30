@@ -23,6 +23,7 @@ body {
   font-weight: bolder;
 }
 
+
 .footer p , .footer p > a {
   font-size: 0.75rem;
   color: white;
@@ -41,13 +42,17 @@ body {
   height: 32px;
 }
 
+
 .footer a:hover, .footer svg:hover path{
   color: hsl(0, 44%, 70%) !important; 
+
   fill: #D49090;
   transition: 200ms;
 }
 
+
  .footer span {
+
 
   width: 25px;
   margin-right: 10px;
