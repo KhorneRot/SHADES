@@ -1,0 +1,54 @@
+/* REGLAS DE ESTILO PARA EL PIE DE PAGINA */
+
+/*Eliminen esta regla si no se comporta como debe*/
+
+
+body {
+
+  min-height: 100vh;
+}
+/****************************************/
+
+.footer {
+  position: sticky; /* Y esta tambien*/
+  top: 100%;        /*Y esta*/
+  width: 100%;
+  background-color: #414141;
+
+}
+
+.footer h3 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bolder;
+}
+
+.footer p , .footer p > a {
+  font-size: 0.75rem;
+  color: white;
+}
+
+.footer .derechos p {
+  font-size: 0.75rem;
+}
+
+.footer .iconos {
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.footer a:hover, .footer svg:hover path{
+  color: hsl(0, 44%, 70%) !important; 
+  fill: #D49090;
+  transition: 200ms;
+}
+
+ .footer span {
+
+  width: 25px;
+  margin-right: 10px;
+} 
