@@ -14,6 +14,7 @@ body {
   top: 100%;        /*Y esta*/
   width: 100%;
   background-color: #414141;
+
 }
 
 .footer h3 {
@@ -22,16 +23,17 @@ body {
   font-weight: bolder;
 }
 
-.footer p {
-  font-size: 1rem;
+.footer p , .footer p > a {
+  font-size: 0.75rem;
   color: white;
 }
 
-.derechos p {
+.footer .derechos p {
   font-size: 0.75rem;
 }
 
-.iconos {
+.footer .iconos {
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +47,8 @@ body {
   transition: 200ms;
 }
 
- footer span {
+ .footer span {
+
   width: 25px;
   margin-right: 10px;
 } 

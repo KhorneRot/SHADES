@@ -1,3 +1,42 @@
+/*CSS de about shades*/
+.nuestrasfotos{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+}
+
+
+.iconosarturo{
+    width:45px;
+    margin: 5px;
+    margin-top: 40px;
+}
+
+
+.titulosaboutshades{
+    font-size: 40px;
+}
+
+
+.accordion-button{
+    background-color: #fceee1;
+    font-size: 20px;
+    
+}
+
+
+.accordion-body{
+    font-size: 20px;
+}
+
+
+
+
+
+
+/* BARRA NAVEGACION */
+
 /* BARRA NAVEGACION */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
@@ -8,6 +47,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
 }
+
 
 .header{
   background-color: #FDEFE1;
@@ -44,10 +84,8 @@
   padding: 0 20px;
 }
 
-
 .header .nav-links li:hover,
 .overlay a:hover{
-
   transform: scale(1.1);
 }
 
@@ -67,7 +105,6 @@
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-
 
 .menu{
   display: none;
@@ -170,90 +207,59 @@
 /* FIN BARRA NAVEGADOR */
 
 
-.fondoInicio{
-background-color: #D59090;
-
-}
-/* Modelo */
 
 
 
-.modeloShades{
-  display: flex;
-  position: relative;
-  margin-top: -27vh;
-  width: 151vh;
-  height: 99vh;
-  top: 0px;
-  left: -455px;
-  object-fit: scale-down;
+
+
+
+
+
+
+/* REGLAS DE ESTILO PARA EL PIE DE PAGINA */
+
+/*Eliminen esta regla si no se comporta como debe*/
+body {
+    min-height: 100vh;
+  }
+  /****************************************/
   
-
-}
-
-/*fin Modelo */
-
-
-/* LEMA SHADES */
-.lemaShades{
-
-font-family: 'Felix Titling';
-font-style: normal;
-font-weight: 400;
-font-size: 60.1px;
-line-height: 78px;
-
-
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #FFFFFF;
-
-text-shadow: 0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25), 0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25), 0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25), 0px 3.98182px 3.98182px rgba(0, 0, 0, 0.25);
-}
-
-/* FIN LEMA SHADES */
-
-
-/* CARRUSEL */
-.carrusel{
-  position: relative;
-max-width: 300px;
-max-height: 150px;
-right: 10px;
-left: 10px;
-
-}
-
-.carrusel2{
-  position: relative;
-  left: 10px;
-  bottom: 10px;
-
-}
-
-/* FIN CARRUSEL */
-
-/* Socios */
-.sociosShades{
-  display: flex;
-  justify-content: center;
+  .footer {
+    position: sticky; /* Y esta tambien*/
+    top: 100%;        /*Y esta*/
+    width: 100%;
+    background-color: #414141;
+  }
   
-}
-.sociosShades2{
-  display: flex;
-  padding-left: 153px;
-  padding-right: 294px;
+  .footer h3 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bolder;
+  }
   
-}
-
-/* CATEGORIAS */
-
-.categoriasShades{
-  margin: 10px;
-
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-
+  .footer p {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .derechos p {
+    font-size: 0.75rem;
+  }
+  
+  .iconos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+  }
+  
+  svg:hover path{
+    fill: #D49090;
+    transition: 200ms;
+  }
+  
+   footer span {
+    width: 25px;
+    margin-right: 10px;
+  } 
