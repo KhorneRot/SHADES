@@ -30,8 +30,16 @@
 
 
 .accordion-button:hover {
-  background-color: #ffffff !important;
-  font: 20px; color: #000000; 
+  background-color: #FCEEE1 !important;
+  color: #000000; 
+}
+
+
+
+
+.accordion-button:link {
+  background-color: #FCEEE1 !important;
+  color: #000000; 
 }
 
 
@@ -39,7 +47,7 @@
 
 .accordion-button:visited {
   background-color: #FCEEE1 !important;
-  font: 20px; color: #000000; 
+  color: #000000; 
   
 }
 
@@ -48,7 +56,14 @@
 
 .accordion-button:active  {
   background-color: #FCEEE1 !important;
-  font: 20px; color: #000000; 
+  color: #000000; 
+}
+
+
+
+.accordion-button:focus  {
+  background-color: #FCEEE1 !important;
+  color: #000000; 
 }
 
 
