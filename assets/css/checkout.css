@@ -36,11 +36,34 @@
 
 #imagproducto{
   width: 70%;
+  border-color: black;
+  border: radius 5px;
 
 }
 
 #descuento{
   width: 70%;
+}
+
+
+#boton1{
+  background-color: #D49090;
+  border-color: #D49090;
+}
+
+#boton2{
+  background-color: #D49090;
+  border-color: #D49090;
+}
+
+#boton3{
+  background-color: #D49090;
+  border-color: #D49090;
+}
+
+#boton4{
+  background-color: #D49090;
+  border-color: #D49090;
 }
 
 .contenedor{
