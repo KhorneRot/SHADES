@@ -31,7 +31,7 @@
 
 
 /* cartas */
-#cards{
+.cards{
     margin-bottom: 21px;
     border-radius: 0%;
     text-align: left;
