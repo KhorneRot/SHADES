@@ -31,8 +31,9 @@
         <link rel="stylesheet" href="assets/css/checkout.css">
         <link rel="stylesheet" href="assets/css/navbar.css">
         <script src="assets/js/nav.js"></script>
+        <script src="assets/js/checkout.js"></script>
 
-        <title>Hello, world!</title>
+        
     
         
     
@@ -84,47 +85,57 @@
             </div>
           </header>
         
-        
-
-          <!--Apartado de pago-->
+         <!--Apartado de pago-->
           <div class="contenedor">
-
-          <div class="row mx-4 py-4">
-            <div class="col-lg-6">
-              <div class="card">
-                <div class="card-body1" style="height: 700px;">
+            <div class="row mx-4 py-4">
+            <div class="col-sm-6">
+              <div class="card-wrap">
+                <div class="card-body1" style="height: 753px;">
                   
                   <p class="card-text py-3">Cuenta --- Envío --- Pago</p>
                   <h5 class="card-envio mx-5 ">Detalles de la cuenta</h5>
                   <p class="car-tex mx-5">Dirección de Correo Electrónico</p>
-                  <div id="correo" class="d-inline-flex p-2 bd-highlight mx-5 col-lg-7" style="background-color: #FFFFFF";>scarlett.uc@example.com</div>
+                  <div class="form-group  ">
+                    <label for="inputEmail3" class="form-label mx-5"></label>
+                    <div class="mx-5">
+                      <input id="mail" type="email" class="form-control" id="inputEmail3">
+                    </div>
+                  </div>
                   <p  class="pass mx-5 py-2">Contraseña</p>
-                  <div id="pass" class="d-inline-flex p-2 bd-highlight mx-5 col-lg-7" style="background-color: #FFFFFF";>**********</div>
+                  <div class="form-group ">
+                    <label for="inputPassword3" class="form-label mx-5"></label>
+                    <div class="mx-5">
+                      <input id="passw" type="password" class="form-control" id="inputPassword3">
+                    </div>
+                  </div>
                   <br>
-                  <p class="count mx-5 py-4 text-right"><a href="https://www.google.com.mx" style="color: black;">Registrese para tener una cuenta   </a><a id="boton2" href="#" class="btn btn-primary">Iniciar Sesión</a></p> 
+                  <p class="count mx-5 text-right"><a href="https://www.google.com.mx" style="color: black;">Registrese para tener una cuenta   </a><a id="boton2" href="#" class="btn btn-primary" onclick="getData()">Iniciar Sesión</a></p> 
                   <br>
                   <br>
                   <hr class="line py-"style="color: black" />
-                  <p class="count mx-5 py-2 text-right"><a href="https://www.google.com.mx" style="color: black;">Cancelar Pedido</a> <a id="boton3" href="#" class="btn btn-primary" ">Detalles de la compra</a></p> 
-                  
-                  
-                 
-                </div>
+                  <p class="count mx-5 text-right"><a href="https://www.google.com.mx" style="color: black;">Cancelar Pedido</a> <a id="boton3" href="#" class="btn btn-primary" ">Detalles de la compra</a></p> 
+                  </div>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="card" style="width: 590px;"></div>
-                <div class="card-body2" style="height: 700px;">
+            <div class="col-sm-6">
+              <div class="card-wrap" style="width: 590px;"></div>
+                <div  class="card-body2" style="height: 753px;">
                   <h5 class="card-title mx-5 py-4">Resumén del pedido</h5>
-                  <img id="imagproducto" class= "mx-5" src="assets/img/checkout/pinceles.jpg" style="width: 483px; height: 120px" alt="">
-                  <h6   class="mx-5 py-2 text-right">Set de Brochas Profesionales <a id="boton1" href="#" class="btn btn-primary text-right">Agregar mas productos</a></h6>
+                  <img id="imagproducto" class= "mx-5 " src="assets/img/checkout/pinceles.jpg" style="width: 483px; height: 120px" alt="">
+                  <h6   class="mx-5 py-1 text-right">Set de Brochas Profesionales <a id="boton1" href="#" class="btn btn-primary text-right">Agregar mas productos</a></h6>
                   <h6 class="mx-5 text-right">$750.45</h6>
-                  <p id="descuento" class="mx-5 py-2">Codigo de descuento / tarjeta de regalo</p>
-                  <div class="d-inline-flex  bd-highlight mx-5 col-lg-5" style="background-color: #FFFFFF; height: 40px;"></div>             
+                  <p id="descuento" class="mx-5">Codigo de descuento / tarjeta de regalo</p>
+                  <div id="codigo" class="form-group ">
+                    <label for="inputcodigo" class="form-label mx-5"></label>
+                    <div class="mx-5">
+                      <input id="codigo" type="codigo" class="form-control" id="codigo">
+                    </div>
+                  </div>            
                   <h6 class="mx-5 text-right">SubTotal  $745</h6>
                   <h6 class="mx-5 text-right">IVA    $5.45</h6>
                   <h6 class="mx-5 text-right">Envío Gratis</h6>
-                  <h6 class="mx-5 text-right">Total $750.45</h6>  
+                  <h6 class="mx-5 text-right">Total $750.45</h6> 
+                  <hr class="line py-"style="color: black" /> 
                   <p class="count mx-5  text-right"><a href="https://www.google.com.mx" style="color: black;">¡Gracias Por tu Compra!</a>  <a id="boton4" href="#" class="btn btn-primary">Realizar Compra</a></p>
                   
                 
