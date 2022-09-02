@@ -37,7 +37,7 @@
 .header .nav-links{
   list-style: none;
   margin-bottom: 0rem;
-  margin-left: 155px;
+  /* margin-left: 155px; */
 }
 
 .header .nav-links li{
@@ -87,7 +87,7 @@
 }
 
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1381px) {
 
 
   .nav-links, .btn{
@@ -167,5 +167,9 @@
   }
 }
 
+.form-control:focus {
+  border-color: #D49090 !important;
+  box-shadow: 0 0 5px #D49090 !important;
+}
 
 /* FIN BARRA NAVEGADOR */
