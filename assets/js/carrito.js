@@ -1,3 +1,4 @@
+/* Variables */
 const cards = document.getElementById('cards')
 const templateCard = document.getElementById('template-card').content
 const items = document.getElementById('items')
@@ -8,7 +9,7 @@ const fragment = document.createDocumentFragment()
 let carrito = {}
 
 
-document.addEventListener('DOMContentLoaded', ()=>{
+document.addEventListener('  ', ()=>{
 	fetchData()
 	if(localStorage.getItem('carrito')){
 		carrito = JSON.parse(localStorage.getItem('carrito'))

@@ -15,6 +15,7 @@
 
     <!--CSS barra de navegacion-->
     <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/footer.css">
 
 
   </head>
@@ -29,28 +30,28 @@
   <!-- BARRA NAVEGACION -->
   <header class="header sticky-top">
     <div class="logo">
-      <img src="assets/logo-iconos/SHADES-LOGO.svg" alt="logo de la marca" />
+      <img src="assets/img/iconos/SHADES-LOGO.svg" alt="logo de la marca" />
     </div>
     <div class="container d-flex justify-content-center">
       <div class="row align-content-center">
         <div class="col-12">
         <nav>
           <ul class="nav-links">
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Tienda</a></li>
-            <li><a href="">Acerca de</a></li>
-            <li><a href="">Contacto</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="TiendaShades.html">Tienda</a></li>
+            <li><a href="aboutshades.html">Acerca de</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
           </ul>
       </div>
     </div>
     <a href="" class="btn"
-      ><img src="assets/logo-iconos/Lupa.svg" alt=""
+      ><img src="assets/img/iconos/Lupa.svg" alt=""
     /></a>
-    <a href="" class="btn"
-      ><img src="assets/logo-iconos/Corazon.svg" alt=""
+    <a href="wishlist.html" class="btn"
+      ><img src="assets/img/iconos/Corazon.svg" alt=""
     /></a>
-    <a href="" class="btn"
-      ><img src="assets/logo-iconos/Carrito.svg" alt=""
+    <a href="carrito.html" class="btn"
+      ><img src="assets/img/iconos/Carrito.svg" alt=""
     /></a>
   </nav>
 </div>
@@ -58,13 +59,13 @@
     <div class="overlay" id="mobile-menu">
       <a onclick="closeNav()" href="" class="close">&times;</a>
       <div class="overlay-content">
-        <a href="">Inicio</a>
-        <a href="">Tienda</a>
-        <a href="">Acerca de</a>
-        <a href="">Contacto</a>
-        <a href=""> <img src="assets/logo-iconos/Lupa.svg" alt=""> Buscar</a>
-        <a href=""> <img src="assets/logo-iconos/Corazon.svg" alt=""> Favoritos</a>
-        <a href=""> <img src="assets/logo-iconos/Carrito.svg" alt=""> Carrito</a>
+        <a href="index.html">Inicio</a>
+        <a href="TiendaShades.html">Tienda</a>
+        <a href="aboutshades.html">Acerca de</a>
+        <a href="contacto.html">Contacto</a>
+        <a href=""> <img src="assets/img/iconos/Lupa.svg" alt=""> Buscar</a>
+        <a href="wishlist.html"> <img src="assets/img/iconos/Corazon.svg" alt=""> Favoritos</a>
+        <a href="carrito.html"> <img src="assets/img/iconos/Carrito.svg" alt=""> Carrito</a>
       </div>
     </div>
   </header>
@@ -75,7 +76,7 @@
 
 
 <!--espacio en blanco entre secciones-->
-<div class="row" style="padding: 30px;"></div>
+<div class="container" style="padding: 30px;"></div>
 
 
 
@@ -89,7 +90,7 @@
 
 
 <!--espacio en blanco entre secciones-->
-<div class="row" style="padding: 30px;"></div>
+<div class="container-fluid" style="padding: 30px;"></div>
 
 
 
@@ -110,8 +111,8 @@
     <p class="titulosaboutshades">
         Somos SHADES
     </p>
-<div class="card">
-  <img src="assets/img/mujer2.jpg" class="card-img-top" alt="...">
+<div class="card border-white">
+  <img src="assets/img/aboutshades/hombremaquillaje.jpg" class="card-img-top" alt="..." style="margin-bottom: 50px;">
 </div>  
 </div>
 
@@ -125,52 +126,44 @@
 
 <center>
   <div class="card">
-    <img src="assets/img/mujer.jpg" class="card-img-top" alt="..." style="margin-top: 50px;">
+    <img src="assets/img/aboutshades/mujermaquillaje.jpg" class="card-img-top" alt="..." >
     <div class="card-body">
 
 
 
               <!--Acordeón-->
-    <div class="accordion accordion-flush" id="acordeon">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-            Quiénes somos
-          </button>
-        </h2>
-        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-          <div class="accordion-body">
-            SHADES es una empresa que ofrece una alta variedad de cosméticos para todos los estilos. Sus productos están disponibles para comprar en línea y realiza envíos a toda la república mexicana.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-            Misión
-          </button>
-        </h2>
-        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-          <div class="accordion-body">
-            Brindar productos cosméticos de calidad a quienquiera en cualquier rincón de México
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-            Visión
-          </button>
-        </h2>
-        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-          <div class="accordion-body">
-            Ser el e-commerce de productos de maquillaje con mayor reconocimiento a nivel nacional
-          </div>
-        </div>
-      </div>
-
-
-    </div>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Quiénes somos
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><p align='justify'>SHADES es una empresa que ofrece una alta variedad de cosméticos para todos los estilos. Sus productos están disponibles para comprar en línea y realiza envíos a toda la república mexicana.</p></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Misión
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><p align='justify'>Brindar productos cosméticos de calidad a quienquiera en cualquier rincón de México.</p></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Visión
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><p align='justify'>Ser el e-commerce de productos de maquillaje con mayor reconocimiento a nivel nacional.</p></div>
+                  </div>
+                </div>
+              </div> 
 
 
 
@@ -189,9 +182,8 @@
 
 
 
-
 <!--espacio en blanco entre secciones-->
-<div class="row" style="padding: 50px;"></div>
+<div class="container-fluid" style="padding: 50px;"></div>
 
 
 
@@ -201,28 +193,30 @@
 
 <!--Barra con iconos-->
 
-    <div style="background-color:#FDEFE2; padding: 50px;" class="row text-center row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center" >
-     
+<div style="background-color:#FCEEE1; padding: 50px;" class="container-fluid" >
+	<div class"container">
+     	<div class="row text-center row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
         <div class="col">
-            <img src="assets/logo-iconos/ventas.jpg" alt="" class="iconosarturo">
+            <img src="assets/img/iconos/ventas.jpg" alt="" class="iconosarturo">
         <b><p style="font-size: 20px; ">Ventas a todo México</p></b>
         <p style="font-size: 18px;">Realizamos envíos a toda la república</p>
       </div>
 
       <div class="col">
-        <img src="assets/logo-iconos/compra.jpg" alt="" class="iconosarturo">
+        <img src="assets/img/iconos/compra.jpg" alt="" class="iconosarturo">
         <b><p style="font-size: 20px; ">Compra en línea</p></b>
         <p style="font-size: 18px;">Compra desde la comodidad de tu  hogar</p>
       </div>
 
 
       <div class="col">
-        <img src="assets/logo-iconos/promociones.jpg" alt="" class="iconosarturo">
+        <img src="assets/img/iconos/promociones.jpg" alt="" class="iconosarturo">
         <b><p style="font-size: 20px; ">Grandes promociones</p></b>
         <p style="font-size: 18px;">Encuentra ofertas en nuestros catálogos</p>
       </div>
-
-
+	
+	</div>
+	</div>
     </div>
 
 
@@ -230,7 +224,7 @@
 
 
 <!--espacio en blanco entre secciones-->
-<div class="row" style="padding: 50px;"></div>
+<div class="container-fluid" style="padding: 50px;"></div>
 
 
 
@@ -238,25 +232,23 @@
 
 
 <!--Nuestro equipo-->
-<div class="container">
-    <div class="col">
-        <div class="row">
-            <p class="titulosaboutshades">Nuestro equipo</p>
-        </div>
-        <div class="row">
-            <p style="font-size: 20px">
-              Somos un equipo lleno de ideas y siempre
-            </p>
-        </div>
-
-        <div class="row">
-          <p style="font-size: 20px">
-            actualizado para ofrecerte los mejos productos
-          </p>
-        </div>
+  <div class="container-fluid">
+  
+    <div class="col" style="margin-left: 8%;">
+      <div class="row">
+          <p class="titulosaboutshades">Nuestro equipo</p>
+      </div>
+      <div class="row">
+          <p>
+          Somos un equipo lleno de ideas
+          <br>
+          siempre actualizado para ofrecerte los mejores productos
+        </p>
+      </div>
 
 
     </div>
+  
 </div>
 
 
@@ -273,50 +265,50 @@
   
   
           <div class="col">
-              <img src="assets/img/josselyn.jpg" alt="" class="nuestrasfotos">
-              <p style="font-size: 20px">Josselyn</p>
+              <img src="assets/img/aboutshades/josselyn.jpg" alt="" class="nuestrasfotos">
+              <p class="nombres" style="font-size: 20px">Josselyn</p>
               <p style="font-size: 18px">Líder</p>
           </div>
   
           <div class="col">
-              <img src="assets/img/Arturo.jpg" alt="fotoarturo" class="nuestrasfotos">
-              <p style="font-size: 20px">Arturo</p>
+              <img src="assets/img/aboutshades/Arturo.jpg" alt="fotoarturo" class="nuestrasfotos">
+              <p class="nombres" style="font-size: 20px">Arturo</p>
               <p style="font-size: 18px">Soñador</p>
           </div>
           
           <div class="col">
-              <img src="assets/img/alejandro.jpg" alt="" class="nuestrasfotos">
-              <p style="font-size: 20px">Alejandro</p>
+              <img src="assets/img/aboutshades/alejandro.jpg" alt="" class="nuestrasfotos">
+              <p class="nombres" style="font-size: 20px">Alejandro</p>
               <p style="font-size: 18px">Divertido</p>
           </div>
                  
           <div class="col">
-              <img src="assets/img/hector.jpg" alt="" class="nuestrasfotos">
-              <p style="font-size: 20px">Héctor</p>
+              <img src="assets/img/aboutshades/hector.jpg" alt="" class="nuestrasfotos">
+              <p class="nombres" style="font-size: 20px">Héctor</p>
               <p style="font-size: 18px">Creativo</p>
           </div>
                   
           <div class="col">
-              <img src="assets/img/kaleb.jpg" alt="" class="nuestrasfotos">
-              <p style="font-size: 20px">Kaleb</p>
+              <img src="assets/img/aboutshades/kaleb.jpg" alt="" class="nuestrasfotos">
+              <p class="nombres" style="font-size: 20px">Kaleb</p>
               <p style="font-size: 18px">Carismático</p>
           </div>
   
           <div class="col">
-              <img src="assets/img/maciel.jpg" alt="" class="nuestrasfotos">
-              <p style="font-size: 20px">Maciel</p> 
+              <img src="assets/img/aboutshades/maciel.jpg" alt="" class="nuestrasfotos">
+              <p class="nombres" style="font-size: 20px">Maciel</p> 
               <p style="font-size: 18px">Original</p>
           </div>
                    
           <div class="col">
-              <img src="assets/img/Arturo.jpg" alt="fotoarturo" class="nuestrasfotos">
-              <p style="font-size: 20px">Iker</p>
+              <img src="assets/img/aboutshades/Arturo.jpg" alt="fotoarturo" class="nuestrasfotos">
+              <p class="nombres" style="font-size: 20px">Iker</p>
               <p style="font-size: 18px">Innovador</p>
           </div>
   
           <div class="col">
-              <img src="assets/img/cyntya.jpg" alt="" class="nuestrasfotos">
-              <p style="font-size: 20px">Cyntya</p>
+              <img src="assets/img/aboutshades/cyntya.jpg" alt="" class="nuestrasfotos">
+              <p class="nombres" style="font-size: 20px">Cyntya</p>
               <p style="font-size: 18px">Emprendedora</p>
           </div>
                   
@@ -331,7 +323,7 @@
 
 
 <!--espacio en blanco entre secciones-->
-<div class="row" style="padding: 70px;"></div>
+<div class="container-fluid" style="padding: 70px;"></div>
 
 
 
@@ -342,15 +334,15 @@
 <p class="titulosaboutshades" style="text-align: center">Marcas</p>
 <center>
   <div class="container d-flex justify-content-evenly">
-    <div class="row">
+    <div class="row filademarcas">
         <div class="col">
-            <img src="assets/img/marcas.jpg" alt="">
+            <img class="imgmarcas" src="assets/img/aboutshades/marcas11.jpg" alt="">
         </div>
         <div class="col">
-            <img src="assets/img/marcas2.jpg" alt="">
+            <img class="imgmarcas" src="assets/img/aboutshades/marcas33.jpg" alt="">
         </div>
         <div class="col">
-            <img src="assets/img/marcas3.jpg" alt="">
+            <img class="imgmarcas" src="assets/img/aboutshades/marcas22.jpg" alt="">
         </div>
     </div>
   </div>
@@ -361,7 +353,7 @@
 
 
 <!--espacio en blanco entre secciones-->
-<div class="row" style="padding: 50px;"></div>
+<div class="container-fluid" style="padding: 50px;"></div>
 
 
 
