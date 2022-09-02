@@ -1,28 +1,18 @@
+
 const urlApi = "https://pokeapi.co/api/v2/pokemon/1"
 
-const imgPrueba = document.getElementById("imgPrueba")//?CAmbiar por  imagen
-
-
-const precioPrueba = document.getElementById("precioPrueba")//?Cambiar por precio
-
-
-const nombrePrubea = document.getElementById("nombrePrubea")//?nombre
-
-const productos = 4;
+const nProductos = 9;
 
 const cards = document.getElementById("centro")
 
-//! Este sirve maso
-/* 
+
+let i = 0;
 async function pWishlist(urlApi) {
 
     try {
-
         const resp = await fetch(urlApi)
         const datos = await resp.json()
-
-
-
+    
         const producto = {
             nombre: datos.forms[0].name,
             habilidades: datos.abilities,
@@ -34,26 +24,27 @@ async function pWishlist(urlApi) {
         let nombreP = producto.nombre
         let precioP = producto.precio
         let imgP = producto.imagen
-        nombrePrubea.innerHTML = nombreP
+        //nombrePrubea.innerHTML = nombreP
 
-        precioPrueba.innerHTML = "$ " + precioP
-        imgPrueba.src = imgP
+        //precioPrueba.innerHTML = "$ " + precioP
+        //imgPrueba.src = imgP
 
-
+        let templateRow = `<div class="row justify-content-center"
+        id="cards">`
         let templateCard = ""
-
-
-        templateCard += `<div class="col"
-            id="cards">
+    while (i < nProductos) {
+    i++
+    templateCard += `<div class="col-3"
+    id="cards">
             <div class="card h-60 mb-3">
     <img id="imgTienda"
-        src="/assets/img/articulo/arcoiris.jpg"
+        src="${producto.imagen}"
         class="card-img-top"
         alt="...">
-    <div id="cardBody"
+        <div id="cardBody"
         class="card-body">
-        <h5 class="card-title">Serum Anti-acné</h5>
-        <p class="card-text">$499.00 
+        <h5 class="card-title">${producto.nombre}</h5>
+        <p class="card-text">${i }
 
             <img id="icon"
             src="/assets/img/iconos/Corazon.svg"
@@ -65,12 +56,15 @@ async function pWishlist(urlApi) {
             srcset="">
         </p>
 
-    </div>
+        </div>
 </div>
 </div>`
 
+}
 
-        cards.innerHTML = templateCard
+
+templateRow+= templateCard
+cards.innerHTML = templateRow
 
 
 
@@ -85,54 +79,7 @@ async function pWishlist(urlApi) {
 }
 
 
-
-
-pWishlist(urlApi)
-*/
-//! Este sirve maso
-
-async function pWishlist(urlApi)
-try {
-    
-    const resp = await fetch(urlApi)
-    const datos = await resp.json()
-    const template =  `<div class= "col" id="cards">
-    <div class="card h-60 mb-3">
-<img id="imgTienda"
-src="/assets/img/articulo/arcoiris.jpg"
-class="card-img-top"
-alt="...">
-<div id="cardBody"
-class="card-body">
-<h5 class="card-title">Serum Anti-acné</h5>
-<p class="card-text">$499.00 
-
-    <img id="icon"
-    src="/assets/img/iconos/Corazon.svg"
-    alt="Icono Me gusta"
-    srcset="">
-    <img id="icon"
-    src="/assets/img/iconos/Carrito.svg"
-    alt="Icono Carrito"
-    srcset="">
-</p>
-
-</div>
-</div>
-</div>`
-    
-    productos.forEach(producto => {
-        
+//pWishlist(urlApi)
 
 
 
-
-    });
-
-
-} catch (error) {
-    alert("No funciono algo")
-}
-
-
-pWishlist(urlApi)

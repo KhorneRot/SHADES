@@ -18,8 +18,6 @@ formularioInput.addEventListener("submit", (e) =>{
     
 
     console.log(contactoObj);
+    formularioInput.reset()
     return contactoObj
 });
-
-
-

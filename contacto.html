@@ -24,56 +24,56 @@
 
 <body>
   <!--! Navbar -->
+  <!-- BARRA NAVEGACION -->
   <header class="header sticky-top">
     <div class="logo">
-      <img src="assets/logo-iconos/SHADES-LOGO.svg"
-        alt="logo de la marca" />
+      <a href="index.html"><img src="assets/img/index/iconos/SHADES-LOGO.svg" alt="logo de la marca" /></a>
     </div>
-    <div class="container d-flex justify-content-center">
+    <div class="d-flex justify-content-center">
       <div class="row align-content-center">
-        <div class="col-12">
-          <nav>
-            <ul class="nav-links">
-              <li><a href="">Inicio</a></li>
-              <li><a href="">Tienda</a></li>
-              <li><a href="">Acerca de</a></li>
-              <li><a href="">Contacto</a></li>
-            </ul>
-        </div>
+        <div class="col-sm-12">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="aboutshades.html">Acerca de</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="TiendaShades.html">Tienda</a>
+              
+            </li>
+          </ul>
       </div>
-      <a href=""
-        class="btn"><img src="assets/logo-iconos/Lupa.svg"
-          alt="" /></a>
-      <a href=""
-        class="btn"><img src="assets/logo-iconos/Corazon.svg"
-          alt="" /></a>
-      <a href=""
-        class="btn"><img src="assets/logo-iconos/Carrito.svg"
-          alt="" /></a>
-      </nav>
     </div>
-    <a onclick="openNav()"
-      class="menu"
-      href="#"><button>Menu</button></a>
-    <div class="overlay"
-      id="mobile-menu">
-      <a onclick="closeNav()"
-        href=""
-        class="close">&times;</a>
+    <div class="nav-links">
+      <div class="row" style="margin-left: 10px;">
+        <a class="nav-link" href="wishlist.html"><img src="assets/img/iconos/Corazon.svg" alt=""></a>
+        <a class="nav-link" href="carrito.html"><img src="assets/img/iconos/Carrito.svg" alt=""></a>
+      <form class="form-inline my-1 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <a href="" class=" my-1 my-sm-0" type="submit"></a> 
+      </form>
+    </div>
+    </div>
+  </div>
+  </nav>
+</div>
+    <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+    <div class="overlay" id="mobile-menu">
+      <a onclick="closeNav()" href="" class="close">&times;</a>
       <div class="overlay-content">
-        <a href="">Inicio</a>
-        <a href="">Tienda</a>
-        <a href="">Acerca de</a>
-        <a href="">Contacto</a>
-        <a href=""> <img src="assets/logo-iconos/Lupa.svg"
-            alt=""> Buscar</a>
-        <a href=""> <img src="assets/logo-iconos/Corazon.svg"
-            alt=""> Favoritos</a>
-        <a href=""> <img src="assets/logo-iconos/Carrito.svg"
-            alt=""> Carrito</a>
+        <a href="index.html">Inicio</a>
+        <a href="TiendaShades.html">Tienda</a>
+        <a href="aboutshades.html">Acerca de</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="wishlist.html"> <img src="assets/img/iconos/Corazon.svg" alt=""> Favoritos</a>
+        <a href="carrito.html"> <img src="assets/img/iconos/Carrito.svg" alt=""> Carrito</a>
+        <form class="form-inline my-1 my-lg-0">
+          <input class="form-control mr-sm-0" type="search" placeholder="Search" aria-label="Search">
+          <a href="" class=" my-0 my-sm-0" type="submit"></a> 
+        </form>   
       </div>
     </div>
   </header>
+  <!-- FIN BARRA NAVEGACION -->
   <!--! Navbar -->
 
   <div class="titulo text-center mt-3 mb-5">
@@ -95,38 +95,44 @@
                   <h6>Ponte en contacto con nosotos</h6>
                 </label>
                 <input type="email"
-                  class="form-control"
+                  class="form-control bg-light"
+                  style="border-style:groove"
                   id="correo"
                   placeholder="Email">
               </div>
               <div id="nombreForm"
                 class="form-group">
                 <input type="text"
-                  class="form-control"
+                  required="required"
+                  class="form-control bg-light "
+                  style="border-style:groove"
                   id="nombre"
                   placeholder="Nombre">
               </div>
               <div id="mensajeForm"
                 class="form-group">
-                <textarea style="resize: none"
-                  class="form-control"
+                <textarea style="resize: none;  border-style:groove;"
+                  required="required"
+                  class="form-control bg-light"
                   id="mensaje"
                   placeholder="Mensaje"
                   rows="4"></textarea>
 
               </div>
-              <!--! Formulario -->
+              <!--! Formulario BOTON -->
               <button type="submit"
-                class="colorRosa mt-2 mb-3">Contactanos</button>
+                id="botonContactanos"
+                class=" mt-2 mb-3 btn-light btn-sm"
+                style="background-color:#D49090; color:white;">Contactanos</button>
             </form>
 
           </div>
 
 
 
-          <div class="col">
+          <div class="col ">
             <!-- ! Mas info cuadro -->
-            <div class="cuadroRosa colorRosa py-1 pl-3 mr-1 my-2">
+            <div class="cuadroRosa colorRosa py-1 pl-3 mr-1 mt-2">
 
               <h3 class=" pt-1  ">Más informacion</h3>
               <p class="tamanioFuente mb-2">
@@ -144,25 +150,27 @@
 
         </div>
       </div>
-      <!--! Imagen-->
-      <div class="col ">
-        <div class="apiMaps ">
-
-          <!--! Imagen-->
-          <img class="mb-4 "
-            id="imgMapa"
-            src="assets/img/contacto/mapà prueba.png"
-            alt="Nofunciona"
-            </div>
-        </div>
-
+      <!--! MAPA-->
+      <div class="col col-xl-5 col-md-5 col-sm-12 ">
+        <iframe id="map"
+          class=""
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d395.15764064564604!2d-99.05174242693123!3d19.567604403357457!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f050ad66aa0f%3A0xb5041de8d2a4b7f0!2sAv.%20Morelos%20215%2C%20Sta%20Maria%20Tulpetlac%2C%2055400%20Ecatepec%20de%20Morelos%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1662075669638!5m2!1ses-419!2smx"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
-
     </div>
+
+
+  </div>
   </div>
 
-
+  <div id="espacio"
+    class="my-3">&#10240</div>
   <!-- ! FOOTER -->
   <footer class="container-fluid footer">
     <div class="container pb-1">
@@ -338,9 +346,9 @@
   <!-- ! FOOTER -->
 
 
+
   <script src="assets/js/contacto.js"></script>
   <script src="assets/js/nav.js"></script>
-
 </body>
 
 </html>
