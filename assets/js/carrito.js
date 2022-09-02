@@ -9,7 +9,7 @@ const fragment = document.createDocumentFragment()
 let carrito = {}
 
 
-document.addEventListener('DOMContentLoaded', ()=>{
+document.addEventListener('  ', ()=>{
 	fetchData()
 	if(localStorage.getItem('carrito')){
 		carrito = JSON.parse(localStorage.getItem('carrito'))
