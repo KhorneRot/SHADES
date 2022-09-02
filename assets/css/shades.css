@@ -113,10 +113,16 @@
   color: black;
 }
 
+.suscripcion .btn-primary:focus{
+  border-color: #FCEEE1 !important;
+  background-color: #FCEEE1 !important;
+  box-shadow: 0 0 0 0.2rem #414141 !important;
+}
+
 .suscripcion .form-control:focus {
   color: black !important;
   border-color: black !important;
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem #414141 !important;
   transition: 100ms;
 }
 

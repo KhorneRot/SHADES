@@ -414,11 +414,14 @@
 
             <div class="px-3">
 
-              <form>
-                <div class="form-group pb-3">
+              <form novalidate id="suscripcion-formulario" class="formulario">
+                <div class="form-group campo-formulario pb-3">
+
+                  <small></small>
                   <label for="correo-electronico"></label>
-                  <input type="email" class="form-control" id="correo-electronico" aria-describedby="emailHelp"
+                  <input type="email" class="form-control" id="correo-electronico-suscripcion" name="correo-electronico" aria-describedby="emailHelp"
                     placeholder="Correo electrónico">
+                    
 
                 </div>
 
@@ -534,9 +537,9 @@
         </div>
 
         <div class="mt-3">
-          <p><a class="text-decoration-none text-reset" href="whislist.html">Lista de deseos</a></p>
+          <p><a class="text-decoration-none text-reset" href="wishlist.html">Lista de deseos</a></p>
           <p><a class="text-decoration-none text-reset" href="carrito.html">Carrito de compras</a></p>
-          <p><a class="text-decoration-none text-reset" href="checkout.html">Checkout</a></p>
+          <p><a class="text-decoration-none text-reset" href="Formulario de pago.html">Checkout</a></p>
         </div>
 
 
@@ -592,6 +595,7 @@
 </footer>
 
 <script src="assets/js/nav.js"></script>
+<script src="assets/js/formulario-suscripcion.js" ></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
   crossorigin="anonymous"></script>
