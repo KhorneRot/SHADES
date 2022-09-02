@@ -1,3 +1,4 @@
+/* Variables */
 const cards = document.getElementById('cards')
 const templateCard = document.getElementById('template-card').content
 const items = document.getElementById('items')

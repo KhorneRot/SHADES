@@ -1,34 +1,44 @@
 /* Carrito */
-.contenedor{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    /* min-height: 100vh; */
-}
-.compras{
-    flex-wrap: wrap;
-   
-}
 
-.table{
+/* .table{
     
     width: 60%;
+} */
+
+h1 {
+    font-family: 'Domine', serif;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 15px;
+    margin: 32px;
 }
 
-.resumen{
+.btn-dark{
+    border-radius: 15px;
     float: right;
-    background-color: #FCEEE1;
-    margin-left: 60px;
-    padding-left: 20px;
-
+    border: none;
 }
 
-
-.btnn{
-    background-color: #D49090;
+button{
+    border-color: transparent;
 }
 
+.btn-info{
+    border-color: transparent;
+}
+.btn-danger{
+    border-color: transparent;
+}
+
+h2 {
+    font-family: 'Domine', serif;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 15px;
+    margin: 52px;
+}
 
 /* cartas */
 .cards{
@@ -47,19 +57,20 @@
     text-align: left;
     font-size: small;
     
+    
 }
 #icon{
     border-radius: 15px;
-    width: 16px;
-    height: 16px;
-    float: right;
-    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+    float:inline-start;
+    margin-left: 90px;
 }
 .card-img-top{
     display:block;
     object-position: center;
     object-fit: cover;
-    width: 253px;
-    height: 253px;
+    width: auto;
+    height: 220px;
     
 }
