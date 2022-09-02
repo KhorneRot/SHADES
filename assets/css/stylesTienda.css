@@ -161,6 +161,12 @@ h6{
 }
 
 
+.card-title:link{
+  text-decoration: none;
+  text-color: black;
+}
+
+
 /* FOOTER */
 body {
     min-height: 100vh;
