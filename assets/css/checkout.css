@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+#pinceles{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .logo{
     width: 50px;
     height: 50px;
@@ -10,7 +24,7 @@
 
 .card-body1{
     
-  background-color:pink;
+  background-color: #fceee1;
   margin: 0 auto;
   
   
@@ -18,11 +32,29 @@
 
 .card-body2{
     
-  background-color: pink;
+  background-color:  #fceee1;
   margin: 0 auto;
   
 
 
+}
+
+#mail{
+  border-radius: 5rem;
+  border-color: #fceee1;
+}
+
+#passw{
+  border-radius: 5rem;
+}
+
+#codigo{
+  border-radius: 5rem;
+}
+
+.card-wrap{
+  display: flex;
+  flex-flow: wrapS;
 }
 
 #correo{
