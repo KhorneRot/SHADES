@@ -1,34 +1,31 @@
 /* Carrito */
-.contenedor{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    /* min-height: 100vh; */
-}
-.compras{
-    flex-wrap: wrap;
-   
-}
 
-.table{
+/* .table{
     
     width: 60%;
+} */
+
+h1 {
+    font-family: 'Domine', serif;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 15px;
+    margin: 32px;
 }
 
-.resumen{
-    float: right;
-    background-color: #FCEEE1;
-    margin-left: 60px;
-    padding-left: 20px;
-
+template{
+    margin: auto;
 }
 
-
-.btnn{
-    background-color: #D49090;
+.titulo h2 {
+    font-family: 'Domine', serif;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 15px;
+    margin: 52px;
 }
-
 
 /* cartas */
 .cards{
