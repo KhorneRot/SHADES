@@ -1,0 +1,76 @@
+/* Carrito */
+
+/* .table{
+    
+    width: 60%;
+} */
+
+h1 {
+    font-family: 'Domine', serif;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 15px;
+    margin: 32px;
+}
+
+.btn-dark{
+    border-radius: 15px;
+    float: right;
+    border: none;
+}
+
+button{
+    border-color: transparent;
+}
+
+.btn-info{
+    border-color: transparent;
+}
+.btn-danger{
+    border-color: transparent;
+}
+
+h2 {
+    font-family: 'Domine', serif;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 15px;
+    margin: 52px;
+}
+
+/* cartas */
+.cards{
+    margin-bottom: 21px;
+    border-radius: 0%;
+    text-align: left;
+    align-items: baseline;
+
+}
+
+#cardBody{
+    
+       
+    background-color: #d5cfcf;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size: small;
+    
+    
+}
+#icon{
+    border-radius: 15px;
+    width: 25px;
+    height: 25px;
+    float:inline-start;
+    margin-left: 90px;
+}
+.card-img-top{
+    display:block;
+    object-position: center;
+    object-fit: cover;
+    width: auto;
+    height: 220px;
+    
+}
