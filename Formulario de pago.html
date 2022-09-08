@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" href="assets/img/iconos/SHADES-LOGO.svg">
-    <link rel="stylesheet" href="assets/css/checkout.css">
+    <link rel="stylesheet" href="assets/css/new-checkout.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <script src="assets/js/nav.js"></script>
     <script src="assets/js/checkout.js"></script>
@@ -93,73 +93,99 @@
 
 
 
+    <!--Apartado de pago-->
 
-         
-        
-   
+    <div class="contenedor">
 
- 
-
-          <!--Apartado de pago-->
-
-          <div class="contenedor">
-            <div class="row mx-4 py-4">
-            <div class="col-sm-6">
-              <div class="card-wrap">
-                <div class="card-body1" style="height: 753px;">
-                  
-                  <p class="card-text py-3">Cuenta --- Envío --- Pago</p>
-                  <h5 class="card-envio mx-5 ">Detalles de la cuenta</h5>
-                  <p class="car-tex mx-5">Dirección de Correo Electrónico</p>
-                  <div class="form-group  ">
-                    <label for="inputEmail3" class="form-label mx-5"></label>
-                    <div class="mx-5">
-                      <input id="mail" type="email" class="form-control" id="inputEmail3">
-                    </div>
+      <form action="">
+  
+          <div class="row ">
+  
+              <div class="col">
+  
+                  <h3 class="title">Dirección de Envío</h3>
+  
+                  <div class="inputBox">
+                      <span>Nombre Completo :</span>
+                      <input type="text" placeholder="Scarlett Johansson">
                   </div>
-                  <p  class="pass mx-5 py-2">Contraseña</p>
-                  <div class="form-group ">
-                    <label for="inputPassword3" class="form-label mx-5"></label>
-                    <div class="mx-5">
-                      <input id="passw" type="password" class="form-control" id="inputPassword3">
-                    </div>
+                  <div class="inputBox">
+                      <span>Correo Electrónico :</span>
+                      <input type="email" placeholder="scarlett@example.com">
                   </div>
-                  <br>
-                  <p class="count mx-5 text-right"><a href="https://www.google.com.mx" style="color: black;">Registrese para tener una cuenta   </a><a id="boton2" href="#" class="btn btn-primary" onclick="getData()">Iniciar Sesión</a></p> 
-                  <br>
-                  <br>
-                  <hr class="line py-"style="color: black" />
-                  <p class="count mx-5 text-right"><a href="https://www.google.com.mx" style="color: black;">Cancelar Pedido</a> <a id="boton3" href="#" class="btn btn-primary" ">Detalles de la compra</a></p> 
+                  <div class="inputBox">
+                      <span>Calle :</span>
+                      <input type="text" placeholder="">
                   </div>
+                  <div class="inputBox">
+                      <span>Ciudad :</span>
+                      <input type="text" placeholder="">
+                  </div>
+  
+                  <div class="flex">
+                      <div class="inputBox">
+                          <span>Estado :</span>
+                          <input type="text" placeholder="">
+                      </div>
+                      <div class="inputBox">
+                          <span>CP :</span>
+                          <input type="text" placeholder="52700">
+                      </div>
+                  </div>
+  
               </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card-wrap" style="width: 590px;"></div>
-                <div  class="card-body2" style="height: 753px;">
-                  <h5 class="card-title mx-5 py-4">Resumén del pedido</h5>
-                 <div id="pinceles" class="contain">
-                  <img id="imagproducto" class= "img-fluid mx-5" src="assets/img/checkout/pinceles.jpg" style="width: 483px; height: 120px" alt="">
-                </div>
-                  <h6   class="mx-5 py-1 text-right">Set de Brochas Profesionales <a id="boton1" href="#" class="btn btn-primary text-right">Agregar mas productos</a></h6>
-                  <h6 class="mx-5 text-right">$750.45</h6>
-                  <p id="descuento" class="mx-5">Codigo de descuento / tarjeta de regalo</p>
-                  <div id="codigo" class="form-group ">
-                    <label for="inputcodigo" class="form-label mx-5"></label>
-                    <div class="mx-5">
-                      <input id="codigo" type="codigo" class="form-control" id="codigo">
-                    </div>
-                  </div>            
-                  <h6 class="mx-5 text-right">SubTotal  $745</h6>
-                  <h6 class="mx-5 text-right">IVA    $5.45</h6>
-                  <h6 class="mx-5 text-right">Envío Gratis</h6>
-                  <h6 class="mx-5 text-right">Total $750.45</h6> 
-                  <hr class="line py-"style="color: black" /> 
-                  <p class="count mx-5  text-right"><a href="https://www.google.com.mx" style="color: black;">¡Gracias Por tu Compra!</a>  <a id="boton4" href="#" class="btn btn-primary">Realizar Compra</a></p>
-                  
-                
+  
+              <div class="col">
+  
+                  <h3 class="title">Pago</h3>
+  
+                  <div class="inputBox">
+                      <span>Se aceptan las siguientes tarjetas :</span>
+                      <img src="assets/img/checkout/card_img.png" alt="">
+                  </div>
+                  <div class="inputBox">
+                      <span>Titular de la Tarjeta :</span>
+                      <input type="text" placeholder="Scarllet Johansson">
+                  </div>
+                  <div class="inputBox">
+                      <span>Número de la tarjeta de credito :</span>
+                      <input type="number" placeholder="1111-2222-3333-4444">
+                  </div>
+                  <div class="inputBox">
+                      <span>Mes de expiración :</span>
+                      <input type="text" placeholder="january">
+                  </div>
+  
+                  <div class="flex">
+                      <div class="inputBox">
+                          <span>Año de Exp :</span>
+                          <input type="number" placeholder="2022">
+                      </div>
+                      <div class="inputBox">
+                          <span>CVV :</span>
+                          <input type="text" placeholder="1234">
+                      </div>
+                  </div>
+  
               </div>
-            </div>
+      
           </div>
+  
+          <input type="submit" value="Proceder al pago" class="submit-btn">
+  
+      </form>
+  
+  </div>    
+
+
+          
+
+
+
+
+
+
+
 
 
 <!-- FOOTER -->
