@@ -1,0 +1,40 @@
+@media (max-width:676px){
+    #map{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.form-control:focus {
+    border-color: #D49090 !important;
+    box-shadow: 0 0 5px #D49090 !important;
+  }
+
+#este{
+
+    height: fit-content; 
+}
+.colorRosa{
+    background-color: #D49090 ;
+}
+
+
+#map {
+    height: 100%;
+    min-height: 500px;
+     min-width: 300px ;
+    padding-right: 5px;
+  }
+  
+
+
+
+.tamanioFuente{
+    font-size: 16px;
+
+}
+
+#espacio{
+
+    color: white;
+}

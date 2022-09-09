@@ -1,0 +1,116 @@
+/*CSS de about shades*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+
+
+.nuestrasfotos{
+    margin: 100px 25px 0px 25px;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+.nombres {
+  font-weight: bold;
+}
+
+
+
+
+.iconosarturo{
+    width:45px;
+    margin: 5px;
+    margin-top: 40px;
+}
+
+
+.titulosaboutshades{
+    font-size: 40px;
+}
+
+
+
+
+
+.accordion-button:hover {
+  background-color: #FCEEE1 !important;
+  color: #000000; 
+}
+
+
+
+
+.accordion-button:link {
+  background-color: #FCEEE1 !important;
+  color: #000000; 
+}
+
+
+
+
+.accordion-button:visited {
+  background-color: #FCEEE1 !important;
+  color: #000000; 
+  
+}
+
+
+
+
+.accordion-button:active  {
+  background-color: #FCEEE1 !important;
+  color: #000000; 
+}
+
+
+
+.accordion-button:focus  {
+  background-color: #FCEEE1 !important;
+  color: #000000; 
+  box-shadow: 0 0 0 0.2rem rgb(255, 255, 255) !important;
+}
+
+
+
+
+
+.accordion-button {
+  background-color: #FCEEE1 !important;
+  border: none;
+  color: #000000;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+
+
+.accordion-body{
+  font: 20px; color: #000000; 
+}
+
+
+
+
+.filademarcas{
+  display: flex;
+  align-items: center;
+}
+
+
+
+.imgmarcas{
+  margin: 50px;
+}

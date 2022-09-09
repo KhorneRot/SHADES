@@ -1,0 +1,29 @@
+[
+	{
+		"precio": 499,
+		"id": 1,
+		"title": "Crema facial",
+		"thumbnailUrl": "assets/img/Carrito/cafeinafacial.jpg"
+	},
+
+	{
+		"precio": 549,
+		"id": 2,
+		"title": "Crema facial ligera",
+		"thumbnailUrl": "assets/img/Carrito/cremafacialligera.jpg"
+	},
+
+	{
+		"precio": 599,
+		"id": 3,
+		"title": "Hidratante",
+		"thumbnailUrl": "assets/img/Carrito/hidratante.jpg"
+	},
+
+	{
+		"precio": 429,
+		"id": 4,
+		"title": "Loción tonificante",
+		"thumbnailUrl": "assets/img/Carrito/lociontonificante.jpg"
+	}
+]

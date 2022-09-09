@@ -1,0 +1,38 @@
+/* html,
+body,
+#centro {
+    background-color: rgb(230, 196, 196);
+    
+    height: 55%;
+}
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+#centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* ! quitar si hay cosas en whislist */
+    /* height: 500px; */
+   
+}
+
+#subTitulo{
+    text-align: justify;
+}
+
+#imgDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.sombra{
+    box-shadow: 1rem 1rem 0.2rem rgb(201, 182, 182);;
+}
+
+#textoNada{
+    font-family: 'Poppins', ;
+    font-size: 18px;
+}
