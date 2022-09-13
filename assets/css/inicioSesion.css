@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #d49090;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.contenedorR{
+    width: 100%;
+    padding: 15px;
+}
+
+.formularioR{
+    background: white;
+    margin-top: 150px;
+    padding: 3px;
+}
+
+h1{
+    text-align: center;
+    color: black;
+    font-size: 40px;
+}
+
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.input-contenedorR{
+    margin-bottom: 15px;
+    border: 1px solid #aaa
+}
+
+.fa-solid{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.buttonR{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: #d49090;
+    padding: 15px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.buttonR:hover{
+    background: #d18080;
+}
+
+p{
+    text-align: center;
+}
+.linkR{
+    text-decoration: none;
+    color: #d49090;
+    font-weight: 600;
+}
+.linkR:hover{
+    color: #d18080;
+}
+@media(min-width:768px){
+    .formularioR{
+        margin: auto;
+        width: 500px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        border-radius: 1%;
+    }
+}
