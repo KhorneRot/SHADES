@@ -33,30 +33,29 @@
       <div class="d-flex justify-content-center">
         <div class="row align-content-center">
           <div class="col-sm-12">
-          <nav>
-            <ul class="nav-links">
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="aboutshades.html">Acerca de</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-              <li><a href="TiendaShades.html">Tienda</a>
-                
-              </li>
-            </ul>
+            <nav>
+              <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="aboutshades.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="TiendaShades.html">Tienda</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+        <div class="nav-links">
+          <div class="row" style="margin-left: 10px;">
+            <a class="nav-link" href="inicioSesion.html"><img src="assets/img/iconos/User.svg" alt=""></a>
+            <a class="nav-link" href="carrito.html"><img src="assets/img/iconos/Carrito.svg" alt=""></a>
+            <form class="form-inline my-1 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <a href="" class=" my-1 my-sm-0" type="submit"></a>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="nav-links">
-        <div class="row" style="margin-left: 10px;">
-          <a class="nav-link" href="wishlist.html"><img src="assets/img/iconos/Corazon.svg" alt=""></a>
-          <a class="nav-link" href="carrito.html"><img src="assets/img/iconos/Carrito.svg" alt=""></a>
-        <form class="form-inline my-1 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <a href="" class=" my-1 my-sm-0" type="submit"></a> 
-        </form>
+      </nav>
       </div>
-      </div>
-    </div>
-    </nav>
-</div>
       <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
       <div class="overlay" id="mobile-menu">
         <a onclick="closeNav()" href="" class="close">&times;</a>
@@ -65,12 +64,12 @@
           <a href="TiendaShades.html">Tienda</a>
           <a href="aboutshades.html">Acerca de</a>
           <a href="contacto.html">Contacto</a>
-          <a href="wishlist.html"> <img src="assets/img/iconos/Corazon.svg" alt=""> Favoritos</a>
+          <a href="inicioSesion.html"> <img src="assets/img/iconos/User.svg" alt=""> Perfil</a>
           <a href="carrito.html"> <img src="assets/img/iconos/Carrito.svg" alt=""> Carrito</a>
           <form class="form-inline my-1 my-lg-0">
             <input class="form-control mr-sm-0" type="search" placeholder="Search" aria-label="Search">
-            <a href="" class=" my-0 my-sm-0" type="submit"></a> 
-          </form>   
+            <a href="" class=" my-0 my-sm-0" type="submit"></a>
+          </form>
         </div>
       </div>
     </header>
@@ -233,8 +232,6 @@
 
                 <div class="d-flex row justify-content-around align-content-center">
 
-                  <svg class="icono-corazon" viewBox="0 0 256 256"><path fill="white" d="M128 222a6 6 0 0 1-2.9-.8c-1.1-.5-25.9-14.6-51.1-37.2c-34.5-31.1-52-62-52-92a58 58 0 0 1 106-32.6A58 58 0 0 1 234 92c0 30-17.5 60.9-52 92c-25.2 22.6-50 36.7-51.1 37.2a6 6 0 0 1-2.9.8ZM80 46a46 46 0 0 0-46 46c0 57.3 77.8 107.3 94 117c16.2-9.7 94-59.7 94-117a46 46 0 0 0-88.5-17.7a5.9 5.9 0 0 1-11 0A46 46 0 0 0 80 46Z"/></svg>
-
                   <svg class="ml-3 icono-carrito" viewBox="0 0 256 256"><path fill="white" d="M94 216a14 14 0 1 1-14-14a14 14 0 0 1 14 14Zm90-14a14 14 0 1 0 14 14a14 14 0 0 0-14-14Zm43.5-128.4L201.1 166a22.2 22.2 0 0 1-21.2 16H84.1a22.2 22.2 0 0 1-21.2-16L36.5 73.8v-.3l-9.8-34a1.9 1.9 0 0 0-1.9-1.5H8a6 6 0 0 1 0-12h16.8a14.1 14.1 0 0 1 13.5 10.2L46.8 66h174.9a6 6 0 0 1 4.8 2.4a6 6 0 0 1 1 5.2ZM213.8 78H50.2l24.3 84.7a10 10 0 0 0 9.6 7.3h95.8a10 10 0 0 0 9.6-7.3Z"/></svg>                                        
 
                 </div>
@@ -262,9 +259,7 @@
                 </div>
 
                 <div class="d-flex row justify-content-around align-content-center">
-
-                  <svg class="icono-corazon" viewBox="0 0 256 256"><path fill="white" d="M128 222a6 6 0 0 1-2.9-.8c-1.1-.5-25.9-14.6-51.1-37.2c-34.5-31.1-52-62-52-92a58 58 0 0 1 106-32.6A58 58 0 0 1 234 92c0 30-17.5 60.9-52 92c-25.2 22.6-50 36.7-51.1 37.2a6 6 0 0 1-2.9.8ZM80 46a46 46 0 0 0-46 46c0 57.3 77.8 107.3 94 117c16.2-9.7 94-59.7 94-117a46 46 0 0 0-88.5-17.7a5.9 5.9 0 0 1-11 0A46 46 0 0 0 80 46Z"/></svg>
-
+               
                   <svg class="ml-3 icono-carrito" viewBox="0 0 256 256"><path fill="white" d="M94 216a14 14 0 1 1-14-14a14 14 0 0 1 14 14Zm90-14a14 14 0 1 0 14 14a14 14 0 0 0-14-14Zm43.5-128.4L201.1 166a22.2 22.2 0 0 1-21.2 16H84.1a22.2 22.2 0 0 1-21.2-16L36.5 73.8v-.3l-9.8-34a1.9 1.9 0 0 0-1.9-1.5H8a6 6 0 0 1 0-12h16.8a14.1 14.1 0 0 1 13.5 10.2L46.8 66h174.9a6 6 0 0 1 4.8 2.4a6 6 0 0 1 1 5.2ZM213.8 78H50.2l24.3 84.7a10 10 0 0 0 9.6 7.3h95.8a10 10 0 0 0 9.6-7.3Z"/></svg>                                            
 
                 </div>
@@ -297,9 +292,7 @@
                 </div>
 
                 <div class="d-flex row justify-content-around align-content-center">
-
-                  <svg class="icono-corazon" viewBox="0 0 256 256"><path fill="white" d="M128 222a6 6 0 0 1-2.9-.8c-1.1-.5-25.9-14.6-51.1-37.2c-34.5-31.1-52-62-52-92a58 58 0 0 1 106-32.6A58 58 0 0 1 234 92c0 30-17.5 60.9-52 92c-25.2 22.6-50 36.7-51.1 37.2a6 6 0 0 1-2.9.8ZM80 46a46 46 0 0 0-46 46c0 57.3 77.8 107.3 94 117c16.2-9.7 94-59.7 94-117a46 46 0 0 0-88.5-17.7a5.9 5.9 0 0 1-11 0A46 46 0 0 0 80 46Z"/></svg>
-
+                  
                   <svg class="ml-3 icono-carrito" viewBox="0 0 256 256"><path fill="white" d="M94 216a14 14 0 1 1-14-14a14 14 0 0 1 14 14Zm90-14a14 14 0 1 0 14 14a14 14 0 0 0-14-14Zm43.5-128.4L201.1 166a22.2 22.2 0 0 1-21.2 16H84.1a22.2 22.2 0 0 1-21.2-16L36.5 73.8v-.3l-9.8-34a1.9 1.9 0 0 0-1.9-1.5H8a6 6 0 0 1 0-12h16.8a14.1 14.1 0 0 1 13.5 10.2L46.8 66h174.9a6 6 0 0 1 4.8 2.4a6 6 0 0 1 1 5.2ZM213.8 78H50.2l24.3 84.7a10 10 0 0 0 9.6 7.3h95.8a10 10 0 0 0 9.6-7.3Z"/></svg>                                          
 
                 </div>
@@ -328,9 +321,7 @@
                 </div>
 
                 <div class="d-flex row justify-content-around align-content-center">
-
-                  <svg class="icono-corazon" viewBox="0 0 256 256"><path fill="white" d="M128 222a6 6 0 0 1-2.9-.8c-1.1-.5-25.9-14.6-51.1-37.2c-34.5-31.1-52-62-52-92a58 58 0 0 1 106-32.6A58 58 0 0 1 234 92c0 30-17.5 60.9-52 92c-25.2 22.6-50 36.7-51.1 37.2a6 6 0 0 1-2.9.8ZM80 46a46 46 0 0 0-46 46c0 57.3 77.8 107.3 94 117c16.2-9.7 94-59.7 94-117a46 46 0 0 0-88.5-17.7a5.9 5.9 0 0 1-11 0A46 46 0 0 0 80 46Z"/></svg>
-
+                  
                   <svg class="ml-3 icono-carrito" viewBox="0 0 256 256"><path fill="white" d="M94 216a14 14 0 1 1-14-14a14 14 0 0 1 14 14Zm90-14a14 14 0 1 0 14 14a14 14 0 0 0-14-14Zm43.5-128.4L201.1 166a22.2 22.2 0 0 1-21.2 16H84.1a22.2 22.2 0 0 1-21.2-16L36.5 73.8v-.3l-9.8-34a1.9 1.9 0 0 0-1.9-1.5H8a6 6 0 0 1 0-12h16.8a14.1 14.1 0 0 1 13.5 10.2L46.8 66h174.9a6 6 0 0 1 4.8 2.4a6 6 0 0 1 1 5.2ZM213.8 78H50.2l24.3 84.7a10 10 0 0 0 9.6 7.3h95.8a10 10 0 0 0 9.6-7.3Z"/></svg>                                           
 
                 </div>
@@ -497,7 +488,7 @@
         </div>
 
         <div class="mt-3">
-          <p><a class="text-decoration-none text-reset" href="wishlist.html">Lista de deseos</a></p>
+          
           <p><a class="text-decoration-none text-reset" href="carrito.html">Carrito de compras</a></p>
           <p><a class="text-decoration-none text-reset" href="Formulario de pago.html">Checkout</a></p>
         </div>
