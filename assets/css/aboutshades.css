@@ -1,18 +1,20 @@
 /*CSS de about shades*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 *{
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
 }
 
 
 
-.nuestrasfotos{
+/*.card .nuestrasfotos{
     margin: 100px 25px 0px 25px;
-    width: 200px;
-    height: 200px;
-}
+    width: 1rem important!;
+    height: 1rem important!; 
+}*/
 
 
 
@@ -28,6 +30,8 @@
     width:45px;
     margin: 5px;
     margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 
@@ -39,7 +43,7 @@
 
 
 
-.accordion-button:hover {
+/*.accordion-button:hover {
   background-color: #FCEEE1 !important;
   color: #000000; 
 }
@@ -74,15 +78,15 @@
 .accordion-button:focus  {
   background-color: #FCEEE1 !important;
   color: #000000; 
-  box-shadow: 0 0 0 0.2rem rgb(255, 255, 255) !important;
-}
+  box-shadow: 0 0 0 0.2rem rgb(255, 255, 255) !important; 
+}*/
 
 
 
 
 
 .accordion-button {
-  background-color: #FCEEE1 !important;
+  background-color: #fff !important;
   border: none;
   color: #000000;
   padding: 16px 32px;
@@ -113,4 +117,73 @@
 
 .imgmarcas{
   margin: 50px;
+}
+
+
+
+
+/*Menu desplegable*/
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5 rem;
+  box-shadow: 0 2 px 5px p rgba(0,0,0,0.25);
+}
+
+.accordion-item-header {
+  padding: 0.5 rem 3rem 0.5rem 1rem;
+  border: none;
+  min-height: 3.5rem;
+  line-height: 1.25 rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-item-header::after {
+
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  transition: transform 0;
+}
+
+
+.accordion-item-header.active::after{
+  content: "\002B" ;
+  transform: rotate(45deg);
+}
+
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  padding: 0px 30px;
+  
+}
+
+
+.accordion-item-body-content {
+  padding: 1 rem;
+  line-height: 1.5 rem;
+  border-top: 1 px solid;
+  border-image: linear-gradient(to right, #008f68, transparent) 1;
+}
+
+
+@media(max-width:767px) {
+  html {
+      font-size: 14px;
+  }
 }
