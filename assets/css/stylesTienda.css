@@ -199,14 +199,14 @@ h6{
 }
 
 #categoria{
-  text-decoration: none!important;
-  outline: none!important;
+  text-decoration: none;
+  outline: none;
   color:#000000;
-  border-color: transparent!important;
-  outline-style: none!important;
-  outline-color: white!important;
+  border-color: transparent;
+  outline-style: none;
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  font-family: 'Poppins', sans-serif;
   
-
 }
 
 #subtitulo{
@@ -457,6 +457,22 @@ body {
     /*550px - pantalla celular*/
   }
 
+  @media (max-width:375px){
+    .card-img-top{
+      max-width: 100%;
+    }
+
+    #cards{
+      max-width: 100%;
+
+    }
+    #navegacion{
+      margin:1px;
+      padding:26px;
+      align-content: left;
+    }
+
+  }
   @media (max-width:896px){
     .card-img-top{
       height: 10rem;
