@@ -6,8 +6,13 @@
     <title>About SHADES</title>
 
 
-    <!--Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+   <!-- Bootstrap4.6.2 CSS -->
+   <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+   integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+   crossorigin="anonymous"/>
+
+
 
     <!--Mi CSS-->
     <link rel="stylesheet" href="assets/css/aboutshades.css">
@@ -18,6 +23,9 @@
     <link rel="stylesheet" href="assets/css/footer.css">
 
 
+    <!--CSS footer-->
+    <link rel="stylesheet" href="assets/css/footer.css">
+
   </head>
 
 
@@ -27,32 +35,36 @@
 
 
 
-  <!-- BARRA NAVEGACION -->
-  <header class="header sticky-top">
+   <!-- BARRA NAVEGACION 
+   <header class="header sticky-top">
     <div class="logo">
-      <img src="assets/img/iconos/SHADES-LOGO.svg" alt="logo de la marca" />
+      <a href="index.html"><img src="assets/img/index/iconos/SHADES-LOGO.svg" alt="logo de la marca" /></a>
     </div>
-    <div class="container d-flex justify-content-center">
+    <div class="d-flex justify-content-center">
       <div class="row align-content-center">
-        <div class="col-12">
+        <div class="col-sm-12">
         <nav>
           <ul class="nav-links">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="TiendaShades.html">Tienda</a></li>
             <li><a href="aboutshades.html">Acerca de</a></li>
             <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="TiendaShades.html">Tienda</a>
+              
+            </li>
           </ul>
       </div>
     </div>
-    <a href="" class="btn"
-      ><img src="assets/img/iconos/Lupa.svg" alt=""
-    /></a>
-    <a href="wishlist.html" class="btn"
-      ><img src="assets/img/iconos/Corazon.svg" alt=""
-    /></a>
-    <a href="carrito.html" class="btn"
-      ><img src="assets/img/iconos/Carrito.svg" alt=""
-    /></a>
+    <div class="nav-links">
+      <div class="row" style="margin-left: 10px;">
+        <a class="nav-link" href="wishlist.html"><img src="assets/img/iconos/Corazon.svg" alt=""></a>
+        <a class="nav-link" href="carrito.html"><img src="assets/img/iconos/Carrito.svg" alt=""></a>
+      <form class="form-inline my-1 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <a href="" class=" my-1 my-sm-0" type="submit"></a> 
+      </form>
+    </div>
+    </div>
+  </div>
   </nav>
 </div>
     <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
@@ -63,12 +75,173 @@
         <a href="TiendaShades.html">Tienda</a>
         <a href="aboutshades.html">Acerca de</a>
         <a href="contacto.html">Contacto</a>
-        <a href=""> <img src="assets/img/iconos/Lupa.svg" alt=""> Buscar</a>
         <a href="wishlist.html"> <img src="assets/img/iconos/Corazon.svg" alt=""> Favoritos</a>
         <a href="carrito.html"> <img src="assets/img/iconos/Carrito.svg" alt=""> Carrito</a>
+        <form class="form-inline my-1 my-lg-0">
+          <input class="form-control mr-sm-0" type="search" placeholder="Search" aria-label="Search">
+          <a href="" class=" my-0 my-sm-0" type="submit"></a> 
+        </form>   
       </div>
     </div>
   </header>
+  FIN BARRA NAVEGACION -->
+
+
+      <!-- BARRA NAVEGACION 2 
+      <header class="header sticky-top">
+        <div class="logo">
+          <a href="index.html"><img src="assets/img/index/iconos/SHADES-LOGO.svg" alt="logo de la marca" /></a>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="row align-content-center">
+            <div class="col-sm-12">
+            <nav>
+              <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="aboutshades.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="TiendaShades.html">Tienda</a>
+                  
+                </li>
+              </ul>
+          </div>
+        </div>
+        <div class="nav-links">
+          <div class="row" style="margin-left: 10px;">
+            <a class="nav-link" href="wishlist.html"><img src="assets/img/iconos/Corazon.svg" alt=""></a>
+            <a class="nav-link" href="carrito.html"><img src="assets/img/iconos/Carrito.svg" alt=""></a>
+          <form class="form-inline my-1 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <a href="" class=" my-1 my-sm-0" type="submit"></a> 
+          </form>
+        </div>
+        </div>
+      </div>
+      </nav>
+  </div>
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+        <div class="overlay" id="mobile-menu">
+          <a onclick="closeNav()" href="" class="close">&times;</a>
+          <div class="overlay-content">
+            <a href="index.html">Inicio</a>
+            <a href="TiendaShades.html">Tienda</a>
+            <a href="aboutshades.html">Acerca de</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="wishlist.html"> <img src="assets/img/iconos/Corazon.svg" alt=""> Favoritos</a>
+            <a href="carrito.html"> <img src="assets/img/iconos/Carrito.svg" alt=""> Carrito</a>
+            <form class="form-inline my-1 my-lg-0">
+              <input class="form-control mr-sm-0" type="search" placeholder="Search" aria-label="Search">
+              <a href="" class=" my-0 my-sm-0" type="submit"></a> 
+            </form>   
+          </div>
+        </div>
+      </header>
+       FIN BARRA NAVEGACION -->
+
+
+           <!-- BARRA NAVEGACION 3
+    <header class="header sticky-top">
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/index/iconos/SHADES-LOGO.svg" alt="logo de la marca" /></a>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="row align-content-center">
+          <div class="col-sm-12">
+          <nav>
+            <ul class="nav-links">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="aboutshades.html">Acerca de</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="TiendaShades.html">Tienda</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+      <div class="nav-links">
+        <div class="row" style="margin-left: 10px;">
+          <a class="nav-link" href="wishlist.html"><img src="assets/img/iconos/Corazon.svg" alt=""></a>
+          <a class="nav-link" href="inicioSesion.html"><img src="assets/img/iconos/User.svg" alt=""></a>
+          <a class="nav-link" href="carrito.html"><img src="assets/img/iconos/Carrito.svg" alt=""></a>
+        <form class="form-inline my-1 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <a href="" class=" my-1 my-sm-0" type="submit"></a> 
+        </form>
+      </div>
+      </div>
+    </div>
+    </nav>
+</div>
+      <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+      <div class="overlay" id="mobile-menu">
+        <a onclick="closeNav()" href="" class="close">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html">Inicio</a>
+          <a href="TiendaShades.html">Tienda</a>
+          <a href="aboutshades.html">Acerca de</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="wishlist.html"> <img src="assets/img/iconos/Corazon.svg" alt=""> Favoritos</a>
+          <a href="inicioSesion.html"> <img src="assets/img/iconos/User.svg" alt=""> Perfil</a>
+          <a href="carrito.html"> <img src="assets/img/iconos/Carrito.svg" alt=""> Carrito</a>
+          <form class="form-inline my-1 my-lg-0">
+            <input class="form-control mr-sm-0" type="search" placeholder="Search" aria-label="Search">
+            <a href="" class=" my-0 my-sm-0" type="submit"></a> 
+          </form>   
+        </div>
+      </div>
+    </header>
+    FIN BARRA NAVEGACION -->
+
+
+
+        <!-- BARRA NAVEGACION 4-->
+        <header class="header sticky-top">
+          <div class="logo">
+            <a href="index.html"><img src="assets/img/index/iconos/SHADES-LOGO.svg" alt="logo de la marca" /></a>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="row align-content-center">
+              <div class="col-sm-12">
+              <nav>
+                <ul class="nav-links">
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="aboutshades.html">Acerca de</a></li>
+                  <li><a href="contacto.html">Contacto</a></li>
+                  <li><a href="TiendaShades.html">Tienda</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+          <div class="nav-links">
+            <div class="row" style="margin-left: 10px;">
+              <a class="nav-link" href="inicioSesion.html"><img src="assets/img/iconos/User.svg" alt=""></a>
+              <a class="nav-link" href="carrito.html"><img src="assets/img/iconos/Carrito.svg" alt=""></a>
+            <form class="form-inline my-1 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <a href="" class=" my-1 my-sm-0" type="submit"></a> 
+            </form>
+          </div>
+          </div>
+        </div>
+        </nav>
+    </div>
+          <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+          <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+            <div class="overlay-content">
+              <a href="index.html">Inicio</a>
+              <a href="TiendaShades.html">Tienda</a>
+              <a href="aboutshades.html">Acerca de</a>
+              <a href="contacto.html">Contacto</a>
+              <a href="inicioSesion.html"> <img src="assets/img/iconos/User.svg" alt=""> Perfil</a>
+              <a href="carrito.html"> <img src="assets/img/iconos/Carrito.svg" alt=""> Carrito</a>
+              <form class="form-inline my-1 my-lg-0">
+                <input class="form-control mr-sm-0" type="search" placeholder="Search" aria-label="Search">
+                <a href="" class=" my-0 my-sm-0" type="submit"></a> 
+              </form>   
+            </div>
+          </div>
+        </header>
+        <!-- FIN BARRA NAVEGACION -->
 
 
 
@@ -76,7 +249,7 @@
 
 
 <!--espacio en blanco entre secciones-->
-<div class="container" style="padding: 30px;"></div>
+<div class="container" style="padding: 50px;"></div>
 
 
 
@@ -90,7 +263,7 @@
 
 
 <!--espacio en blanco entre secciones-->
-<div class="container-fluid" style="padding: 30px;"></div>
+<div class="container-fluid" style="padding: 70px;"></div>
 
 
 
@@ -99,6 +272,7 @@
 
 
 <!--Cards-->        
+
 <div class="container d-flex justify-content-evenly">
     <!--Card con imagen izquierda-->
 <div class="row">
@@ -111,6 +285,9 @@
     <p class="titulosaboutshades">
         Somos SHADES
     </p>
+    <br>
+    <br>
+    <br>
 <div class="card border-white">
   <img src="assets/img/aboutshades/hombremaquillaje.jpg" class="card-img-top" alt="..." style="margin-bottom: 50px;">
 </div>  
@@ -125,13 +302,13 @@
 <div class="col">
 
 <center>
-  <div class="card">
+  <div class="card bg-secondary">
     <img src="assets/img/aboutshades/mujermaquillaje.jpg" class="card-img-top" alt="..." >
     <div class="card-body">
 
 
 
-              <!--Acordeón-->
+              <!--Acordeón
               <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingOne">
@@ -164,6 +341,39 @@
                   </div>
                 </div>
               </div> 
+            -->
+
+            <!--Menu-->
+            <div class="accordion">
+              <div class="accordion-item">
+                  <div class="accordion-item-header active accordion-button">
+                      Quiénes somos
+                  </div>
+                  <div class="accordion-item-body">
+                      <div class="accordion-item-body-content"><p align='justify'>SHADES es una empresa que ofrece una alta variedad de cosméticos para todos los estilos. Sus productos están disponibles para comprar en línea y realiza envíos a toda la república mexicana.</p></div>
+                  </div>
+              </div>
+      
+              <div class="accordion-item">
+                  <div class="accordion-item-header accordion-button">
+                      Misión
+                  </div>
+                  <div class="accordion-item-body">
+                      <div class="accordion-item-body-content"><p align='justify'>Brindar productos cosméticos de calidad a quienquiera en cualquier rincón de México.</p></div>
+                  </div>
+              </div>
+      
+              <div class="accordion-item">
+                  <div class="accordion-item-header accordion-button">
+                      Visión
+                  </div>
+                  <div class="accordion-item-body">
+                      <div class="accordion-item-body-content"><p align='justify'>Ser el e-commerce de productos de maquillaje con mayor reconocimiento a nivel nacional.</p></div>
+                  </div>
+              </div>
+      
+      
+            </div>
 
 
 
@@ -194,30 +404,32 @@
 <!--Barra con iconos-->
 
 <div style="background-color:#FCEEE1; padding: 50px;" class="container-fluid" >
-	<div class"container">
-     	<div class="row text-center row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
-        <div class="col">
-            <img src="assets/img/iconos/ventas.jpg" alt="" class="iconosarturo">
-        <b><p style="font-size: 20px; ">Ventas a todo México</p></b>
-        <p style="font-size: 18px;">Realizamos envíos a toda la república</p>
-      </div>
+  <div class="container">
+    <div class="row text-center row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
-      <div class="col">
-        <img src="assets/img/iconos/compra.jpg" alt="" class="iconosarturo">
-        <b><p style="font-size: 20px; ">Compra en línea</p></b>
-        <p style="font-size: 18px;">Compra desde la comodidad de tu  hogar</p>
-      </div>
-
-
-      <div class="col">
-        <img src="assets/img/iconos/promociones.jpg" alt="" class="iconosarturo">
-        <b><p style="font-size: 20px; ">Grandes promociones</p></b>
-        <p style="font-size: 18px;">Encuentra ofertas en nuestros catálogos</p>
-      </div>
-	
-	</div>
-	</div>
+    <div class="col">
+          <img src="assets/img/iconos/ventas.jpg" alt="" class="iconosarturo">
+      <b><p style="font-size: 20px;">Ventas a todo México</p></b>
+      <p style="font-size: 18px;">Realizamos envíos a toda la república</p>
     </div>
+
+
+    <div class="col">
+      <img src="assets/img/iconos/compra.jpg" alt="" class="iconosarturo">
+      <b><p style="font-size: 20px; ">Compra en línea</p></b>
+      <p style="font-size: 18px;">Compra desde la comodidad de tu  hogar</p>
+    </div>
+    
+
+    <div class="col">
+      <img src="assets/img/iconos/promociones.jpg" alt="" class="iconosarturo">
+      <b><p style="font-size: 20px; ">Grandes promociones</p></b>
+      <p style="font-size: 18px;">Encuentra ofertas en nuestros catálogos</p>
+    </div>
+  
+    </div>
+  </div>
+</div>
 
 
 
@@ -234,25 +446,24 @@
 <!--Nuestro equipo-->
   <div class="container-fluid">
   
-    <div class="col" style="margin-left: 8%;">
+    <div class="container">
       <div class="row">
-          <p class="titulosaboutshades">Nuestro equipo</p>
-      </div>
-      <div class="row">
-          <p>
-          Somos un equipo lleno de ideas
-          <br>
-          siempre actualizado para ofrecerte los mejores productos
-        </p>
-      </div>
-
-
+        <p class="titulosaboutshades">Nuestro equipo</p>
+    </div>
+    <div class="row">
+        <p>
+        Somos un equipo lleno de ideas
+        <br>
+        siempre actualizado para ofrecerte los mejores productos
+      </p>
+    </div>
     </div>
   
 </div>
 
 
-
+<!--espacio en blanco entre secciones-->
+<div class="container-fluid" style="padding: 50px;"></div>
 
 
 
@@ -265,58 +476,132 @@
   
   
           <div class="col">
-              <img src="assets/img/aboutshades/josselyn.jpg" alt="" class="nuestrasfotos">
-              <p class="nombres" style="font-size: 20px">Josselyn</p>
+            <div class="card" style="height: 20rem; width: 12rem;">
+              <img src="assets/img/aboutshades/josselyn.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="nombres" style="font-size: 20px">Josselyn</p>
               <p style="font-size: 18px">Líder</p>
+              </div>
+            </div>
+            <!--  <img src="assets/img/aboutshades/josselyn.jpg" alt="" class="nuestrasfotos">
+              <p class="nombres" style="font-size: 20px">Josselyn</p>
+              <p style="font-size: 18px">Líder</p> -->
           </div>
   
           <div class="col">
-              <img src="assets/img/aboutshades/Arturo.jpg" alt="fotoarturo" class="nuestrasfotos">
-              <p class="nombres" style="font-size: 20px">Arturo</p>
+            <div class="card" style="height: 20rem; width: 12rem;">
+              <img src="assets/img/aboutshades/Arturo.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="nombres" style="font-size: 20px">Arturo</p>
               <p style="font-size: 18px">Soñador</p>
+              </div>
+            </div>
+              <!-- <img src="assets/img/aboutshades/Arturo.jpg" alt="fotoarturo" class="nuestrasfotos">
+              <p class="nombres" style="font-size: 20px">Arturo</p>
+              <p style="font-size: 18px">Soñador</p>-->
           </div>
           
           <div class="col">
-              <img src="assets/img/aboutshades/alejandro.jpg" alt="" class="nuestrasfotos">
-              <p class="nombres" style="font-size: 20px">Alejandro</p>
+            <div class="card" style="height: 20rem; width: 12rem;">
+              <img src="assets/img/aboutshades/alejandro.jpg" class="card-img-top" alt="..." >
+              <div class="card-body">
+                <p class="nombres" style="font-size: 20px">Alejandro</p>
               <p style="font-size: 18px">Divertido</p>
+              </div>
+            </div>
+              <!--<img src="assets/img/aboutshades/alejandro.jpg" alt="" class="nuestrasfotos">
+              <p class="nombres" style="font-size: 20px">Alejandro</p>
+              <p style="font-size: 18px">Divertido</p>-->
           </div>
                  
           <div class="col">
-              <img src="assets/img/aboutshades/hector.jpg" alt="" class="nuestrasfotos">
-              <p class="nombres" style="font-size: 20px">Héctor</p>
+            <div class="card" style="height: 20rem; width: 12rem;">
+              <img src="assets/img/aboutshades/hector.jpg" class="card-img-top" alt="..." >
+              <div class="card-body">
+                <p class="nombres" style="font-size: 20px">Héctor</p>
               <p style="font-size: 18px">Creativo</p>
+              </div>
+            </div>
+              <!--<img src="assets/img/aboutshades/hector.jpg" alt="" class="nuestrasfotos">
+              <p class="nombres" style="font-size: 20px">Héctor</p>
+              <p style="font-size: 18px">Creativo</p>-->
           </div>
                   
-          <div class="col">
-              <img src="assets/img/aboutshades/kaleb.jpg" alt="" class="nuestrasfotos">
-              <p class="nombres" style="font-size: 20px">Kaleb</p>
-              <p style="font-size: 18px">Carismático</p>
-          </div>
-  
-          <div class="col">
-              <img src="assets/img/aboutshades/maciel.jpg" alt="" class="nuestrasfotos">
-              <p class="nombres" style="font-size: 20px">Maciel</p> 
-              <p style="font-size: 18px">Original</p>
-          </div>
-                   
-          <div class="col">
-              <img src="assets/img/aboutshades/Arturo.jpg" alt="fotoarturo" class="nuestrasfotos">
-              <p class="nombres" style="font-size: 20px">Iker</p>
-              <p style="font-size: 18px">Innovador</p>
-          </div>
-  
-          <div class="col">
-              <img src="assets/img/aboutshades/cyntya.jpg" alt="" class="nuestrasfotos">
-              <p class="nombres" style="font-size: 20px">Cyntya</p>
-              <p style="font-size: 18px">Emprendedora</p>
-          </div>
+          
                   
                   
       </div>
   
   
   </div>
+
+
+<!--espacio en blanco entre secciones-->
+<div class="container-fluid" style="padding: 50px;"></div>
+
+
+
+  <div class="container d-flex justify-content-evenly">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="height: 20rem; width: 12rem;">
+          <img src="assets/img/aboutshades/kaleb.jpg" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <p class="nombres" style="font-size: 20px">Kaleb</p>
+          <p style="font-size: 18px">Carismático</p>
+          </div>
+        </div>
+          <!--<img src="assets/img/aboutshades/kaleb.jpg" alt="" class="nuestrasfotos">
+          <p class="nombres" style="font-size: 20px">Kaleb</p>
+          <p style="font-size: 18px">Carismático</p>-->
+      </div>
+
+      <div class="col">
+        <div class="card" style="height: 20rem; width: 12rem;">
+          <img src="assets/img/aboutshades/maciel.jpg" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <p class="nombres" style="font-size: 20px">Maciel</p>
+          <p style="font-size: 18px">Original</p>
+          </div>
+        </div>
+         <!-- <img src="assets/img/aboutshades/maciel.jpg" alt="" class="nuestrasfotos">
+          <p class="nombres" style="font-size: 20px">Maciel</p> 
+          <p style="font-size: 18px">Original</p>-->
+      </div>
+               
+      <div class="col">
+        <div class="card" style="height: 20rem; width: 12rem;">
+          <img src="assets/img/aboutshades/Arturo.jpg" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <p class="nombres" style="font-size: 20px">Iker</p>
+          <p style="font-size: 18px">Innovador</p>
+          </div>
+        </div>
+          <!--<img src="assets/img/aboutshades/Arturo.jpg" alt="fotoarturo" class="nuestrasfotos">
+          <p class="nombres" style="font-size: 20px">Iker</p>
+          <p style="font-size: 18px">Innovador</p>-->
+      </div>
+
+      <div class="col">
+        <div class="card" style="height: 20rem; width: 12rem;">
+          <img src="assets/img/aboutshades/cyntya.jpg" class="card-img-top" alt="..."  class="nuestrasfotos">
+          <div class="card-body">
+            <p class="nombres" style="font-size: 20px">Cyntya</p>
+          <p style="font-size: 18px">Emprendedora</p>
+          </div>
+        </div>
+         <!-- <img src="assets/img/aboutshades/cyntya.jpg" alt="" class="nuestrasfotos">
+          <p class="nombres" style="font-size: 20px">Cyntya</p>
+          <p style="font-size: 18px">Emprendedora</p>-->
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
   </center>
 
 
@@ -333,7 +618,7 @@
 <!--Sección de marcas-->
 <p class="titulosaboutshades" style="text-align: center">Marcas</p>
 <center>
-  <div class="container d-flex justify-content-evenly">
+  <div class="container justify-content-evenly">
     <div class="row filademarcas">
         <div class="col">
             <img class="imgmarcas" src="assets/img/aboutshades/marcas11.jpg" alt="">
@@ -517,6 +802,9 @@
 <!--JS de la navbar-->
 <script src="assets/js/nav.js"></script>
 
+
+<!--JS de aboutshades-->
+<script src="assets/js/aboutshades.js"></script>
 
   </body>
 </html>
