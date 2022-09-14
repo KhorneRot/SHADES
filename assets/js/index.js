@@ -3,31 +3,6 @@ const iconoCorazon = document.querySelectorAll('.icono-corazon');
 const iconoCarrito = document.querySelectorAll('.icono-carrito');
 
 /* Declaracion de funciones*/
-const animarCorazon = function(evento) {
-
-  if (evento.currentTarget.classList.contains('activo')) {
-
-    console.log(evento.currentTarget);
-    evento.currentTarget.innerHTML = '<path fill="CurrentColor" d="M128 222a6 6 0 0 1-2.9-.8c-1.1-.5-25.9-14.6-51.1-37.2c-34.5-31.1-52-62-52-92a58 58 0 0 1 106-32.6A58 58 0 0 1 234 92c0 30-17.5 60.9-52 92c-25.2 22.6-50 36.7-51.1 37.2a6 6 0 0 1-2.9.8ZM80 46a46 46 0 0 0-46 46c0 57.3 77.8 107.3 94 117c16.2-9.7 94-59.7 94-117a46 46 0 0 0-88.5-17.7a5.9 5.9 0 0 1-11 0A46 46 0 0 0 80 46Z"/>';
-    evento.currentTarget.classList.remove('activo');
-    evento.currentTarget.classList.add('inactivo');
-
-  } else if (
-    evento.currentTarget.classList.contains('inactivo')
-    ||
-    (!evento.currentTarget.classList.contains('inactivo') && !evento.currentTarget.classList.contains('activo'))
-  ) {
-
-    console.log(evento.currentTarget);
-    evento.currentTarget.innerHTML = '<path fill="CurrentColor" d="M236 92c0 30.6-17.7 62-52.6 93.4a314.3 314.3 0 0 1-51.5 37.6a8.1 8.1 0 0 1-7.8 0C119.8 220.6 20 163.9 20 92a60 60 0 0 1 108-36a60 60 0 0 1 108 36Z"/>';
-    evento.currentTarget.classList.remove('inactivo');
-    evento.currentTarget.classList.add('activo');
-
-
-  }
-
-}
-
 const animarCarrito = function(evento) {
 
   if (evento.currentTarget.classList.contains('activo')) {
@@ -52,12 +27,6 @@ const animarCarrito = function(evento) {
   }
 
 }
-
-
-// Generar EventListeners para cada icono de corazon
-iconoCorazon.forEach( function(elemento) {
-  elemento.addEventListener('click', animarCorazon);
-} );
 
 // Generar EventListeners para iconos de carrito
 iconoCarrito.forEach( function(elemento) {
