@@ -90,13 +90,13 @@
 @media screen and (max-width: 1381px) {
 
 
-  .nav-links, .btn{
+  .nav-links, .header .btn{
     display: none;
   }
   .menu{
     display: inherit;
   }
-}
+
 
 
 /* Nav */

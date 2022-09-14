@@ -92,6 +92,39 @@
   z-index:1;
 }
 
+/*REGLAS PARA LA ANIMACIÓN DE ICONOS*/
+.icono-corazon.activo , .icono-carrito.activo{
+  animation: 200ms linear 0s 1 forwards escalar;
+}
+
+.icono-corazon.inactivo , .icono-carrito.inactivo {
+  animation: 200ms linear 0s 1 backwards descalar;
+}
+
+@keyframes escalar{
+  0% {
+    transform: scale(1,1);
+  }
+  50% {
+    transform: scale(0.8,0.8);
+  }
+  100% {
+    transform: (1,1);
+  }
+  
+}
+
+@keyframes descalar{
+  0% {
+    transform: scale(1,1);
+  }
+  50% {
+    transform: scale(0.8,0.8);
+  }
+  100% {
+    transform: (1,1);
+  }
+}
 /* REGLAS PARA LA SECCIÓN DE SUSCRIPCION*/
 
 .suscripcion {
@@ -113,10 +146,16 @@
   color: black;
 }
 
+.suscripcion .btn-primary:focus{
+  border-color: #FCEEE1 !important;
+  background-color: #FCEEE1 !important;
+  box-shadow: 0 0 0 0.2rem #414141 !important;
+}
+
 .suscripcion .form-control:focus {
   color: black !important;
   border-color: black !important;
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem #414141 !important;
   transition: 100ms;
 }
 
