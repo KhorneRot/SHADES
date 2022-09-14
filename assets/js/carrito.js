@@ -1,3 +1,4 @@
+/* Variables */
 const cards = document.getElementById('cards')
 const templateCard = document.getElementById('template-card').content
 const items = document.getElementById('items')
@@ -7,7 +8,7 @@ const templateCarrito = document.getElementById('template-carrito').content
 const fragment = document.createDocumentFragment()
 let carrito = {}
 
-
+/* LocalStorage retiene elementos */
 document.addEventListener('DOMContentLoaded', ()=>{
 	fetchData()
 	if(localStorage.getItem('carrito')){
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 }
 )
 
+/* Botones */
 cards.addEventListener('click', e =>{
 	addCarrito(e)
 })
@@ -25,6 +27,7 @@ items.addEventListener('click', e=>{
 	btnAccion(e)
 })
 
+/* Funciones */
 const fetchData = async()=>{
 	try{
 		const res = await fetch('productos.json')
@@ -35,7 +38,7 @@ const fetchData = async()=>{
 		console.log(error)
 	}
 }
-
+/* Pintar carrito con elementos del json */
 const pintarCard = data=>{
 	data.forEach(item => {
 		templateCard.querySelector('h5').textContent = item.title
@@ -47,7 +50,7 @@ const pintarCard = data=>{
 	})
 	cards.appendChild(fragment)
 }
-
+/* Agregar elementos al carrito */
 const addCarrito = e =>{
 	//console.log(e.target)
 	//console.log(e.target.classList.contains('btn-dark'))
@@ -59,7 +62,7 @@ e.stopPropagation()
 }
 
 
-
+/* Almacenar elementos únicos dentro del json */
 const setCarrito = item => {
 	//console.log(objeto)
 	const producto = {
@@ -78,7 +81,7 @@ const setCarrito = item => {
 }
 
 const pintarCarrito = ()=> {
-	
+/* dentro del propio carrito, selectores */	
 	items.innerHTML = ''
 	Object.values(carrito).forEach(producto => {
 		templateCarrito.querySelector('th').textContent = producto.id
@@ -98,26 +101,26 @@ const pintarCarrito = ()=> {
 	localStorage.setItem('carrito', JSON.stringify(carrito))
 
 }
-
+/* va llenando la tabla, si no hay nada se pinta con vacío */
 const pintarFooter = () => {
 		footer.innerHTML = ''
 		if(Object.keys(carrito).length === 0){
 			footer.innerHTML = `
-			<th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+			<th scope="row" colspan="5">Carrito vacío</th>
 			`
 			return
 		}
-
+/* hace el cálculo del precio respecto a la cantidad */
 		const nCantidad = Object.values(carrito).reduce((acc, {cantidad})=> acc + cantidad, 0)
 		const nPrecio = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio, 0)
 		
 		templateFooter.querySelectorAll('td')[0].textContent = nCantidad
 		templateFooter.querySelector('span').textContent = nPrecio
-	
+	/* cards */
 		const clone = templateFooter.cloneNode(true)
 		fragment.appendChild(clone)
 		footer.appendChild(fragment)
-	
+	/* regresa el carrito a valores vacíos */
 		const btnVaciar = document.getElementById('vaciar-carrito')
 		btnVaciar.addEventListener('click', ()=>{
 			carrito = {}

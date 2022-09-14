@@ -175,13 +175,13 @@ h1{
 
 }
 
-h4{
+h2{
   font-weight: bold;
   font-family: 'pompin''sans-serif';
   text-align: left;
-  font-size:medium;
+  font-size:larger;
   position:relative;
-  left:  40px;
+  left:  100px;
   top: 150px
 
 }
@@ -308,23 +308,23 @@ left:340px;
 
 #carrusel1{
   border-radius: 30px;
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 200px;
+  max-height: 300px;
  
  
 }
 #carrusel2{
   border-radius: 30px;
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 200px;
+  max-height: 300px;
 
   
 }
 
 #carrusel3{
   border-radius: 30px;
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 200px;
+  max-height: 300px;
  
 
   
@@ -332,114 +332,117 @@ left:340px;
 
 #carrusel4{
   border-radius: 30px;
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 200px;
+  max-height: 300px;
  
  
   
 }
 #carrusel5{
   border-radius: 30px;
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 200px;
+  max-height: 300px;
   
   
   
 }
 #carrusel6{
   border-radius: 30px;
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 200px;
+  max-height: 300px;
   
   
   
 }
 #carrusel7{
   border-radius: 30px;
-  max-width: 300px;
-  max-height: 400px;
-  
+  max-width: 200px;
+  max-height: 300px;
   
   
 }
 
 #carrusel8{
   border-radius: 30px;
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 200px;
+  max-height: 300px;
  
   
   
 }
 #carrusel9{
   border-radius: 30px;
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 200px;
+  max-height: 300px;
 
   
   
 }
 #carrusel10{
   border-radius: 30px;
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 200px;
+  max-height: 300px;
  
 
   
 }
 #carrusel11{
   border-radius: 30px;
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 200px;
+  max-height: 300px;
+  
  
   
   
 }
 #carrusel12{
   border-radius: 30px;
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 200px;
+  max-height: 300px;
+  margin-right: 100px;
+  
  
   
   
 }
 #carrusel13{
   border-radius: 30px;
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 200px;
+  max-height: 300px;
+  margin-right: 100px;
   
   
   
 }
 #carrusel14{
   border-radius: 30px;
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 200px;
+  max-height: 300px;
+  margin-right: 100px;
   
  
   
 }
 #carrusel15{
   border-radius: 30px;
-  max-width: 300px;
-  max-height: 400px;
-  
+  max-width: 200px;
+  max-height: 300px;
+  margin-right: 100px;
   
   
 }
 
 #añadir{
-    background-color: #fceee1;
-    margin-left: auto;
-    font-family: 'pompin' 'sans-serif';
-    font-size: 20px;
-    padding-block: 4px;
-    position: relative;
-    bottom: 900px;
-    left:1000px;
-    color: #000000;
-    
-    
+  border-radius: 4px;
+  background-color: #fceee1;
+  font-family: 'pompin' 'sans-serif';
+  font-size: 20px;
+  padding-block: 4px;
+  margin-left: 20px;
+  position: relative;
+  color: #000000;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 
@@ -451,13 +454,7 @@ left:340px;
     padding-block: 4px;
     margin-left: 20px;
     position: relative;
-    bottom: 1000PX;
-    left:760px;
     color: #000000;
-    
-    
-    
-    
 }
 
 #centro{
@@ -516,4 +513,61 @@ svg:hover path{
   margin-right: 10px;
 }  
 
-  
+
+/*
+Codigo agregado
+*/
+
+
+#columnas3{
+  padding: 100px;
+  text-align: center;
+}
+
+#tituloCard{
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px;
+}
+
+#precioCard{
+  align-items: center;
+  font-size:40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px;
+  margin-top: -50px;
+}
+
+
+.ec-stars-wrapper {
+	/* Espacio entre los inline-block (los hijos, los `a`) 
+	   http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+	font-size: 0;
+	/* Podríamos quitarlo, 
+		pero de esta manera (siempre que no le demos padding), 
+		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+		también se esté haciendo hover a alguna estrella */
+	display: inline-block;
+  margin-top: -50px;
+}
+.ec-stars-wrapper a {
+	text-decoration: none;
+	display: inline-block;
+	/* Volver a dar tamaño al texto */
+	font-size: 32px;
+	font-size: 36px;
+	color: rgb(179, 179, 179);
+}
+
+.ec-stars-wrapper:hover a {
+	color: rgb(248, 227, 5);
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.ec-stars-wrapper > a:hover ~ a {
+	color: rgb(179, 179, 179);
+}
