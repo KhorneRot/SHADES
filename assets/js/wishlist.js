@@ -21,9 +21,9 @@ async function pWishlist(urlApi) {
 
         }
 
-        let nombreP = producto.nombre
-        let precioP = producto.precio
-        let imgP = producto.imagen
+        //let nombreP = producto.nombre
+        //let precioP = producto.precio
+       // let imgP = producto.imagen
         //nombrePrubea.innerHTML = nombreP
 
         //precioPrueba.innerHTML = "$ " + precioP
