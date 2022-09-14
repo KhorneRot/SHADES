@@ -29,6 +29,7 @@
 
 
 	<!-- Style propios -->
+	<link rel="icon" href="assets/img/iconos/SHADES-LOGO.svg">
 	<link rel="stylesheet" href="assets/css/navbar.css">
 	<link rel="stylesheet" href="assets/css/footer.css">
 	<link rel="stylesheet" href="assets/css/carrito.css">
@@ -37,58 +38,56 @@
 
 <body>
 
-<!-- BARRA NAVEGACION -->
-<header class="header sticky-top">
-	<div class="logo">
-	  <a href="index.html"><img src="assets/img/index/iconos/SHADES-LOGO.svg" alt="logo de la marca" /></a>
-	</div>
-	<div class="d-flex justify-content-center">
-	  <div class="row align-content-center">
-		<div class="col-sm-12">
-		<nav>
-		  <ul class="nav-links">
-			<li><a href="index.html">Inicio</a></li>
-			<li><a href="aboutshades.html">Acerca de</a></li>
-			<li><a href="contacto.html">Contacto</a></li>
-			<li><a href="TiendaShades.html">Tienda</a>
-			  
-			</li>
-		  </ul>
+    
+    <!-- BARRA NAVEGACION -->
+    <header class="header sticky-top">
+		<div class="logo">
+		  <a href="index.html"><img src="assets/img/index/iconos/SHADES-LOGO.svg" alt="logo de la marca" /></a>
+		</div>
+		<div class="d-flex justify-content-center">
+		  <div class="row align-content-center">
+			<div class="col-sm-12">
+			<nav>
+			  <ul class="nav-links">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="aboutshades.html">Acerca de</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+				<li><a href="tiendaShades.html">Tienda</a>
+				</li>
+			  </ul>
+		  </div>
+		</div>
+		<div class="nav-links">
+		  <div class="row" style="margin-left: 10px;">
+			<a class="nav-link" href="inicioSesion.html"><img src="assets/img/iconos/User.svg" alt=""></a>
+			<a class="nav-link" href="carrito.html"><img src="assets/img/iconos/Carrito.svg" alt=""></a>
+		  <form class="form-inline my-1 my-lg-0">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<a href="" class=" my-1 my-sm-0" type="submit"></a> 
+		  </form>
+		</div>
+		</div>
 	  </div>
-	</div>
-	<div class="nav-links">
-	  <div class="row" style="margin-left: 10px;">
-		<a class="nav-link" href="wishlist.html"><img src="assets/img/iconos/Corazon.svg" alt=""></a>
-		<a class="nav-link" href="carrito.html"><img src="assets/img/iconos/Carrito.svg" alt=""></a>
-	  <form class="form-inline my-1 my-lg-0">
-		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-		<a href="" class=" my-1 my-sm-0" type="submit"></a> 
-	  </form>
-	</div>
-	</div>
+	  </nav>
   </div>
-  </nav>
-</div>
-	<a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
-	<div class="overlay" id="mobile-menu">
-	  <a onclick="closeNav()" href="" class="close">&times;</a>
-	  <div class="overlay-content">
-		<a href="index.html">Inicio</a>
-		<a href="TiendaShades.html">Tienda</a>
-		<a href="aboutshades.html">Acerca de</a>
-		<a href="contacto.html">Contacto</a>
-		<a href="wishlist.html"> <img src="assets/img/iconos/Corazon.svg" alt=""> Favoritos</a>
-		<a href="carrito.html"> <img src="assets/img/iconos/Carrito.svg" alt=""> Carrito</a>
-		<form class="form-inline my-1 my-lg-0">
-		  <input class="form-control mr-sm-0" type="search" placeholder="Search" aria-label="Search">
-		  <a href="" class=" my-0 my-sm-0" type="submit"></a> 
-		</form>   
-	  </div>
-	</div>
-  </header>
-  <!-- FIN BARRA NAVEGACION -->
-
-
+		<a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+		<div class="overlay" id="mobile-menu">
+		  <a onclick="closeNav()" href="" class="close">&times;</a>
+		  <div class="overlay-content">
+			<a href="index.html">Inicio</a>
+			<a href="tiendaShades.html">Tienda</a>
+			<a href="aboutshades.html">Acerca de</a>
+			<a href="contacto.html">Contacto</a>
+			<a href="inicioSesion.html"> <img src="assets/img/iconos/User.svg" alt=""> Perfil</a>
+			<a href="carrito.html"> <img src="assets/img/iconos/Carrito.svg" alt=""> Carrito</a>
+			<form class="form-inline my-1 my-lg-0">
+			  <input class="form-control mr-sm-0" type="search" placeholder="Search" aria-label="Search">
+			  <a href="" class=" my-0 my-sm-0" type="submit"></a> 
+			</form>   
+		  </div>
+		</div>
+	  </header>
+	  <!-- FIN BARRA NAVEGACION -->
 
 
 	<div class="container">
@@ -169,9 +168,7 @@
 				<div class="card-body" id="cardBody">
 					<h5>Titulo</h5>
 					<p>$ precio</p>
-					<a title="Añadir a Wishlist" href="/wishlist.html"><img id="icon"
-							src="assets/img/paginaTienda/icon.png" alt="Icono Me gusta" srcset=""></a>
-
+					
 					<button class="btn btn-dark btn-sm"
 						style="background-color:#D49090; color:white;">¡Cómprame!</button>
 				</div>
@@ -267,7 +264,7 @@
         </div>
 
         <div class="mt-3">
-          <p><a class="text-decoration-none text-reset" href="wishlist.html">Lista de deseos</a></p>
+          
           <p><a class="text-decoration-none text-reset" href="carrito.html">Carrito de compras</a></p>
           <p><a class="text-decoration-none text-reset" href="Formulario de pago.html">Checkout</a></p>
         </div>
@@ -323,6 +320,7 @@
 
   </div>
 </footer>
+<!--  FIN DEL FOOTER  -->
 
 
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

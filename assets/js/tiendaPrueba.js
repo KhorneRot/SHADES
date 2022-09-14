@@ -1,7 +1,13 @@
+const prueba1 = document.getElementById("prueba1")
+const prueba2 = document.getElementById("prueba2")
+const prueba3 = document.getElementById("prueba3")
 
-const urlApi = "https://pokeapi.co/api/v2/pokemon/1"
 
-const nProductos = 9;
+///!----- sirve con api poke inicio
+
+const urlApi = "https://pokeapi.co/api/v2/pokemon/"
+
+let nProductos = 25;
 
 const cards = document.getElementById("centro")
 
@@ -12,7 +18,7 @@ async function pWishlist(urlApi) {
     try {
         const resp = await fetch(urlApi)
         const datos = await resp.json()
-    
+
         const producto = {
             nombre: datos.forms[0].name,
             habilidades: datos.abilities,
@@ -21,20 +27,20 @@ async function pWishlist(urlApi) {
 
         }
 
-        //let nombreP = producto.nombre
-        //let precioP = producto.precio
-       // let imgP = producto.imagen
+        let nombreP = producto.nombre
+        let precioP = producto.precio
+        let imgP = producto.imagen
         //nombrePrubea.innerHTML = nombreP
 
         //precioPrueba.innerHTML = "$ " + precioP
         //imgPrueba.src = imgP
 
-        let templateRow = `<div class="row justify-content-center"
-        id="cards">`
+        let templateRow = <div class="row justify-content-center"
+        id="cards">
         let templateCard = ""
     while (i < nProductos) {
     i++
-    templateCard += `<div class="col-3"
+    templateCard += <div class="col-md-3 col-lg-3 "
     id="cards">
             <div class="card h-60 mb-3">
     <img id="imgTienda"
@@ -58,7 +64,7 @@ async function pWishlist(urlApi) {
 
         </div>
 </div>
-</div>`
+</div>
 
 }
 
@@ -78,8 +84,26 @@ cards.innerHTML = templateRow
 
 }
 
-
-//pWishlist(urlApi)
-
+//!----- sirve con api poke fin
 
 
+prueba1.addEventListener("click",(e) =>{
+    e.preventDefault()
+    let link = urlApi + 1
+    pWishlist(link)
+})
+
+
+prueba2.addEventListener("click",(e) =>{
+    e.preventDefault()
+    let link = urlApi + 7
+    nProductos = 5
+    pWishlist(link)
+})
+
+prueba3.addEventListener("click",(e) =>{
+    e.preventDefault()
+    let link = urlApi + 5
+    nProductos = 10
+    pWishlist(link)
+})

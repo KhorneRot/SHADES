@@ -7,6 +7,7 @@
   padding: 0;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
+
 }
 
 .header{
@@ -96,7 +97,7 @@
   .menu{
     display: inherit;
   }
-
+}
 
 
 /* Nav */
@@ -170,6 +171,10 @@
 .form-control:focus {
   border-color: #D49090 !important;
   box-shadow: 0 0 5px #D49090 !important;
+}
+
+.form-control{
+  font-size: 16px !important;
 }
 
 /* FIN BARRA NAVEGADOR */
