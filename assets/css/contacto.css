@@ -44,3 +44,17 @@
 
     color: white;
 }
+
+.textError{
+    color: red;
+    ;
+}
+
+#botonContactanos{
+    height: 40px;
+    margin-right: 15px;
+}
+
+#errores{
+    font-size: 18px;
+}
