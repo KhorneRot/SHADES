@@ -32,7 +32,7 @@ $formRegistro.addEventListener('submit', (e) => {
     if (respuesta.ok) {
       url = window.location;
       const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1)
-      location.href = path +  'index.html';
+      location.href = path +  'loginvista.html';
     }
   }) // Fin de .then
   .catch(error => {
