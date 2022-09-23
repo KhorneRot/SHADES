@@ -6,15 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>PAGINA DE PRODUCTO </title>
+  <title>Producto</title>
 
-  <link rel="icon" href="assets/img/iconos/SHADES-LOGO.svg">
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="assets/css/navbar.css" />
-  <link rel="stylesheet" href="./assets/css/producto.css">
-  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/producto.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  
 
 <body>
 
@@ -69,28 +70,24 @@
   </header>
   <!-- FIN BARRA NAVEGACION -->
 
-
-
-  <!-- ENLAZAR EL JS DE LA NAVBAR -->
-  <script src="assets/js/nav.js"></script>
-
-
 <!--Metemos todos los elementos en un div de una sola fila, con 3 columas. Cada columna abarca 4-->
   <div class="container-fluid" id="columnas3"> <!--Div que nos da las 3 columnas-->
     <!--Columna 1 donde metemos el titulo del producto-->
     <div class="row align-items-center">
-      <div class="col-sm-4">
+      <div class="col-sm-4 crds">
         <ul id="tituloCard">
-          Clinique Pop™ Matte Lip Colour + Primer
+      <p>
+        Clinique Pop™ Matte Lip Colour + Primer
+      </p>
           <!-- Estrellas -->
-          <ul id="precioCard">$230</ul>
-          <div class="ec-stars-wrapper">
-            <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
-            <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
-            <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
-            <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
-            <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
-          </div>
+          <ul id="precioCard">
+            <h5>$230 </h5></ul>
+          
+            <form >
+              <a href="./carrito.html">
+                <button class="btn btn-light btn-sm" id="añadir">¡Añadir a carrito!</button> </a>
+          </form>
+        
         </ul>
       </div>
 
@@ -146,30 +143,17 @@
           <li class="list-group-item">¿Qué es?
             Fórmula ligera que deja los labios con acabados mate llenos de color que se sienten cómodos. Se desliza sin
             esfuerzo y uniformemente. Descubre los diferentes tonos. Tus labios harán Pop.</li>
-            <form >
-            <a href="./carrito.html">
-            <button type="button" id="añadir" role="button" aria-pressed="true" value="AÑADIR AL CARRITO">AÑADIR AL CARRITO</button> <br>
-
-          </a>
-        </form>
-        
-            <button type="button" id="comprarAhora" role="button" aria-pressed="true">COMPRAR AHORA</button>
+            
+                
+            <a href="./Formulario de pago.html">
+            <button type="button" id="comprarAhora" role="button" aria-pressed="true">Comprar ahora</button></a>
         </ul>
       </div>
       </div>
       </div>
 
-
-
         </div>
-        <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </button>
+        
       </div>
 
     </div>
@@ -270,16 +254,16 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        <a class="carousel-control-prev" role="button" data-bs-target="#carouselExampleControls"
           data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        </a>
+        <a class="carousel-control-next" role="button" data-bs-target="#carouselExampleControls"
           data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
-        </button>
+        </a>
       </div>
 
 
@@ -435,21 +419,16 @@
 
 
 
-
-
-
-
-
-
-
-      <script type="text/javascript" src="jQuery/jquery-3.6.0.min.js"></script>
-      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <!-- <script type="text/javascript" src="jQuery/jquery-3.6.0.min.js"></script> -->
+      <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"></script>
+      <script src="assets/js/nav.js"></script>
+      <script src="assets/js/producto.js"></script>
 
 </body>
 
