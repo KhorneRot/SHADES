@@ -1,6 +1,6 @@
 /* Variables */
-const cards = document.getElementById('cards')
-const templateCard = document.getElementById('template-card').content
+const cards = document.getElementById('cards');
+const templateCard = document.getElementById('template-card').content;
 const items = document.getElementById('items')
 const footer = document.getElementById('footer')
 const templateFooter = document.getElementById('template-footer').content
