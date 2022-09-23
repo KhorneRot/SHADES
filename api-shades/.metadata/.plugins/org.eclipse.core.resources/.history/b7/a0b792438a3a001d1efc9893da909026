@@ -1,0 +1,25 @@
+package com.shades.services;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.shades.models.CarritoModelo;
+import com.shades.repositories.CarritoRepository;
+
+@Service
+public class CarritoService {
+	
+	@Autowired
+	private CarritoRepository carritoRepository;
+	
+	public ArrayList<CarritoModelo> obtenerCarrito(){
+		return(ArrayList<CarritoModelo>) carritoRepository.findAll();
+	}
+
+	public CarritoModelo guardarCarrito(CarritoModelo carrito) {
+		// TODO Auto-generated method stub
+		return null;
+	}	
+}

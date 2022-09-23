@@ -1,0 +1,5 @@
+package com.shades.models;
+
+public interface CarritoModelo {
+
+}

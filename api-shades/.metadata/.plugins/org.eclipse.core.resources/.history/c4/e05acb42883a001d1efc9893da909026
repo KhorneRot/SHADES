@@ -1,0 +1,68 @@
+package com.shades.models;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "carrito")
+public class CarritoModelo {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(nullable = false)
+	
+	private Long ordenId;
+	
+	private String usuario;
+	private String producto;
+	private String cantidadProductos;
+	private String fechaCompra;
+	private String Total;
+	
+	public Long getOrdenId() {
+		return ordenId;
+	}
+	public void setOrdenId(Long ordenId) {
+		this.ordenId = ordenId;
+	}
+	public String getUsuario() {
+		return usuario;
+	}
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
+	}
+	public String getProducto() {
+		return producto;
+	}
+	public void setProducto(String producto) {
+		this.producto = producto;
+	}
+	public String getCantidadProductos() {
+		return cantidadProductos;
+	}
+	public void setCantidadProductos(String cantidadProductos) {
+		this.cantidadProductos = cantidadProductos;
+	}
+	public String getFechaCompra() {
+		return fechaCompra;
+	}
+	public void setFechaCompra(String fechaCompra) {
+		this.fechaCompra = fechaCompra;
+	}
+	public String getTotal() {
+		return Total;
+	}
+	public void setTotal(String total) {
+		Total = total;
+	}
+	public CarritoModelo() {
+		super();
+	} 
+	
+	
+	
+}
