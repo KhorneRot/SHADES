@@ -17,7 +17,7 @@ $formRegistro.addEventListener('submit', (e) => {
 
   $formRegistro.reset();
 
-  fetch('http://localhost:8080/api/usuarios', {
+  fetch('https://api-shades-test.herokuapp.com/api/usuarios', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json; charset=UTF-8'

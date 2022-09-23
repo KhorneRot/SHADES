@@ -10,7 +10,7 @@ $formLogin.addEventListener('submit', (e) => {
 
 
     if(username != '' && password != '') {
-        fetch('http://localhost:8080/login', {
+        fetch('https://api-shades-test.herokuapp.com/login', {
             method: 'POST',
             body: JSON.stringify( {
                 correo,
