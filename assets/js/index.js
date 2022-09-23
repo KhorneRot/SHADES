@@ -1,6 +1,8 @@
 // Obtener elementos del DOM
 const iconoCorazon = document.querySelectorAll('.icono-corazon');
 const iconoCarrito = document.querySelectorAll('.icono-carrito');
+let carrito = {};
+
 
 /* Declaracion de funciones*/
 const animarCarrito = function(evento) {
@@ -27,6 +29,7 @@ const animarCarrito = function(evento) {
   }
 
 }
+
 
 // Generar EventListeners para iconos de carrito
 iconoCarrito.forEach( function(elemento) {

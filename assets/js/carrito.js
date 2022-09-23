@@ -30,7 +30,7 @@ items.addEventListener('click', e=>{
 /* Funciones */
 const fetchData = async()=>{
 	try{
-		const res = await fetch('productos.json')
+		const res = await fetch('http://localhost:8080/api/productos/')
 		const data = await res.json()
 		pintarCard(data)
 
@@ -40,11 +40,11 @@ const fetchData = async()=>{
 }
 /* Pintar carrito con elementos del json */
 const pintarCard = data=>{
-	data.forEach(item => {
-		templateCard.querySelector('h5').textContent = item.title
-		templateCard.querySelector('p').textContent = item.precio
-		templateCard.querySelector('img').setAttribute('src', item.thumbnailUrl)
-		templateCard.querySelector('.btn-dark').dataset.id = item.id
+	data.slice(-3).forEach(item => {
+		templateCard.querySelector('h5').textContent = item.nombreProducto
+		templateCard.querySelector('p').textContent = "$" + item.precio;
+		templateCard.querySelector('img').setAttribute('src', item.imageUrl)
+		templateCard.querySelector('.btn-dark').dataset.id = item.productoId
 		const clone = templateCard.cloneNode(true)
 		fragment.appendChild(clone)
 	})
@@ -67,7 +67,7 @@ const setCarrito = item => {
 	//console.log(objeto)
 	const producto = {
 		title: item.querySelector('h5').textContent,
-		precio: item.querySelector('p').textContent,
+		precio: Number(item.querySelector('p').textContent.replace('$','')),
 		id: item.querySelector('.btn-dark').dataset.id,
 		cantidad: 1
 	}
@@ -111,11 +111,14 @@ const pintarFooter = () => {
 			return
 		}
 /* hace el cálculo del precio respecto a la cantidad */
-		const nCantidad = Object.values(carrito).reduce((acc, {cantidad})=> acc + cantidad, 0)
-		const nPrecio = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio, 0)
+		
+		const nCantidad = Object.values(carrito).reduce((acc, {cantidad})=> acc + cantidad, 0);
+		const nPrecio = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio, 0);
+
 		
 		templateFooter.querySelectorAll('td')[0].textContent = nCantidad
-		templateFooter.querySelector('span').textContent = nPrecio
+		templateFooter.querySelector('span').textContent = nPrecio;
+
 	/* cards */
 		const clone = templateFooter.cloneNode(true)
 		fragment.appendChild(clone)
