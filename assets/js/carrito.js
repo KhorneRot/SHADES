@@ -30,7 +30,7 @@ items.addEventListener('click', e=>{
 /* Funciones */
 const fetchData = async()=>{
 	try{
-		const res = await fetch('http://localhost:8080/api/productos/')
+		const res = await fetch('https://api-shades-test.herokuapp.com/api/productos/')
 		const data = await res.json()
 		pintarCard(data)
 
